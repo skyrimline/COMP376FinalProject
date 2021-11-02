@@ -16,21 +16,24 @@ public class Room_Area : MonoBehaviour, IDropHandler
     private int functionalRoomCapacity = 1;     // capacity for observation room and ICU
     public void OnDrop(PointerEventData eventData)
     {
-        // get the object that is dropped 
-        GameObject drop_obj = eventData.pointerDrag;
-
-        // set isInRoom to true to enable the movement in room behavior
-        NPC_Movement npc = drop_obj.GetComponent<NPC_Movement>();
-        if(npc != null)
+        if (CheckCapacity())
         {
-            npc.isInRoom = true;
-        }
+            // get the object that is dropped 
+            GameObject drop_obj = eventData.pointerDrag;
 
-        //// snap it to room position
-        //if(drop_obj != null)
-        //{
-        //    drop_obj.transform.position = transform.position;
-        //}
+            // set isInRoom to true to enable the movement in room behavior
+            NPC_Movement npc = drop_obj.GetComponent<NPC_Movement>();
+            if (npc != null)
+            {
+                npc.isInRoom = true;
+            }
+
+            // snap it to room position
+            if (drop_obj != null)
+            {
+                drop_obj.transform.position = transform.position;
+            }
+        }
     }
 
     // called by drag and drop npc script to check capacity of the room.
@@ -39,10 +42,6 @@ public class Room_Area : MonoBehaviour, IDropHandler
         switch (roomType)
         {
             case Room_Type.dorm:
-                if()
-                {
-
-                }
                 break;
             case Room_Type.observation:
             case Room_Type.ICU:

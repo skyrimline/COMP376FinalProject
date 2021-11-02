@@ -57,11 +57,7 @@ public class Drag_And_Drop_NPC : MonoBehaviour,
             // When a room is located, break the loop
             if(room != null)
             {
-                if (room.CheckCapacity())
-                {
-                    isAccept = true;
-                    break;
-                }
+                isAccept = room.CheckCapacity();
             }
         }
         // reset the position if not dropped to the correct area
