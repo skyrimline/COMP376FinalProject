@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4948169160094761681}
   - component: {fileID: -9074395349162803706}
   - component: {fileID: 2662206589523217071}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NPC2_infected
   m_TagString: Untagged
   m_Icon: {fileID: 0}

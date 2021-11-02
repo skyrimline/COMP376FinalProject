@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2443446525052197960}
   - component: {fileID: -1088573065644228662}
   - component: {fileID: 5139672947594653509}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NPC4_zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}

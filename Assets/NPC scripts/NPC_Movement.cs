@@ -42,13 +42,16 @@ public class NPC_Movement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // set another direction if collides with wall
-        if (collision.gameObject.layer == 6)
+        if (collision.gameObject.layer == 6 || collision.gameObject.layer == 7)
         {
-            Vector3 oldDir = moveDir;
-            do
+            if(moveDir == Vector3.left)
             {
-                moveDir = possibleMoveDir[Random.Range(0, 3)];
-            } while (moveDir == oldDir);
+                moveDir = Vector3.right;
+            }
+            else if(moveDir == Vector3.right)
+            {
+                moveDir = Vector3.left;
+            }
         }
 
     }

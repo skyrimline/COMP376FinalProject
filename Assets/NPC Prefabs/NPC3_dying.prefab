@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 9178548711330818115}
   - component: {fileID: 7187130852036104633}
   - component: {fileID: 3532428147818569599}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: NPC3_dying
   m_TagString: Untagged
   m_Icon: {fileID: 0}
