@@ -7,7 +7,7 @@ public class NPC_Movement : MonoBehaviour
     // components of the npc
     private Rigidbody2D rb;
     private BoxCollider2D col;
-    private SpriteRenderer spr;
+    private Animator anim;
     
     
     // true if is in room, false if is outside seeking help.
@@ -26,7 +26,7 @@ public class NPC_Movement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<BoxCollider2D>();
-        spr = GetComponent<SpriteRenderer>();
+        anim = transform.Find("AnimatorWrapper").gameObject.GetComponent<Animator>();
         // set initial timer and move dir
         switchMovementTimerInRoom = Random.Range(1f,3f);
         moveDir = Vector3.zero;
@@ -103,27 +103,32 @@ public class NPC_Movement : MonoBehaviour
         col.enabled = false;
         rb.gravityScale = 0;
         rb.velocity = Vector2.zero;
+        moveDir = Vector3.zero;
     }
 
     public void ResetMoveAndEnableCol()
     {
         col.enabled = true;
-        rb.gravityScale = 25;
+        rb.gravityScale = 1;
     }
 
     private void UpdateAnimation()
     {
         if(moveDir == Vector3.right)
         {
-            spr.flipX = false;
+            transform.localScale = new Vector3(1, 1, 1);
+            anim.SetTrigger("Walk");
         }
         else if(moveDir == Vector3.left)
         {
-            spr.flipX = true;
+            transform.localScale = new Vector3(-1, 1, 1);
+            anim.SetTrigger("Walk");
         }
         else if(moveDir == Vector3.zero)
         {
-
+            anim.SetTrigger("Idle");
         }
     }
+
+
 }

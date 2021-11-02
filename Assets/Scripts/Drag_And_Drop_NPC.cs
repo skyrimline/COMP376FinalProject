@@ -10,7 +10,6 @@ public class Drag_And_Drop_NPC : MonoBehaviour,
     private NPC_Movement npcMove = null;
     private NPC_Logic npcLogic = null;
     private Camera cam;
-    private SpriteRenderer spr;
     private Vector3 startPos;
 
     private void Awake()
@@ -18,7 +17,6 @@ public class Drag_And_Drop_NPC : MonoBehaviour,
         npcMove = GetComponent<NPC_Movement>();
         npcLogic = GetComponent<NPC_Logic>();
         cam = Camera.main;
-        spr = GetComponent<SpriteRenderer>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
@@ -28,9 +26,6 @@ public class Drag_And_Drop_NPC : MonoBehaviour,
         {
             npcMove.FreezePosAndDisableCol();
         }
-
-        // change to transparent when dragging
-        spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, 0.5f);
     }
 
 
@@ -38,6 +33,11 @@ public class Drag_And_Drop_NPC : MonoBehaviour,
     public void OnDrag(PointerEventData eventData)
     {
         transform.position = cam.ScreenToWorldPoint(new Vector3(eventData.position.x, eventData.position.y, 10));
+        // if the object being dragged is a npc
+        if (npcMove != null)
+        {
+            npcMove.FreezePosAndDisableCol();
+        }
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -52,9 +52,6 @@ public class Drag_And_Drop_NPC : MonoBehaviour,
         {
             npcMove.ResetMoveAndEnableCol();
         }
-
-        // reset transparency
-        spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, 1f);
 
         /***************************************************/
         // also check if the drop position is droppable.

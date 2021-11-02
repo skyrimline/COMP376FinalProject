@@ -9262,7 +9262,7 @@ GameObject:
   - component: {fileID: -2087986189108881598}
   - component: {fileID: -2691094113508946496}
   m_Layer: 0
-  m_Name: man4-zombies
+  m_Name: man4-zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
