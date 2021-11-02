@@ -11,7 +11,9 @@ public class NPC_Movement : MonoBehaviour
     
     
     // true if is in room, false if is outside seeking help.
-    public bool isInRoom { get; set; } = false;
+    public bool isInRoom = false;
+    // when being dragged, walking is disabled.
+    private bool walkingEnabled = true;
 
     // walking speed of the NPC.
     private float walkingSpeed = 2;
@@ -59,20 +61,24 @@ public class NPC_Movement : MonoBehaviour
     // called by Update()
     private void Movement()
     {
-        if (isInRoom)
+        if (walkingEnabled)
         {
-            SetDirectionInRoom();
-        }
-        else
-        {
-            SetDirectionOutside();
+            if (isInRoom)
+            {
+                SetDirectionInRoom();
+            }
+            else
+            {
+                SetDirectionOutside();
+            }
+
+            // only move when it's not being dragged (by checking if its collider is enabled)
+            if (col.enabled)
+            {
+                transform.position = (transform.position + moveDir * walkingSpeed * Time.deltaTime);
+            }
         }
 
-        // only move when it's not being dragged (by checking if its collider is enabled)
-        if (col.enabled)
-        {
-            transform.position = (transform.position + moveDir * walkingSpeed * Time.deltaTime);
-        }
     }
 
     // walks randomly left or right, turns around if collides with room wall
@@ -104,12 +110,14 @@ public class NPC_Movement : MonoBehaviour
         rb.gravityScale = 0;
         rb.velocity = Vector2.zero;
         moveDir = Vector3.zero;
+        walkingEnabled = false;
     }
 
     public void ResetMoveAndEnableCol()
     {
         col.enabled = true;
-        rb.gravityScale = 1;
+        rb.gravityScale = 4;
+        walkingEnabled = true;
     }
 
     private void UpdateAnimation()

@@ -1029,11 +1029,12 @@ GameObject:
   - component: {fileID: 2539572247663646764}
   - component: {fileID: 1786456736333720032}
   - component: {fileID: 8771850614233916729}
-  - component: {fileID: -6577609046958498001}
+  - component: {fileID: 632977444210800634}
   - component: {fileID: -8723087003970000780}
   - component: {fileID: -7411390168268445755}
   - component: {fileID: -1828356585909265600}
-  m_Layer: 0
+  - component: {fileID: 1058018855547845671}
+  m_Layer: 7
   m_Name: women2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1207,8 +1208,8 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
---- !u!70 &-6577609046958498001
-CapsuleCollider2D:
+--- !u!61 &632977444210800634
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1220,9 +1221,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.85}
-  m_Size: {x: 1, y: 3.7}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 1.75}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.39, y: 3.47}
+  m_EdgeRadius: 0
 --- !u!50 &-8723087003970000780
 Rigidbody2D:
   serializedVersion: 4
@@ -1238,12 +1249,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &-7411390168268445755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1271,6 +1282,19 @@ MonoBehaviour:
   infectionPhase: 0
   type: 0
   life: 0
+--- !u!114 &1058018855547845671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095712458859260122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f12aaa806723044ebe8322d2c50e68d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInRoom: 0
 --- !u!1 &1177016202167901446
 GameObject:
   m_ObjectHideFlags: 0

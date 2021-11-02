@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222554507289378089}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.6442575, z: 0}
+  m_LocalPosition: {x: 0, y: 4.64426, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7634136666939749166}
@@ -1876,11 +1876,12 @@ GameObject:
   - component: {fileID: 3494065828613289987}
   - component: {fileID: 831460816581265871}
   - component: {fileID: 7708168538984908054}
-  - component: {fileID: -3369591767994536574}
+  - component: {fileID: 6812474384584513799}
   - component: {fileID: 7297498380304744518}
   - component: {fileID: 6339283455123806680}
   - component: {fileID: 5637781771647330760}
-  m_Layer: 0
+  - component: {fileID: 8500814369777525172}
+  m_Layer: 7
   m_Name: man4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2054,8 +2055,8 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
---- !u!70 &-3369591767994536574
-CapsuleCollider2D:
+--- !u!61 &6812474384584513799
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2067,9 +2068,19 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.6}
-  m_Size: {x: 1, y: 3.2}
-  m_Direction: 0
+  m_Offset: {x: 0, y: 1.75}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.39, y: 3.47}
+  m_EdgeRadius: 0
 --- !u!50 &7297498380304744518
 Rigidbody2D:
   serializedVersion: 4
@@ -2085,12 +2096,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &6339283455123806680
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,6 +2129,19 @@ MonoBehaviour:
   infectionPhase: 0
   type: 0
   life: 0
+--- !u!114 &8500814369777525172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051378050254981365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f12aaa806723044ebe8322d2c50e68d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInRoom: 0
 --- !u!1 &2149413905162970838
 GameObject:
   m_ObjectHideFlags: 0

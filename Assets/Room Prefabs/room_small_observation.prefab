@@ -216,7 +216,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 10914c2ce7dc7f744beff238cbd89042, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -276,7 +276,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5332345539642847340}
   - component: {fileID: 2101497525115615502}
-  - component: {fileID: 5871208087975176273}
   - component: {fileID: 6117304843401880672}
   m_Layer: 0
   m_Name: ceiling_small
@@ -350,32 +349,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &5871208087975176273
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2140832789714626983}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.37, y: 0.23}
-    newSize: {x: 8.37, y: 0.23}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 8.37, y: 0.23}
-  m_EdgeRadius: 0
 --- !u!61 &6117304843401880672
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -413,7 +386,6 @@ GameObject:
   - component: {fileID: 7107826535000444563}
   - component: {fileID: 4053806043577677301}
   - component: {fileID: 559057305759092130}
-  - component: {fileID: 8097366437565441398}
   m_Layer: 6
   m_Name: wall_left
   m_TagString: Untagged
@@ -512,32 +484,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.36, y: 6.84}
   m_EdgeRadius: 0
---- !u!61 &8097366437565441398
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2186286322526262128}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.36, y: 6.84}
-    newSize: {x: 20, y: 12}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.36, y: 6.84}
-  m_EdgeRadius: 0
 --- !u!1 &2362411209188107167
 GameObject:
   m_ObjectHideFlags: 0
@@ -548,7 +494,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2652354716302359441}
   - component: {fileID: 3234853036864609706}
-  - component: {fileID: 3504038381398848892}
   - component: {fileID: 1230363886241505198}
   m_Layer: 0
   m_Name: floor_small
@@ -622,32 +567,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &3504038381398848892
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2362411209188107167}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.37, y: 0.23}
-    newSize: {x: 8.37, y: 0.23}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 8.37, y: 0.23}
-  m_EdgeRadius: 0
 --- !u!61 &1230363886241505198
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -820,7 +739,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3813283539350023406}
   - component: {fileID: 8434096084193075527}
-  - component: {fileID: 6195915964908645634}
   - component: {fileID: 3647921925553860245}
   m_Layer: 6
   m_Name: wall_balcony_right
@@ -894,32 +812,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6195915964908645634
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3321308297482889365}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.35, y: 2.73}
-    newSize: {x: 20, y: 12}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.35, y: 2.73}
-  m_EdgeRadius: 0
 --- !u!61 &3647921925553860245
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1092,9 +984,8 @@ GameObject:
   m_Component:
   - component: {fileID: 7821439720445842416}
   - component: {fileID: 282219975644832790}
-  - component: {fileID: 6527630597571481116}
   - component: {fileID: 7336354786177050212}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: wall_with_door_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1166,32 +1057,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6527630597571481116
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6262120312388575377}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.35, y: 2.73}
-    newSize: {x: 20, y: 12}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.35, y: 2.73}
-  m_EdgeRadius: 0
 --- !u!61 &7336354786177050212
 BoxCollider2D:
   m_ObjectHideFlags: 0
