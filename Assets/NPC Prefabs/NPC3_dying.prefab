@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 9178548711330818115}
   - component: {fileID: 7187130852036104633}
   - component: {fileID: 3532428147818569599}
+  - component: {fileID: 5269893615479166002}
   m_Layer: 7
   m_Name: NPC3_dying
   m_TagString: Untagged
@@ -157,3 +158,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f12aaa806723044ebe8322d2c50e68d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5269893615479166002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5479823513899572069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4fbc815adbbfca49bbb30983f3fd392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infectionPhase: 1
+  type: 2
+  life: 1

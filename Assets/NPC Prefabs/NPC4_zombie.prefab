@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7297297644278316349}
   - component: {fileID: 3947010249331554389}
   - component: {fileID: 2443446525052197960}
-  - component: {fileID: -1088573065644228662}
   - component: {fileID: 5139672947594653509}
+  - component: {fileID: -6233039328908940917}
   m_Layer: 7
   m_Name: NPC4_zombie
   m_TagString: Untagged
@@ -133,18 +133,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &-1088573065644228662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334229549131050862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaab9cca64623ca4e9b8971bf45edd3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &5139672947594653509
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -157,3 +145,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f12aaa806723044ebe8322d2c50e68d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-6233039328908940917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334229549131050862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4fbc815adbbfca49bbb30983f3fd392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infectionPhase: 2
+  type: 3
+  life: 999

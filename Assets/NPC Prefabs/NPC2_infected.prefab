@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4948169160094761681}
   - component: {fileID: -9074395349162803706}
   - component: {fileID: 2662206589523217071}
+  - component: {fileID: -9116644273394685010}
   m_Layer: 7
   m_Name: NPC2_infected
   m_TagString: Untagged
@@ -157,3 +158,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f12aaa806723044ebe8322d2c50e68d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-9116644273394685010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8631028555323732471}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4fbc815adbbfca49bbb30983f3fd392, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infectionPhase: 1
+  type: 1
+  life: 3

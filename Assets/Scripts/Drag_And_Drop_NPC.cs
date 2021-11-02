@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 // implementing drag and drop events
-public class Drag_And_Drop : MonoBehaviour, 
+public class Drag_And_Drop_NPC : MonoBehaviour, 
     IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IInitializePotentialDragHandler
 {
     private NPC_Movement npcMove = null;
+    private NPC_Logic npcLogic = null;
     private Camera cam;
     private SpriteRenderer spr;
     private Vector3 startPos;
@@ -15,6 +16,7 @@ public class Drag_And_Drop : MonoBehaviour,
     private void Awake()
     {
         npcMove = GetComponent<NPC_Movement>();
+        npcLogic = GetComponent<NPC_Logic>();
         cam = Camera.main;
         spr = GetComponent<SpriteRenderer>();
     }
@@ -54,7 +56,6 @@ public class Drag_And_Drop : MonoBehaviour,
         // reset transparency
         spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, 1f);
 
-
         /***************************************************/
         // also check if the drop position is droppable.
         var results = new List<RaycastResult>();
@@ -64,7 +65,7 @@ public class Drag_And_Drop : MonoBehaviour,
         {
             // by checking if the ray casted drop position has a room area in it
             room = result.gameObject.GetComponent<Room_Area>();
-            // as long as a room is located, break the loop to save resources
+            // When a room is located, break the loop
             if(room != null)
             {
                 break;
