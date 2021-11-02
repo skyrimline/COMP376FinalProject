@@ -5,61 +5,80 @@ using UnityEngine.EventSystems;
 
 // implementing drag and drop events
 public class Drag_And_Drop : MonoBehaviour, 
-    IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+    IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler, IInitializePotentialDragHandler
 {
-
-    private BoxCollider2D col = null;
-    private Rigidbody2D rb = null;
+    private NPC_Movement npcMove = null;
     private Camera cam;
+    private SpriteRenderer spr;
+    private Vector3 startPos;
+
     private void Awake()
     {
+        npcMove = GetComponent<NPC_Movement>();
         cam = Camera.main;
-        col = GetComponent<BoxCollider2D>();
-        rb = GetComponent<Rigidbody2D>();
+        spr = GetComponent<SpriteRenderer>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
-    {
-        Debug.Log("down");
-        // make its collider to trigger and set the rigid body gravity scale to 0
-        if (col != null)
+    {   
+        // if the object being dragged is a npc
+        if(npcMove != null)
         {
-            col.isTrigger = true;
+            npcMove.FreezePosAndDisableCol();
         }
-        if (rb != null)
-        {
-            rb.gravityScale = 0;
-            rb.velocity = Vector2.zero;
-        }
+
+        // change to transparent when dragging
+        spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, 0.5f);
     }
 
-    // change the position of the thing
+
+    // change the position of the game object
     public void OnDrag(PointerEventData eventData)
     {
-        //Debug.Log("OnDrag");
-        //Debug.Log(eventData);
-        //Debug.Log(cam.ScreenToWorldPoint(new Vector3(eventData.position.x, eventData.position.y, 10)));
-        //rectTransform.anchoredPosition += eventData.delta;
         transform.position = cam.ScreenToWorldPoint(new Vector3(eventData.position.x, eventData.position.y, 10));
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        Debug.Log("begin drag");
+
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        Debug.Log("End drag");
-        // make its collider back to normal and set the rigid body gravity scale to 1
-        if (col != null)
+        // reset npc movement
+        if(npcMove != null)
         {
-            col.isTrigger = false;
+            npcMove.ResetMoveAndEnableCol();
         }
-        if (rb != null)
+
+        // reset transparency
+        spr.color = new Color(spr.color.r, spr.color.g, spr.color.b, 1f);
+
+
+        /***************************************************/
+        // also check if the drop position is droppable.
+        var results = new List<RaycastResult>();
+        EventSystem.current.RaycastAll(eventData, results);
+        Room_Area room = null;
+        foreach(var result in results)
         {
-            rb.gravityScale = 1;
+            // by checking if the ray casted drop position has a room area in it
+            room = result.gameObject.GetComponent<Room_Area>();
+            // as long as a room is located, break the loop to save resources
+            if(room != null)
+            {
+                break;
+            }
+        }
+        // reset the position if not dropped to the correct area
+        if(room == null)
+        {
+            transform.position = startPos;
         }
     }
 
+    public void OnInitializePotentialDrag(PointerEventData eventData)
+    {
+        startPos = transform.position;
+    }
 }

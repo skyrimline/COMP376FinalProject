@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 6138984036637793771}
   - component: {fileID: 8702073634992089394}
   - component: {fileID: 1519551727156168144}
+  - component: {fileID: 652222043975788287}
   m_Layer: 0
   m_Name: room_small_observation
   m_TagString: room_observation
@@ -253,6 +254,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.71, y: 6.48}
   m_EdgeRadius: 0
+--- !u!114 &652222043975788287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326728697648696355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bd31571874d7d498bbca51a9ecc572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2140832789714626983
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,7 +414,7 @@ GameObject:
   - component: {fileID: 4053806043577677301}
   - component: {fileID: 559057305759092130}
   - component: {fileID: 8097366437565441398}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -809,7 +822,7 @@ GameObject:
   - component: {fileID: 8434096084193075527}
   - component: {fileID: 6195915964908645634}
   - component: {fileID: 3647921925553860245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall_balcony_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1081,7 +1094,7 @@ GameObject:
   - component: {fileID: 282219975644832790}
   - component: {fileID: 6527630597571481116}
   - component: {fileID: 7336354786177050212}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall_with_door_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2180908957254242817}
   - component: {fileID: 5939238193677084729}
   - component: {fileID: 1893329808000163883}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -556,6 +556,7 @@ GameObject:
   - component: {fileID: 95034720358709430}
   - component: {fileID: 7922068560357810506}
   - component: {fileID: 8107877839823868718}
+  - component: {fileID: -6265503237421133822}
   m_Layer: 0
   m_Name: room_tiny_ICU
   m_TagString: room_ICU
@@ -662,6 +663,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.61, y: 6.48}
   m_EdgeRadius: 0
+--- !u!114 &-6265503237421133822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4276522975399525939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bd31571874d7d498bbca51a9ecc572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5121042886088350193
 GameObject:
   m_ObjectHideFlags: 0
@@ -782,7 +795,7 @@ GameObject:
   - component: {fileID: 6796119490869256396}
   - component: {fileID: 8461340619490426255}
   - component: {fileID: 7643850687386949129}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}

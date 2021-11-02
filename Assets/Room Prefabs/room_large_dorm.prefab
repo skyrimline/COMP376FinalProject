@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 4556333853344922864}
   - component: {fileID: 7561489145865399714}
   - component: {fileID: 868832191928065830}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall_right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 5396111430663768130}
   - component: {fileID: 425303828198981220}
   - component: {fileID: 9166523016008425314}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: wall_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -883,6 +883,7 @@ GameObject:
   - component: {fileID: 6559757039331124043}
   - component: {fileID: 3210152842753063243}
   - component: {fileID: 7118748180551595426}
+  - component: {fileID: -7618921515853544712}
   m_Layer: 0
   m_Name: room_large_dorm
   m_TagString: room_dorm
@@ -989,3 +990,15 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16.3, y: 6.4}
   m_EdgeRadius: 0
+--- !u!114 &-7618921515853544712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9056723764607627165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bd31571874d7d498bbca51a9ecc572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
