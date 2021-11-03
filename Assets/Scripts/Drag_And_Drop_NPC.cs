@@ -61,7 +61,7 @@ public class Drag_And_Drop_NPC : MonoBehaviour,
             }
         }
         // reset the position if not dropped to the correct area
-        if(isAccept)
+        if(!isAccept)
         {
             transform.position = startPos;
         }

@@ -338,7 +338,6 @@ GameObject:
   - component: {fileID: 7329244483933657849}
   - component: {fileID: 655207725004653317}
   - component: {fileID: 1469267929343390049}
-  - component: {fileID: 5614689755873702477}
   m_Layer: 0
   m_Name: room_tiny_balcony
   m_TagString: room_ICU
@@ -445,19 +444,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.61, y: 6.48}
   m_EdgeRadius: 0
---- !u!114 &5614689755873702477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6899046689674910844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99bd31571874d7d498bbca51a9ecc572, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomType: 0
 --- !u!1 &7121632463865531273
 GameObject:
   m_ObjectHideFlags: 0

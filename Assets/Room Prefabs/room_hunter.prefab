@@ -994,7 +994,6 @@ GameObject:
   - component: {fileID: 8872122363307022932}
   - component: {fileID: 910902559995347028}
   - component: {fileID: 4819471507366972605}
-  - component: {fileID: 3921732792240438247}
   m_Layer: 0
   m_Name: room_hunter
   m_TagString: room_dorm
@@ -1101,19 +1100,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16.3, y: 6.4}
   m_EdgeRadius: 0
---- !u!114 &3921732792240438247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6739388671646193282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99bd31571874d7d498bbca51a9ecc572, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roomType: 0
 --- !u!1 &7468985472334055017
 GameObject:
   m_ObjectHideFlags: 0
