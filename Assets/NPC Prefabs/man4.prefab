@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 222554507289378089}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.64426, z: 0}
+  m_LocalPosition: {x: 0, y: 4.644257, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7634136666939749166}
@@ -1883,7 +1883,7 @@ GameObject:
   - component: {fileID: 8500814369777525172}
   m_Layer: 7
   m_Name: man4
-  m_TagString: Untagged
+  m_TagString: NPC
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1900,6 +1900,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5492528602304617378}
+  - {fileID: 2884916090188948729}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2068,7 +2069,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 1.75}
+  m_Offset: {x: 0, y: 1.63}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -2079,7 +2080,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.39, y: 3.47}
+  m_Size: {x: 1.39, y: 3.25}
   m_EdgeRadius: 0
 --- !u!50 &7297498380304744518
 Rigidbody2D:
@@ -2128,6 +2129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   infectionPhase: 0
   type: 0
+  zombiePrefab: {fileID: 7394018795796845611, guid: e0c6fa1ab2929924e840f2bb948e65c9, type: 3}
   life: 0
 --- !u!114 &8500814369777525172
 MonoBehaviour:
@@ -2142,6 +2144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInRoom: 0
+  isWaitingInLine: 0
 --- !u!1 &2149413905162970838
 GameObject:
   m_ObjectHideFlags: 0
@@ -11204,3 +11207,69 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &133050729131737040
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1671048192947878403}
+    m_Modifications:
+    - target: {fileID: 3013461242867456809, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013461242867456809, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.634
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013461242867456809, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.469
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013461242867456809, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013461242867456809, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013461242867456809, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013461242867456809, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013461242867456809, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013461242867456809, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013461242867456809, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013461242867456809, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524095363511747225, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+      propertyPath: m_Name
+      value: Timer_UI_NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524095363511747225, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+--- !u!4 &2884916090188948729 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3013461242867456809, guid: f851c16ebb6887d4fae9b255568abd28, type: 3}
+  m_PrefabInstance: {fileID: 133050729131737040}
+  m_PrefabAsset: {fileID: 0}

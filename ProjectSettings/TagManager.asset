@@ -8,6 +8,9 @@ TagManager:
   - room_observation
   - room_vaccine
   - room_ICU
+  - lose
+  - NPC
+  - Zombie
   layers:
   - Default
   - TransparentFX

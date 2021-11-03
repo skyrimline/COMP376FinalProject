@@ -7112,13 +7112,13 @@ GameObject:
   - component: {fileID: 7366767989594750955}
   - component: {fileID: 6757826176668634663}
   - component: {fileID: 4375674048501875454}
-  - component: {fileID: 7538454080041070970}
   - component: {fileID: -8905485088748478442}
-  - component: {fileID: -8028696663389913679}
   - component: {fileID: -3070381850843504532}
+  - component: {fileID: 1347500979606204214}
+  - component: {fileID: 432485591005857717}
   m_Layer: 0
   m_Name: women2-zombie
-  m_TagString: Untagged
+  m_TagString: Zombie
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7290,22 +7290,6 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
---- !u!70 &7538454080041070970
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5347632412554383133}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 2.3}
-  m_Size: {x: 1, y: 4.6}
-  m_Direction: 0
 --- !u!50 &-8905485088748478442
 Rigidbody2D:
   serializedVersion: 4
@@ -7321,24 +7305,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
---- !u!114 &-8028696663389913679
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5347632412554383133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eaab9cca64623ca4e9b8971bf45edd3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Constraints: 4
 --- !u!114 &-3070381850843504532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7351,9 +7323,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4fbc815adbbfca49bbb30983f3fd392, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  infectionPhase: 0
-  type: 0
-  life: 0
+  infectionPhase: 2
+  type: 3
+  zombiePrefab: {fileID: 0}
+  life: 999
+--- !u!61 &1347500979606204214
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5347632412554383133}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 2.38}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.65, y: 4.77}
+  m_EdgeRadius: 0
+--- !u!114 &432485591005857717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5347632412554383133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f12aaa806723044ebe8322d2c50e68d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isInRoom: 0
+  isWaitingInLine: 0
 --- !u!1 &5446310591089484094
 GameObject:
   m_ObjectHideFlags: 0

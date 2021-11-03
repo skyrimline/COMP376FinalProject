@@ -12,6 +12,9 @@ public class NPC_Movement : MonoBehaviour
     
     // true if is in room, false if is outside seeking help.
     public bool isInRoom = false;
+    // when npc outside the room, indicate whether npc is waiting in line
+    public bool isWaitingInLine = false;
+
     // when being dragged, walking is disabled.
     private bool walkingEnabled = true;
 
@@ -58,6 +61,12 @@ public class NPC_Movement : MonoBehaviour
 
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+    }
+
+
     // called by Update()
     private void Movement()
     {
@@ -78,7 +87,6 @@ public class NPC_Movement : MonoBehaviour
                 transform.position = (transform.position + moveDir * walkingSpeed * Time.deltaTime);
             }
         }
-
     }
 
     // walks randomly left or right, turns around if collides with room wall
@@ -100,6 +108,18 @@ public class NPC_Movement : MonoBehaviour
     // turns around randomly over a small time period,
     // make sure npc doesn't walk outside the scene.
     private void SetDirectionOutside()
+    {
+        if (!isWaitingInLine)
+        {
+            moveDir = Vector3.right;
+        }
+        else
+        {
+            moveDir = Vector3.zero;
+        }
+    }
+
+    private void SetDirectionZombie()
     {
 
     }
@@ -124,12 +144,12 @@ public class NPC_Movement : MonoBehaviour
     {
         if(moveDir == Vector3.right)
         {
-            transform.localScale = new Vector3(1, 1, 1);
+            transform.Find("AnimatorWrapper").localScale = new Vector3(1, 1, 1);
             anim.SetTrigger("Walk");
         }
         else if(moveDir == Vector3.left)
         {
-            transform.localScale = new Vector3(-1, 1, 1);
+            transform.Find("AnimatorWrapper").localScale = new Vector3(-1, 1, 1);
             anim.SetTrigger("Walk");
         }
         else if(moveDir == Vector3.zero)

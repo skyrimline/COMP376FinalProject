@@ -33,7 +33,7 @@ public class Drag_And_Drop_NPC : MonoBehaviour,
     // change the position of the game object
     public void OnDrag(PointerEventData eventData)
     {
-        transform.position = cam.ScreenToWorldPoint(new Vector3(eventData.position.x, eventData.position.y, 10));
+        transform.position = - new Vector3(0, 2f, 0) + cam.ScreenToWorldPoint(new Vector3(eventData.position.x, eventData.position.y, 10));
     }
 
     public void OnBeginDrag(PointerEventData eventData)
