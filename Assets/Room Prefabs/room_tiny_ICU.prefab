@@ -787,6 +787,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   roomType: 2
   NPCList: []
+  remainingBedText: {fileID: 0}
 --- !u!1 &5121042886088350193
 GameObject:
   m_ObjectHideFlags: 0
