@@ -11,6 +11,8 @@ TagManager:
   - lose
   - NPC
   - Zombie
+  - GameLogic
+  - AirDrop
   layers:
   - Default
   - TransparentFX

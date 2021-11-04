@@ -1034,6 +1034,7 @@ GameObject:
   - component: {fileID: -7411390168268445755}
   - component: {fileID: -1828356585909265600}
   - component: {fileID: 1058018855547845671}
+  - component: {fileID: -2516018953392343930}
   m_Layer: 7
   m_Name: women2
   m_TagString: NPC
@@ -1284,6 +1285,8 @@ MonoBehaviour:
   type: 0
   zombiePrefab: {fileID: 5347632412554383133, guid: 69c16945046313845b7c4e44992231bd, type: 3}
   life: 0
+  infectedByRoom: 0
+  isVaccinated: 0
 --- !u!114 &1058018855547845671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1298,6 +1301,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInRoom: 0
   isWaitingInLine: 0
+--- !u!114 &-2516018953392343930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095712458859260122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e55104006e38c846a83009498ae48d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1177016202167901446
 GameObject:
   m_ObjectHideFlags: 0

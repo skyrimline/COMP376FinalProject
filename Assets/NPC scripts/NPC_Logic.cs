@@ -28,12 +28,14 @@ public class NPC_Logic : MonoBehaviour
     [SerializeField] private int life;
     // 2. food is allocated automatically by the game.
     // 3. All NPC (except from zombie) will die if their HP <= 0
-    // 4. (*) Dorm can have at most x people
-    // 5. (*) observation and ICU can have at most 1 people inside
     // 6. normal NPC can turn into infected NPC if stayed in an infected room for x, say 40 seconds
     private float NormalToInfectedTimer = 40.0f;
+    private float NormalToInfectedTime = 40.0f;
+    public bool infectedByRoom = false;
     // 6.1. NPC1 can be applied with vaccine, then it will never turn into NPC2
-    private bool isVaccinated = false;
+    public bool isVaccinated = false;
+
+
     // 7. infected NPC can turn into dying NPC if not treated with serum(血清) after 1 minute (implicit timer)
     private float InfectedToDyingTimer = 20f;
     // 8. (*) infected NPC will contaminate a dorm immediately
@@ -41,8 +43,6 @@ public class NPC_Logic : MonoBehaviour
     private float DyingToZombieTimer = 30f;
     private float DyingToZombieTime = 30f;
     private Progress_bar zombieProgress;
-    // will add some image and UI component here. 这个我可以来做，以前做过。
-    // 10. (*) dying NPC will contaminate a dorm immediately
     // 11. zombies cannot be dragged (already done, simply remove the Drag_And_Drop.cs on zombie prefab)
     // 12. zombies can only be killed by special agents.
     // 13. zombies can kill other NPC on contact (can check the collision tag). 
@@ -64,6 +64,7 @@ public class NPC_Logic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        NormalToInfected();
         InfectedToDying();
         DyingToZombie();
         TimerUIDisplay();
@@ -75,6 +76,28 @@ public class NPC_Logic : MonoBehaviour
     {
         // play dead animation
         // destry object
+        transform.eulerAngles = new Vector3(0, 0, 90);
+        Destroy(gameObject, 2);
+    }
+
+    private void NormalToInfected()
+    {
+        if (infectedByRoom && type == NPC_Type.normal)
+        {
+            // timer start count down
+            if(NormalToInfectedTimer >= 0)
+            {
+                NormalToInfectedTimer -= Time.deltaTime;
+                return;
+            }
+
+            // when time's up, set type to infected.
+            type = NPC_Type.infected;
+        }
+        else
+        {
+            NormalToInfectedTimer = NormalToInfectedTime;
+        }
     }
 
     private void InfectedToDying()

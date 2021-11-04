@@ -2336,7 +2336,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2363850707569638562}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.7397265, z: 0}
+  m_LocalPosition: {x: 0, y: 4.739727, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5343907219167589029}
@@ -4519,6 +4519,7 @@ GameObject:
   - component: {fileID: 2390802738259317772}
   - component: {fileID: 6752356349951294375}
   - component: {fileID: 6604323742390292577}
+  - component: {fileID: -3519249250313937063}
   m_Layer: 7
   m_Name: man1
   m_TagString: NPC
@@ -4769,6 +4770,8 @@ MonoBehaviour:
   type: 0
   zombiePrefab: {fileID: 5237410401664002183, guid: 46a2d5c83219b754caa44788b1d387cc, type: 3}
   life: 0
+  infectedByRoom: 0
+  isVaccinated: 0
 --- !u!114 &6604323742390292577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4783,6 +4786,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInRoom: 0
   isWaitingInLine: 0
+--- !u!114 &-3519249250313937063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4588971084260313470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e55104006e38c846a83009498ae48d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4635858016314108212
 GameObject:
   m_ObjectHideFlags: 0

@@ -24,6 +24,7 @@ public class Camera_Logic : MonoBehaviour
     private float maxX;
     private float minY;
     private float maxY;
+    private float offset = 0;
 
 
 
@@ -151,26 +152,26 @@ public class Camera_Logic : MonoBehaviour
 
         if(camLeft < minX)
         {
-            transform.position = new Vector3(minX + myCam.orthographicSize * myCam.aspect, transform.position.y, transform.position.z);
-            cameraPos = transform.position;
+            transform.position = new Vector3(minX + myCam.orthographicSize * myCam.aspect + offset, transform.position.y, transform.position.z);
+            cameraPos.x = transform.position.x;
         }
 
         if(camRight > maxX)
         {
-            transform.position = new Vector3(maxX - myCam.orthographicSize * myCam.aspect, transform.position.y, transform.position.z);
-            cameraPos = transform.position;
+            transform.position = new Vector3(maxX - myCam.orthographicSize * myCam.aspect - offset, transform.position.y, transform.position.z);
+            cameraPos.x = transform.position.x;
         }
 
         if (camTop > maxY)
         {
-            transform.position = new Vector3(transform.position.x, maxY - myCam.orthographicSize, transform.position.z);
-            cameraPos = transform.position;
+            transform.position = new Vector3(transform.position.x, maxY - myCam.orthographicSize - offset, transform.position.z);
+            cameraPos.y = transform.position.y;
         }
 
         if (camBottom < minY)
         {
-            transform.position = new Vector3(transform.position.x, maxY + myCam.orthographicSize, transform.position.z);
-            cameraPos = transform.position;
+            transform.position = new Vector3(transform.position.x, minY + myCam.orthographicSize + offset, transform.position.z);
+            cameraPos.y = transform.position.y;
         }
     }
 
