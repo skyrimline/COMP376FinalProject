@@ -8,6 +8,8 @@ public class NPC_Logic : MonoBehaviour
     // enum for NPC type.
     public enum NPC_Type { normal, infected, dying, zombie };
 
+    //give a heartRate for all NPCS
+    public int[] heartRate = new int[5];
 
     // The following fields are set in the editor, and should be modified through getter and setter
     // infectionPhase can be 1 or 2
@@ -37,7 +39,7 @@ public class NPC_Logic : MonoBehaviour
 
 
     // 7. infected NPC can turn into dying NPC if not treated with serum(血清) after 1 minute (implicit timer)
-    private float InfectedToDyingTimer = 20f;
+    private float InfectedToDyingTimer = 40f;
     // 8. (*) infected NPC will contaminate a dorm immediately
     // 9. dying NPC has a explicit timer (progress bar) shown on top of head, if not treated with serum, will turn into zombie after 30 seconds
     private float DyingToZombieTimer = 30f;
@@ -59,6 +61,8 @@ public class NPC_Logic : MonoBehaviour
         {
             zombieProgress = transform.Find("Timer_UI_NPC").gameObject.GetComponent<Progress_bar>();
         }
+
+        GenerateHeartRate();
     }
 
     // Update is called once per frame
@@ -68,6 +72,16 @@ public class NPC_Logic : MonoBehaviour
         InfectedToDying();
         DyingToZombie();
         TimerUIDisplay();
+        CheckLife();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // other npc touch zombie, they die
+        if(this.type != NPC_Type.zombie && collision.gameObject.tag.Equals("Zombie"))
+        {
+            Die();            
+        }
     }
 
 
@@ -79,6 +93,16 @@ public class NPC_Logic : MonoBehaviour
         transform.eulerAngles = new Vector3(0, 0, 90);
         Destroy(gameObject, 2);
     }
+
+
+    private void CheckLife()
+    {
+        if(life <= 0)
+        {
+            Die();
+        }
+    }
+
 
     private void NormalToInfected()
     {
@@ -97,6 +121,7 @@ public class NPC_Logic : MonoBehaviour
         else
         {
             NormalToInfectedTimer = NormalToInfectedTime;
+            infectedByRoom = false;
         }
     }
 
@@ -206,5 +231,43 @@ public class NPC_Logic : MonoBehaviour
     public void SetLife(int l)
     {
         life = l;
+    }
+
+    private void GenerateHeartRate()
+    {
+
+
+
+        int[] heartRateNormal = {Random.Range(70, 111), Random.Range(70, 111), Random.Range(70, 111),
+                                Random.Range(70, 111), Random.Range(70, 111)};
+        int[] heartRateInfected = {Random.Range(80, 121), Random.Range(80, 121), Random.Range(80, 121),
+                                Random.Range(80, 121), Random.Range(111, 121)};
+        int[] heartRateDying = {Random.Range(121, 181), Random.Range(121, 181), Random.Range(121, 181),
+                                Random.Range(121, 181), Random.Range(121, 181)};
+        int[] heartRateZombie = {Random.Range(200, 301), Random.Range(200, 301), Random.Range(200, 301),
+                                 Random.Range(200, 301), Random.Range(200, 301)};
+
+
+        switch (GetNPCType())
+        {
+            case NPC_Type.normal:
+
+                heartRate = heartRateNormal;
+                break;
+            case NPC_Type.infected:
+
+                heartRate = heartRateInfected;
+                break;
+            case NPC_Type.dying:
+
+                heartRate = heartRateDying;
+                break;
+            case NPC_Type.zombie:
+
+                heartRate = heartRateZombie;
+                break;
+        }
+
+
     }
 }

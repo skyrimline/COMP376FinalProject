@@ -16,6 +16,8 @@ public class Camera_Logic : MonoBehaviour
     private float moveSpeed = 6f;
     private float moveAmount = 20f;
     private float edgeSize = 30;
+    private bool isMouseDown = false;
+    private Vector3 lastMousePosition = Vector3.zero;
 
     [SerializeField] Transform topLeftConfine;
     [SerializeField] Transform bottomRightConfine;
@@ -90,10 +92,10 @@ public class Camera_Logic : MonoBehaviour
             myCam.orthographicSize = 30;
             cameraZoom = 30;
         }
-        if (myCam.orthographicSize < 10)
+        if (myCam.orthographicSize < 6)
         {
-            myCam.orthographicSize = 10;
-            cameraZoom = 10;
+            myCam.orthographicSize = 6;
+            cameraZoom = 6;
         }
 
     }
@@ -121,6 +123,29 @@ public class Camera_Logic : MonoBehaviour
         {
             cameraPos.y -= moveAmount * Time.deltaTime;
         }
+
+        // use middle button to move cam
+        if (Input.GetMouseButtonDown(2))
+        {
+            isMouseDown = true;
+        }
+
+        if (Input.GetMouseButtonUp(2))
+        {
+            isMouseDown = false;
+            lastMousePosition = Vector3.zero;
+        }
+        if (isMouseDown)
+        {
+            if (lastMousePosition != Vector3.zero)
+            {
+                Vector3 offset = Input.mousePosition - lastMousePosition;
+                cameraPos = cameraPos - offset * 0.05f;
+            }
+            lastMousePosition = Input.mousePosition;
+        }
+
+
 
         Vector3 cameraMoveDir = (cameraPos - transform.position).normalized;
         float distance = Vector3.Distance(cameraPos, transform.position);

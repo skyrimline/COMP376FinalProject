@@ -10,7 +10,13 @@ public class Observation_Room : MonoBehaviour
 
     private float updateIntervalTimer = 0;
     private float updateInterval = 3f;
-    
+
+
+    //setting roomHeartRate for displaying and which roomHeartRate to display
+    private int[] roomHeartRate = new int[5];
+    private NPC_Logic npcRefer;
+    private int roomHeartRateIndex = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +26,7 @@ public class Observation_Room : MonoBehaviour
     void Update()
     {
         GetNpcReference();
+        setRoomHeartRate();
         DisplayHeartRate();
     }
 
@@ -36,25 +43,26 @@ public class Observation_Room : MonoBehaviour
         }
     }
 
+    private void setRoomHeartRate()
+    {
+        if (npc != null)
+        {
+            npcRefer = GetComponent<Room_Area>().NPCList[0].GetComponent<NPC_Logic>();
+            roomHeartRate = npcRefer.heartRate;
+        }
+
+    }
+
+
     // based on the NPC type, display the heart rate
     private void DisplayHeartRate()
     {
         // display a number on UI based on the npc type
 
-        int[] heartRate = new int[10];
+        if (roomHeartRateIndex >= 5)
+            roomHeartRateIndex = 0;
 
-        int[] heartRateNormal = {Random.Range(80, 111), Random.Range(80, 111), Random.Range(80, 111), Random.Range(80, 111),
-                                Random.Range(80, 111), Random.Range(80, 111), Random.Range(80, 111), Random.Range(80, 111),
-                                Random.Range(80, 111), Random.Range(80, 111)};
-        int[] heartRateInfected = {Random.Range(80, 121), Random.Range(80, 121), Random.Range(80, 121), Random.Range(80, 121),
-                                Random.Range(80, 121), Random.Range(110, 121), Random.Range(80, 121), Random.Range(80, 121),
-                                Random.Range(110, 121), Random.Range(80, 121)};
-        int[] heartRateDying = {Random.Range(121, 181), Random.Range(121, 181), Random.Range(121, 181), Random.Range(121, 181),
-                                Random.Range(121, 181), Random.Range(121, 181), Random.Range(121, 181), Random.Range(121, 181),
-                                Random.Range(121, 181), Random.Range(121, 181)};
-        int[] heartRateZombie = {Random.Range(200, 301), Random.Range(200, 301), Random.Range(200, 301), Random.Range(200, 301),
-                                 Random.Range(200, 301), Random.Range(200, 301), Random.Range(200, 301), Random.Range(200, 301),
-                                 Random.Range(200, 301), Random.Range(200, 301)};
+
         if (npc != null)
         {
             // only display once after the interval
@@ -63,49 +71,33 @@ public class Observation_Room : MonoBehaviour
                 updateIntervalTimer -= Time.deltaTime;
                 return;
             }
-            Debug.Log("111");
+            //Debug.Log("111");
             // this is where you can change which npc can have which heart rate
-            switch (npc.GetNPCType())
-            {
-                case NPC_Logic.NPC_Type.normal:
 
-                    heartRate = heartRateNormal;
-                    break;
-                case NPC_Logic.NPC_Type.infected:
 
-                    heartRate = heartRateInfected;
-                    break;
-                case NPC_Logic.NPC_Type.dying:
-
-                    heartRate = heartRateDying;
-                    break;
-                case NPC_Logic.NPC_Type.zombie:
-
-                    heartRate = heartRateZombie;
-                    break;
-            }
             // reset timer
             updateIntervalTimer = updateInterval;
         }
         // continue to display 000 when 
         else
         {
-            for (int i = 0; i < heartRate.Length; i++)
+            for (int i = 0; i < roomHeartRate.Length; i++)
             {
-                heartRate[i] = 0;
+                roomHeartRate[i] = 0;
             }
-            
+
             updateIntervalTimer = 0;
         }
 
         // display on UI
-        for (int i = 0; i < heartRate.Length; i++)
-        {
-            heartRateText.text = heartRate[i].ToString("D3");
-        }
-        
 
 
+        heartRateText.text = roomHeartRate[roomHeartRateIndex].ToString("D3");
+
+
+
+
+        roomHeartRateIndex += 1;
 
     }
 }

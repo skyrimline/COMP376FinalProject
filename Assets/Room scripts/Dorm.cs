@@ -19,6 +19,7 @@ public class Dorm : MonoBehaviour
     void Update()
     {
         CheckRoomInfection();
+        InfectNPC();
     }
 
     // update里循环list，如果有npc的type不是normal，感染当前房间
@@ -49,7 +50,7 @@ public class Dorm : MonoBehaviour
     }
 
 
-    private void Disinfect()
+    public void Disinfect()
     {
         isDormInfected = false;
     }

@@ -67,6 +67,10 @@ public class Room_Area : MonoBehaviour, IDropHandler
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        if(other == null)
+        {
+            return;
+        }
         if(other.tag.Equals("NPC") || other.tag.Equals("Zombie"))
         {
             NPCList.Add(other.gameObject.GetComponent<NPC_Logic>());
@@ -75,6 +79,10 @@ public class Room_Area : MonoBehaviour, IDropHandler
 
     private void OnTriggerExit2D(Collider2D other)
     {
+        if(other == null)
+        {
+            return;
+        }
         if (other.tag.Equals("NPC") || other.tag.Equals("Zombie"))
         {
             NPCList.Remove(other.gameObject.GetComponent<NPC_Logic>());
@@ -84,6 +92,7 @@ public class Room_Area : MonoBehaviour, IDropHandler
     private void Update()
     {
         UpdateUIRemainingBed();
+        RemoveNullFromList();
     }
 
 
@@ -93,6 +102,18 @@ public class Room_Area : MonoBehaviour, IDropHandler
         if(roomType == Room_Type.dorm)
         {
             remainingBedText.text = (dormCapacity - NPCList.Count).ToString();
+        }
+    }
+
+
+    private void RemoveNullFromList()
+    {
+        foreach(NPC_Logic n in NPCList)
+        {
+            if (n == null)
+            {
+                NPCList.Remove(n);
+            }
         }
     }
 

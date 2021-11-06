@@ -72,13 +72,17 @@ public class NPC_Movement : MonoBehaviour
     {
         if (walkingEnabled)
         {
-            if (isInRoom)
+            if (isInRoom && GetComponent<NPC_Logic>().GetNPCType() != NPC_Logic.NPC_Type.zombie)
             {
                 SetDirectionInRoom();
             }
-            else
+            else if(!isInRoom && GetComponent<NPC_Logic>().GetNPCType() != NPC_Logic.NPC_Type.zombie)
             {
                 SetDirectionOutside();
+            }
+            else if (GetComponent<NPC_Logic>().GetNPCType() == NPC_Logic.NPC_Type.zombie)
+            {
+                SetDirectionZombie();
             }
 
             // only move when it's not being dragged (by checking if its collider is enabled)
@@ -121,7 +125,16 @@ public class NPC_Movement : MonoBehaviour
 
     private void SetDirectionZombie()
     {
+        walkingSpeed = 4;
+        if (switchMovementTimerInRoom >= 0)
+        {
+            switchMovementTimerInRoom -= Time.fixedDeltaTime;
+            return;
+        }
 
+        // when time's up, reset the timer and change the moving direction
+        switchMovementTimerInRoom = Random.Range(1f, 3f);
+        moveDir = possibleMoveDir[Random.Range(0, 2)];
     }
 
     public void FreezePosAndDisableCol()

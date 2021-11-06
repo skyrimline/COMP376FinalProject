@@ -1695,6 +1695,7 @@ GameObject:
   - component: {fileID: 7118748180551595426}
   - component: {fileID: -7618921515853544712}
   - component: {fileID: 4738581582956203194}
+  - component: {fileID: -2208345468651081558}
   m_Layer: 0
   m_Name: room_large_dorm
   m_TagString: room_dorm
@@ -1831,5 +1832,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2eeb0aa51a915174db2e49a180b48acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDormInfected: 0
+--- !u!114 &-2208345468651081558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9056723764607627165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56338f522451f8c4ab32652bd25cec60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

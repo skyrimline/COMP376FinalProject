@@ -749,6 +749,7 @@ GameObject:
   - component: {fileID: 7922068560357810506}
   - component: {fileID: 8107877839823868718}
   - component: {fileID: -6265503237421133822}
+  - component: {fileID: 8013104456510229813}
   m_Layer: 0
   m_Name: room_tiny_ICU
   m_TagString: room_ICU
@@ -874,6 +875,18 @@ MonoBehaviour:
   roomType: 2
   NPCList: []
   remainingBedText: {fileID: 0}
+--- !u!114 &8013104456510229813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4276522975399525939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 140c636b41d32934e862160e14b4b34f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5121042886088350193
 GameObject:
   m_ObjectHideFlags: 0

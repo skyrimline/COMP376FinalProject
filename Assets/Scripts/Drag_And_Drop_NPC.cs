@@ -26,7 +26,6 @@ public class Drag_And_Drop_NPC : MonoBehaviour,
         {
             npcMove.FreezePosAndDisableCol();
         }
-        Debug.Log("OnPointerDown");
     }
 
 
