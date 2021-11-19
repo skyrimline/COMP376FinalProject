@@ -108,11 +108,12 @@ public class Room_Area : MonoBehaviour, IDropHandler
 
     private void RemoveNullFromList()
     {
-        foreach(NPC_Logic n in NPCList)
+        for(int i = 0; i < NPCList.Count; ++i)
         {
-            if (n == null)
+            if(NPCList[i] == null)
             {
-                NPCList.Remove(n);
+                NPCList.RemoveAt(i);
+                break;
             }
         }
     }
