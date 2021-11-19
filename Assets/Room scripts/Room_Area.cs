@@ -6,15 +6,11 @@ using UnityEngine.UI;
 
 public class Room_Area : MonoBehaviour, IDropHandler
 {
-    public enum Room_Type { dorm, observation, ICU};
-    public Room_Type roomType;
-
     // keep a list of NPC objects to keep track of NPCs
     public List<NPC_Logic> NPCList = new List<NPC_Logic>();
-    
+
     // capacity for different rooms, might increase or decrease. Can be set and get
-    private int dormCapacity = 2;
-    private int functionalRoomCapacity = 1;     // capacity for observation room and ICU
+    [SerializeField] private int roomCapacity = 1;
 
 
     [SerializeField] private Text remainingBedText = null;
@@ -45,24 +41,7 @@ public class Room_Area : MonoBehaviour, IDropHandler
     // called by drag and drop npc script to check capacity of the room.
     public bool CheckCapacity()
     {
-        switch (roomType)
-        {
-            case Room_Type.dorm:
-                if(NPCList.Count >= dormCapacity)
-                {
-                    return false;
-                }
-                break;
-            case Room_Type.observation:
-            case Room_Type.ICU:
-                if(NPCList.Count >= functionalRoomCapacity)
-                {
-                    return false;
-                }
-                break;
-        }
-
-        return true;
+        return NPCList.Count <= roomCapacity;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -99,9 +78,9 @@ public class Room_Area : MonoBehaviour, IDropHandler
     // Update the UI - remaining bed of dorm
     private void UpdateUIRemainingBed()
     {
-        if(roomType == Room_Type.dorm)
+        if(remainingBedText != null)
         {
-            remainingBedText.text = (dormCapacity - NPCList.Count).ToString();
+            remainingBedText.text = (roomCapacity - NPCList.Count).ToString();
         }
     }
 
@@ -120,14 +99,14 @@ public class Room_Area : MonoBehaviour, IDropHandler
 
 
     // --------- getters and setters -----------
-    public void SetDormCapacity(int c)
+    public void SetCapacity(int c)
     {
-        dormCapacity = c;
+        roomCapacity = c;
     }
 
-    public int GetDormCapacity()
+    public int GetCapacity()
     {
-        return dormCapacity;
+        return roomCapacity;
     }
 
 
