@@ -1374,6 +1374,9 @@ GameObject:
   - component: {fileID: 8872122363307022932}
   - component: {fileID: 910902559995347028}
   - component: {fileID: 4819471507366972605}
+  - component: {fileID: -7740297048689824169}
+  - component: {fileID: -4372092902721683311}
+  - component: {fileID: 3280097361596076435}
   m_Layer: 0
   m_Name: room_hunter
   m_TagString: room_dorm
@@ -1486,6 +1489,45 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 16.3, y: 6.4}
   m_EdgeRadius: 0
+--- !u!114 &-7740297048689824169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6739388671646193282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99bd31571874d7d498bbca51a9ecc572, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCList: []
+  roomCapacity: 1
+  remainingBedText: {fileID: 0}
+--- !u!114 &-4372092902721683311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6739388671646193282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24d66389d5f4d8f49b901bbcb84e4b7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3280097361596076435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6739388671646193282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2499d1e45da721947acea0c44f3e29b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7061339549011619357
 GameObject:
   m_ObjectHideFlags: 0

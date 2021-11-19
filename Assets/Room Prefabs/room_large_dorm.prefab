@@ -1696,6 +1696,7 @@ GameObject:
   - component: {fileID: -7618921515853544712}
   - component: {fileID: 4738581582956203194}
   - component: {fileID: -2208345468651081558}
+  - component: {fileID: 2458108141910049043}
   m_Layer: 0
   m_Name: room_large_dorm
   m_TagString: room_dorm
@@ -1819,8 +1820,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99bd31571874d7d498bbca51a9ecc572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roomType: 0
   NPCList: []
+  roomCapacity: 1
   remainingBedText: {fileID: 4927106051153197359}
 --- !u!114 &4738581582956203194
 MonoBehaviour:
@@ -1845,5 +1846,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56338f522451f8c4ab32652bd25cec60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2458108141910049043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9056723764607627165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2499d1e45da721947acea0c44f3e29b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
