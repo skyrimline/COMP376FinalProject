@@ -10,6 +10,7 @@ public class Room_Area : MonoBehaviour, IDropHandler
     public List<NPC_Logic> NPCList = new List<NPC_Logic>();
 
     // capacity for different rooms, might increase or decrease. Can be set and get
+    // The defult value is 2 (Chould chang)
     [SerializeField] private int roomCapacity = 1;
 
 
