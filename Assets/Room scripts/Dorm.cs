@@ -8,11 +8,18 @@ public class Dorm : MonoBehaviour
 
     // add a particle system later. 
     public bool isDormInfected = false;
-    
+
+    [SerializeField] private GameObject infectionParticle;
+  
     // Start is called before the first frame update
     void Start()
     {
+
+        
+
         npcList = GetComponent<Room_Area>().NPCList;
+
+        
     }
 
     // Update is called once per frame
@@ -20,6 +27,10 @@ public class Dorm : MonoBehaviour
     {
         CheckRoomInfection();
         InfectNPC();
+
+        //check if play infection particle effect
+       
+        changeInfectionParticle();
     }
 
     // update里循环list，如果有npc的type不是normal，感染当前房间
@@ -53,6 +64,14 @@ public class Dorm : MonoBehaviour
     public void Disinfect()
     {
         isDormInfected = false;
+    }
+
+    private void changeInfectionParticle()
+    {
+        if (isDormInfected)
+            infectionParticle.SetActive(true);
+        else
+            infectionParticle.SetActive(false);
     }
 
 }

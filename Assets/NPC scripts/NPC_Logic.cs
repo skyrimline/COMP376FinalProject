@@ -51,7 +51,8 @@ public class NPC_Logic : MonoBehaviour
 
 
 
-
+    //set if food is allowed to be allocated on this NPC
+    private bool isFoodAllowed;
 
 
     // Start is called before the first frame update
