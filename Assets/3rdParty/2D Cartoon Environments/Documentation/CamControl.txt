@@ -1,0 +1,12 @@
+"2D cartoon environments"
+
+
+the controls for the "camera" are:
+
+W= up
+A= left
+S= down
+D= right
+
+Z= zoom in
+X= zoom out

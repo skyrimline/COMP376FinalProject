@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 6b77693f9b6f47743810a9d7a84217f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: plantsThorns_0
+  - first:
+      213: 21300002
+    second: plantsThorns_1
+  - first:
+      213: 21300004
+    second: plantsThorns_2
+  - first:
+      213: 21300006
+    second: plantsThorns_3
+  - first:
+      213: 21300008
+    second: plantsThorns_4
+  - first:
+      213: 21300010
+    second: plantsThorns_5
+  - first:
+      213: 21300012
+    second: plantsThorns_6
+  - first:
+      213: 21300014
+    second: plantsThorns_7
+  - first:
+      213: 21300016
+    second: plantsThorns_8
+  - first:
+      213: 21300018
+    second: plantsThorns_9
+  - first:
+      213: 21300020
+    second: plantsThorns_10
+  - first:
+      213: 21300022
+    second: plantsThorns_11
+  - first:
+      213: 21300024
+    second: plantsThorns_12
+  - first:
+      213: 21300026
+    second: plantsThorns_13
+  - first:
+      213: 21300028
+    second: plantsThorns_14
+  - first:
+      213: 21300030
+    second: plantsThorns_15
+  - first:
+      213: 21300032
+    second: plantsThorns_16
+  - first:
+      213: 21300034
+    second: plantsThorns_17
+  - first:
+      213: 21300036
+    second: plantsThorns_18
+  - first:
+      213: 21300038
+    second: plantsThorns_19
+  - first:
+      213: 21300040
+    second: plantsThorns_20
+  - first:
+      213: 21300042
+    second: plantsThorns_21
+  - first:
+      213: 21300044
+    second: plantsThorns_22
+  - first:
+      213: -1980955807520152059
+    second: plantsThorns_23
+  - first:
+      213: 7876955841616700411
+    second: plantsThorns_24
+  - first:
+      213: 302623925031293317
+    second: plantsThorns_25
+  - first:
+      213: -3490163568061535847
+    second: plantsThorns_26
+  - first:
+      213: 1811350006600549468
+    second: plantsThorns_27
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plantsThorns_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 520
+        width: 43
+        height: 261
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463b6bb14ca8f144da17f40cdc7bb0c2
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 544
+        width: 315
+        height: 225
+      alignment: 9
+      pivot: {x: 0.43004766, y: 0.2519401}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ac12b2e53e4bd408b42371254c5d94
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_2
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 519
+        width: 43
+        height: 195
+      alignment: 9
+      pivot: {x: 0.39443758, y: 0.011638622}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49b81b3ec2cc39e4fb6dbe71d08e21c0
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_3
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 537
+        width: 256
+        height: 244
+      alignment: 9
+      pivot: {x: 0.44960332, y: 0.25757337}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2c843501503f4142a7c17390c06e887
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_4
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 561
+        width: 237
+        height: 203
+      alignment: 9
+      pivot: {x: 0.5070391, y: 0.27317291}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeca181b36c775743803aaa9cc42e0b1
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_5
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 621
+        width: 36
+        height: 128
+      alignment: 9
+      pivot: {x: 0.39730835, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4504bfbfb0b81d4b979d358688d8e9b
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_6
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 659
+        width: 185
+        height: 107
+      alignment: 9
+      pivot: {x: 0.51606447, y: 0.60288304}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e62b2315c945a419295dd36790e00e
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_7
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 303
+        width: 141
+        height: 208
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6bad4b39417e44db3d8039b362c9fc
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_8
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 303
+        width: 159
+        height: 183
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e4e65adbb316542bb97b2de9b2e5ff
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_9
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 407
+        width: 169
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ac2b3f25585cec4dbee972c4dc08d6b
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_10
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 435
+        width: 156
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d73e6872ca02b40ba62d04f16ec749
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_11
+      rect:
+        serializedVersion: 2
+        x: 725
+        y: 456
+        width: 89
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cfa76fa7f0fdf743a429ab1dce70d9a
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_12
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 458
+        width: 102
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df20c8e79cf4efb43b113ee5a442e08c
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_13
+      rect:
+        serializedVersion: 2
+        x: 958
+        y: 453
+        width: 148
+        height: 138
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa557f1d49f11024096465edfaaa87d9
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_14
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 482
+        width: 68
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380b800131cf69b4fad249a88058fd45
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_15
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 306
+        width: 239
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accd65c2343228849b31017f776e9a6b
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_16
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 307
+        width: 89
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92127c50e71e7a43ae94ccf26f69447
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_17
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 310
+        width: 48
+        height: 117
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 178bcd35d9c1be14088f08a239d21b39
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_18
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 310
+        width: 55
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df8756a306aee444b8984086fbeab13
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_19
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 308
+        width: 53
+        height: 121
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ff1816ffa439f547964aab738a36556
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_20
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 303
+        width: 135
+        height: 147
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e837eaa2aaf402d4eaec7ef311674c0e
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_21
+      rect:
+        serializedVersion: 2
+        x: 1097
+        y: 350
+        width: 72
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50c0549fcfc742f41b9a09ce51450ebe
+      internalID: 21300042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6
+        width: 167
+        height: 289
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16aa832da62aaa945b2056929d58b4c1
+      internalID: 21300044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_23
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 3
+        width: 99
+        height: 332
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea88c7f47323ad1408fb98f1181fb232
+      internalID: -1980955807520152059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_24
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 5
+        width: 186
+        height: 292
+      alignment: 9
+      pivot: {x: 0.45921794, y: 0.000000055522136}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67915666092d4e42834b4fc9f82bcd5
+      internalID: 7876955841616700411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_25
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 4
+        width: 255
+        height: 277
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd273b5a73d9914f9075df1c2fe4b81
+      internalID: 302623925031293317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_26
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 4
+        width: 192
+        height: 297
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 211ab58d8c30de0458671c0840a29aa3
+      internalID: -3490163568061535847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plantsThorns_27
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 7
+        width: 173
+        height: 291
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede7608b0156d0749b58da4bbe356b89
+      internalID: 1811350006600549468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7ba8e7d1dc46d034ea77b5a151713166
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
