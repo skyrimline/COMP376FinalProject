@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: 594906e16aba67f449672576e4880369
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: squareSports_0
+  - first:
+      213: 21300002
+    second: squareSports_1
+  - first:
+      213: 21300004
+    second: squareSports_2
+  - first:
+      213: 21300006
+    second: squareSports_3
+  - first:
+      213: 21300008
+    second: squareSports_4
+  - first:
+      213: 21300010
+    second: squareSports_5
+  - first:
+      213: 21300012
+    second: squareSports_6
+  - first:
+      213: 21300014
+    second: squareSports_7
+  - first:
+      213: 21300016
+    second: squareSports_8
+  - first:
+      213: 21300018
+    second: squareSports_9
+  - first:
+      213: 21300020
+    second: squareSports_10
+  - first:
+      213: 21300022
+    second: squareSports_11
+  - first:
+      213: 21300024
+    second: squareSports_12
+  - first:
+      213: 21300026
+    second: squareSports_13
+  - first:
+      213: 21300028
+    second: squareSports_14
+  - first:
+      213: 21300030
+    second: squareSports_15
+  - first:
+      213: 21300032
+    second: squareSports_16
+  - first:
+      213: 21300034
+    second: squareSports_17
+  - first:
+      213: 21300036
+    second: squareSports_18
+  - first:
+      213: 21300038
+    second: squareSports_19
+  - first:
+      213: 21300040
+    second: squareSports_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: squareSports_0
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 611
+        width: 533
+        height: 255
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e56a08d489ea04997612aeb9881ba0
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_1
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 611
+        width: 533
+        height: 257
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 884aadb4b49b6ae42a7cfbc5aad04bc1
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_2
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 611
+        width: 665
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1b808c7c98d1a34d9f26fd503fae451
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_3
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 611
+        width: 511
+        height: 145
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccbc99d86fd82b546a183b84eb5f5a2a
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_4
+      rect:
+        serializedVersion: 2
+        x: 2345
+        y: 611
+        width: 638
+        height: 266
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 335476f810603b140b4b3f324eb3e19f
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_5
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 477
+        width: 219
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8366ed121f86094ea26dda927dc6cc0
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_6
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 476
+        width: 178
+        height: 126
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e115e10c0e14453449b5fa05c82486ff
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_7
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 471
+        width: 220
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ba8cc45220cb644a11cae8d62ab134
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_8
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 472
+        width: 177
+        height: 124
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a73d10c9067852942aa86be7bdde6880
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_9
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 435
+        width: 398
+        height: 135
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91f7888cd62d2fb47b27edc8982ecea2
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_10
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 425
+        width: 373
+        height: 154
+      alignment: 9
+      pivot: {x: 0.49911115, y: 0.019381635}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b95acabad96264cb74762e23e0cc20
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_11
+      rect:
+        serializedVersion: 2
+        x: 1767
+        y: 444
+        width: 263
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be162cdbf17e844daad64b6d8eb4599
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_12
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 4
+        width: 455
+        height: 590
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd0c08e219633df4e8e17cb4519ab883
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_13
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 4
+        width: 457
+        height: 589
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5a5793661c6af4f8c12c498c8465e0
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_14
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 16
+        width: 442
+        height: 449
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39ac19c29b3d7f7479f2c4a681a49b65
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_15
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 13
+        width: 648
+        height: 359
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0d10131449ca04f947462b0d67e514
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_16
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 6
+        width: 226
+        height: 337
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a57b7d96a9fa7540a81d0c63b3279d6
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_17
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 5
+        width: 208
+        height: 338
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dde7b5c7ffa1454f887d3b8a4c92ebd
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_18
+      rect:
+        serializedVersion: 2
+        x: 1776
+        y: 242
+        width: 265
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdae651c64ea94344a4fdd7ecd554f95
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_19
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 1
+        width: 305
+        height: 199
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f84a9589246e7445b34b1f17c837c9f
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: squareSports_20
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 435
+        width: 33
+        height: 134
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a607dbe166999bf45b7056c1757a7409
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: f89349f3fcfc5134f89d4b61c0a69b29
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

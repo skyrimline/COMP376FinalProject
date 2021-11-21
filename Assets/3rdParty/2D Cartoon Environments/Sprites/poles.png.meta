@@ -1,0 +1,612 @@
+fileFormatVersion: 2
+guid: 21e07e110d3480f468f0ae998153a4a9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: poles_0
+  - first:
+      213: 21300002
+    second: poles_1
+  - first:
+      213: 21300004
+    second: poles_2
+  - first:
+      213: 21300006
+    second: poles_3
+  - first:
+      213: 21300008
+    second: poles_4
+  - first:
+      213: 21300010
+    second: poles_5
+  - first:
+      213: 21300012
+    second: poles_6
+  - first:
+      213: 21300014
+    second: poles_7
+  - first:
+      213: 21300016
+    second: poles_8
+  - first:
+      213: 21300018
+    second: poles_9
+  - first:
+      213: 21300020
+    second: poles_10
+  - first:
+      213: 21300022
+    second: poles_11
+  - first:
+      213: 21300024
+    second: poles_12
+  - first:
+      213: 21300026
+    second: poles_13
+  - first:
+      213: 21300028
+    second: poles_14
+  - first:
+      213: 21300030
+    second: poles_15
+  - first:
+      213: 21300032
+    second: poles_16
+  - first:
+      213: 21300034
+    second: poles_17
+  - first:
+      213: 21300036
+    second: poles_18
+  - first:
+      213: 21300038
+    second: poles_19
+  - first:
+      213: 21300040
+    second: poles_20
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: poles_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 705
+        width: 1000
+        height: 40
+      alignment: 9
+      pivot: {x: 0.1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4438b2d3a67166f40bba0c4579370fd8
+      internalID: 21300000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_1
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 705
+        width: 1000
+        height: 40
+      alignment: 9
+      pivot: {x: 0.9, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58cb7588beb57414490e6f8f3fef80a1
+      internalID: 21300002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_2
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 2
+        width: 444
+        height: 690
+      alignment: 9
+      pivot: {x: 0.9342175, y: 0.0016831965}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39b830ab7a44364fb1e832cef4feedd
+      internalID: 21300004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_3
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 2
+        width: 191
+        height: 643
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e084d552ce40664fb9a8d8152b2ccf7
+      internalID: 21300006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_4
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 2
+        width: 127
+        height: 613
+      alignment: 9
+      pivot: {x: 0.16508183, y: 0.0004391433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bcbc30399d633a4e8551d79d9e2aca4
+      internalID: 21300008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_5
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 2
+        width: 121
+        height: 626
+      alignment: 9
+      pivot: {x: 0.1707229, y: 0.00086006493}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3ad1a43b45e6574e9136bb59c53e712
+      internalID: 21300010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_6
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 2
+        width: 108
+        height: 602
+      alignment: 9
+      pivot: {x: 0.7367995, y: 0.001341539}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0306313904739984ea7f1d6c7f343786
+      internalID: 21300012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_7
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 3
+        width: 107
+        height: 605
+      alignment: 9
+      pivot: {x: 0.7188858, y: 0.000000022462578}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8fef3e891a5ba40ba8f533b5ea7ed1
+      internalID: 21300014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_8
+      rect:
+        serializedVersion: 2
+        x: 1541
+        y: 3
+        width: 108
+        height: 689
+      alignment: 9
+      pivot: {x: 0.7193524, y: 0.0007802908}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a1520078e4b23a41b2a09f81ccb5040
+      internalID: 21300016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_9
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 597
+        width: 80
+        height: 79
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6d86f044d7915247bc78a544b92338f
+      internalID: 21300018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_10
+      rect:
+        serializedVersion: 2
+        x: 1795
+        y: 600
+        width: 69
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49be4122afc73014a8a2be4f82ddaa0a
+      internalID: 21300020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_11
+      rect:
+        serializedVersion: 2
+        x: 1908
+        y: 2
+        width: 249
+        height: 686
+      alignment: 9
+      pivot: {x: 0.11078641, y: 0.0003924123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9281ca7a4936df498384d03bd376b77
+      internalID: 21300022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_12
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 2
+        width: 80
+        height: 540
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca9c6099a1b9e6e40be379fe4fa41421
+      internalID: 21300024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_13
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 2
+        width: 50
+        height: 594
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86651830b9013754dafc03553d414f12
+      internalID: 21300026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_14
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 2
+        width: 68
+        height: 593
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e91aca55f6e45a40b181568df6a0540
+      internalID: 21300028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_15
+      rect:
+        serializedVersion: 2
+        x: 1675
+        y: 464
+        width: 69
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169821a744266b245abc81c0ebb73635
+      internalID: 21300030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_16
+      rect:
+        serializedVersion: 2
+        x: 1788
+        y: 447
+        width: 84
+        height: 83
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a4a21a3491fcb4ea544e99104eead4
+      internalID: 21300032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_17
+      rect:
+        serializedVersion: 2
+        x: 1670
+        y: 337
+        width: 78
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7adb1a1ef17112a4abbf5445232260bd
+      internalID: 21300034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_18
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 3
+        width: 36
+        height: 298
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499d5ce57bde5d045b74d0f269138199
+      internalID: 21300036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_19
+      rect:
+        serializedVersion: 2
+        x: 1813
+        y: 3
+        width: 35
+        height: 289
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c00d61a5be96b7747af7a12720877b28
+      internalID: 21300038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: poles_20
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 705
+        width: 200
+        height: 40
+      alignment: 9
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60cf74847ca5f274a931aa3a824a906c
+      internalID: 21300040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2500217e027e09145b32115f6f6298fc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

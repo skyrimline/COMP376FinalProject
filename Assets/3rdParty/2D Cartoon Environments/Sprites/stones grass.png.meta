@@ -1,0 +1,708 @@
+fileFormatVersion: 2
+guid: 56df808766fe89b41b037e0b479acf20
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1283738343377025772
+    second: stones grass_0
+  - first:
+      213: 6051011550669279485
+    second: stones grass_1
+  - first:
+      213: -3965888829703776469
+    second: stones grass_2
+  - first:
+      213: -6495985385596094808
+    second: stones grass_3
+  - first:
+      213: -8141327800607795011
+    second: stones grass_4
+  - first:
+      213: 1108249366665724124
+    second: stones grass_5
+  - first:
+      213: -116888143965434451
+    second: stones grass_6
+  - first:
+      213: -7353554842376575910
+    second: stones grass_7
+  - first:
+      213: -3238957271281968037
+    second: stones grass_8
+  - first:
+      213: 7820843470262163313
+    second: stones grass_9
+  - first:
+      213: -1708497966589306954
+    second: stones grass_10
+  - first:
+      213: -11108095902759761
+    second: stones grass_11
+  - first:
+      213: -4788722915686796759
+    second: stones grass_12
+  - first:
+      213: -2537016577576982796
+    second: stones grass_13
+  - first:
+      213: 6155273904610069734
+    second: stones grass_14
+  - first:
+      213: 2926801671722045618
+    second: stones grass_15
+  - first:
+      213: -6734437465663238526
+    second: stones grass_16
+  - first:
+      213: 301802946347046032
+    second: stones grass_17
+  - first:
+      213: -1259008377917791374
+    second: stones grass_18
+  - first:
+      213: -5131255282869513509
+    second: stones grass_19
+  - first:
+      213: 8837008230666269584
+    second: stones grass_20
+  - first:
+      213: 5792713507908443689
+    second: stones grass_21
+  - first:
+      213: -7890884004652583642
+    second: stones grass_22
+  - first:
+      213: 7693457287504331354
+    second: stones grass_23
+  - first:
+      213: 5230682265991666704
+    second: stones grass_24
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 1024
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: stones grass_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 253
+        width: 80
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2ed3a3e1861204ca6ed02929c8ebd0
+      internalID: -1283738343377025772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 252
+        width: 81
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4db675a5d5af6764aa15f5c9794ba799
+      internalID: 6051011550669279485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_2
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 252
+        width: 118
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e3f8fc4479cd9428b0d6c35a1874ec
+      internalID: -3965888829703776469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_3
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 252
+        width: 146
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d6f66d412aa394fb80fb6075f50bdb
+      internalID: -6495985385596094808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_4
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 253
+        width: 188
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007428a4ced71b444849a5cdcfc4d40d
+      internalID: -8141327800607795011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_5
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 253
+        width: 203
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3ad61e0eeb7aa4a95faafa6431d4bf
+      internalID: 1108249366665724124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_6
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 174
+        width: 111
+        height: 57
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 528a90eb85e35df4bb618a22226f1de0
+      internalID: -116888143965434451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_7
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 177
+        width: 99
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 223ca9db455fc824d91db9d35b6a0069
+      internalID: -7353554842376575910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_8
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 179
+        width: 95
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3dcb143539f316489b47de06faaf498
+      internalID: -3238957271281968037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_9
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 180
+        width: 83
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f375b78a799b69f4dab797f10ba87f2d
+      internalID: 7820843470262163313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_10
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 179
+        width: 98
+        height: 43
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de44b5a47ac9f740bfe3d78cc8e3ac1
+      internalID: -1708497966589306954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_11
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 180
+        width: 96
+        height: 50
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc4408742868b045ae3edb4f2e2d5b3
+      internalID: -11108095902759761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_12
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 181
+        width: 99
+        height: 41
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f559f83bf861fb4b9900c2fb5423666
+      internalID: -4788722915686796759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 95
+        width: 141
+        height: 65
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946090f10ae24374390a3315cfbb8724
+      internalID: -2537016577576982796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_14
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 95
+        width: 158
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7436e7d34ca3b4fa41ff13d8d2c65a
+      internalID: 6155273904610069734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_15
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 102
+        width: 152
+        height: 63
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed63c556590b0d84aa0494d28b48ed6d
+      internalID: 2926801671722045618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_16
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 101
+        width: 129
+        height: 61
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9826fe0062a2344e9f3d092fe99fb61
+      internalID: -6734437465663238526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_17
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 98
+        width: 133
+        height: 72
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4359b6f17f1089443820b7ebf290634b
+      internalID: 301802946347046032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_18
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 101
+        width: 143
+        height: 67
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745a4645edd87694dad79ff3b5db269b
+      internalID: -1259008377917791374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_19
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 184
+        height: 82
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91085293f5b563742bd078c0bbfee4b7
+      internalID: -5131255282869513509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_20
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 2
+        width: 148
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 161f268ca6817a94798c50cb6d75196f
+      internalID: 8837008230666269584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_21
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 4
+        width: 193
+        height: 81
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f20a7b1e4d894c349832e872c7a207e9
+      internalID: 5792713507908443689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_22
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1
+        width: 156
+        height: 75
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbedb97789d0bf43a6ad69cd2f0642d
+      internalID: -7890884004652583642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_23
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1
+        width: 172
+        height: 77
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4015f02f86d6a8046950486a6a49fd81
+      internalID: 7693457287504331354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: stones grass_24
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 176
+        width: 91
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c912677e97e06584994b7986854c5246
+      internalID: 5230682265991666704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
