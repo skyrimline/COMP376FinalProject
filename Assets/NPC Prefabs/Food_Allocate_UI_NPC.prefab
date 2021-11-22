@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7918180985540447433}
   - component: {fileID: 1126743550656125746}
+  - component: {fileID: 8121874731519580703}
   m_Layer: 7
   m_Name: Food_Allocate_UI_NPC
   m_TagString: Untagged
@@ -44,7 +45,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65042eacba20e4afda716d47a5119c2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Food_Allocation_UI: {fileID: 9026210739886655513}
+  Food_Allocation_UI: {fileID: 1299400189624696057}
+--- !u!114 &8121874731519580703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235282817833186948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9161f59f593074b3082f6cf75e00c8db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Allow_Allocation: {fileID: 21300000, guid: aa148b5620a8f3b4594c55cab1115156, type: 3}
+  Not_Allow_Allocation: {fileID: 21300000, guid: 2a015d3a552394440a09707423cf6bed, type: 3}
+  Food_Allocation_Button: {fileID: 8230406742828893976}
+  allow_Food_Allocation: 1
 --- !u!1 &1299400189624696057
 GameObject:
   m_ObjectHideFlags: 0
@@ -57,7 +74,6 @@ GameObject:
   - component: {fileID: 6368669308615945059}
   - component: {fileID: 6482401921348480189}
   - component: {fileID: 8230406742828893976}
-  - component: {fileID: 7806375026982005882}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -166,7 +182,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7806375026982005882}
+      - m_Target: {fileID: 8121874731519580703}
         m_TargetAssemblyTypeName: Button_Food_Allocation, Assembly-CSharp
         m_MethodName: changeButtonImage
         m_Mode: 1
@@ -178,21 +194,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7806375026982005882
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1299400189624696057}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9161f59f593074b3082f6cf75e00c8db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Allow_Allocation: {fileID: 21300000, guid: aa148b5620a8f3b4594c55cab1115156, type: 3}
-  Not_Allow_Allocation: {fileID: 21300000, guid: 2a015d3a552394440a09707423cf6bed, type: 3}
-  Food_Allocation_Button: {fileID: 8230406742828893976}
 --- !u!1 &9026210739886655513
 GameObject:
   m_ObjectHideFlags: 0

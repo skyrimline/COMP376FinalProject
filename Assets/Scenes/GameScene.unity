@@ -6310,6 +6310,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa37bbf33f024a14aac61859b8f58864, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  default_cursor: {fileID: 2800000, guid: 34cc3655bbc4c4cecb674d24bfbd2dbe, type: 3}
+  c96_cursor: {fileID: 2800000, guid: 16873112f47f34932aaeddb309113e71, type: 3}
 --- !u!114 &1281468720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6330,7 +6332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f421f6e8587e1b0419dd7110f8425e41, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09b3b6d14f6014d7488304e771116bbe, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8275,7 +8277,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: aedb8739a441b1d49ac6fdc6c30ab293, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c3f10ccaa5dd6459ebd349003b69883b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8305,6 +8307,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4a0bbdb1f88cff4caf49e973647b7bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  default_cursor: {fileID: 2800000, guid: 34cc3655bbc4c4cecb674d24bfbd2dbe, type: 3}
+  disinfectant_cursor: {fileID: 2800000, guid: e452ff6ae1d10402582b4ed7cfc54c55, type: 3}
 --- !u!1 &1701036168
 GameObject:
   m_ObjectHideFlags: 0

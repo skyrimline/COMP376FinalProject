@@ -99,12 +99,6 @@ public class GameLogic : MonoBehaviour
             dayTimer = dayTime;
             distributeFood();
         }
-        // 触发UI的事件
-        // 游戏暂停
-        // pop up window
-        // allow player to send NPC to hunt
-
-
     }
 
     private void distributeFood()
@@ -116,7 +110,6 @@ public class GameLogic : MonoBehaviour
                 if (foodNum > 0)
                 {
                     foodNum--;
-
                 }
 
                 else
