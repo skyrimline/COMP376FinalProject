@@ -1835,10 +1835,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2414187291018883474}
     m_Modifications:
-    - target: {fileID: 1152972455090022465, guid: ee8e975e70026c44b9d992085d845e3e, type: 3}
-      propertyPath: m_DynamicPixelsPerUnit
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 4875799996164911348, guid: ee8e975e70026c44b9d992085d845e3e, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -1945,33 +1941,9 @@ PrefabInstance:
     m_TransformParent: {fileID: 2414187291018883474}
     m_Modifications:
     - target: {fileID: 1830048968240292976, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1830048968240292976, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1830048968240292976, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5373630358381614601}
-    - target: {fileID: 1830048968240292976, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1830048968240292976, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ProduceVaccine
-      objectReference: {fileID: 0}
-    - target: {fileID: 1830048968240292976, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: Vaccine_Lab, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 1830048968240292976, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     - target: {fileID: 3055903798870492379, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875, type: 3}
       propertyPath: m_Name
       value: Vaccine Forge
@@ -2020,18 +1992,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5390773305646628037, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875, type: 3}
-      propertyPath: m_DynamicPixelsPerUnit
-      value: 11
-      objectReference: {fileID: 0}
     - target: {fileID: 6035763372256432044, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875, type: 3}
       propertyPath: lab
       value: 
       objectReference: {fileID: 5373630358381614601}
-    - target: {fileID: 7658512117788295126, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875, type: 3}
-      propertyPath: m_RaycastTarget
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875, type: 3}
 --- !u!4 &8849899727575511999 stripped
