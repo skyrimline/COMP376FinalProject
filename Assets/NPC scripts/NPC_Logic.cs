@@ -18,9 +18,6 @@ public class NPC_Logic : MonoBehaviour
     [SerializeField] private int infectionPhase;
     [SerializeField] private NPC_Type type;
 
-    // get a reference to its own zombie, for later spawing
-    [SerializeField] private GameObject zombiePrefab = null;
-
 
     /* Logics to be implemented, while implementing, may introduce new variables and functions 
         Some logics might be better to implement in room, noted with (*)
@@ -31,8 +28,10 @@ public class NPC_Logic : MonoBehaviour
     // 2. food is allocated automatically by the game.
     // 3. All NPC (except from zombie) will die if their HP <= 0
     // 6. normal NPC can turn into infected NPC if stayed in an infected room for x, say 40 seconds
-    private float NormalToInfectedTimer = 40.0f;
-    private float NormalToInfectedTime = 40.0f;
+    //private float NormalToInfectedTimer = 40.0f;
+    //private float NormalToInfectedTime = 40.0f;
+    private float NormalToInfectedTimer = 10.0f;
+    private float NormalToInfectedTime = 10.0f;
     public bool infectedByRoom = false;
     // 6.1. NPC1 can be applied with vaccine, then it will never turn into NPC2
     public bool isVaccinated = false;
@@ -45,14 +44,11 @@ public class NPC_Logic : MonoBehaviour
     private float DyingToZombieTimer = 30f;
     private float DyingToZombieTime = 30f;
     private Progress_bar zombieProgress;
-    // 11. zombies cannot be dragged (already done, simply remove the Drag_And_Drop.cs on zombie prefab)
-    // 12. zombies can only be killed by special agents.
-    // 13. zombies can kill other NPC on contact (can check the collision tag). 
 
 
+    // the NPC_Movement reference of this game object
+    private NPC_Movement npcMovement;
 
-    //set if food is allowed to be allocated on this NPC
-    private bool isFoodAllowed;
 
 
     // Start is called before the first frame update
@@ -64,6 +60,8 @@ public class NPC_Logic : MonoBehaviour
         }
 
         GenerateHeartRate();
+
+        npcMovement = gameObject.GetComponent<NPC_Movement>();
     }
 
     // Update is called once per frame
@@ -89,9 +87,11 @@ public class NPC_Logic : MonoBehaviour
     // ---------- some state transition function -------------
     public void Die()
     {
+        // disable collider and stuff and disable rigid body
         // play dead animation
         // destry object
-        transform.eulerAngles = new Vector3(0, 0, 90);
+        npcMovement.FreezePosAndDisableCol();
+        npcMovement.isDying = true;
         Destroy(gameObject, 2);
     }
 
@@ -155,12 +155,10 @@ public class NPC_Logic : MonoBehaviour
                 return;
             }
 
-            // when times up, turn into zombie!
-            // Instantiate a zombie here and destroy this game object
-            Instantiate(zombiePrefab, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            // set animation transition
+            npcMovement.FreezePosAndDisableCol();
+            npcMovement.isBecomingZombie = true;
         }
-        
     }
 
     public void CureBySerum()

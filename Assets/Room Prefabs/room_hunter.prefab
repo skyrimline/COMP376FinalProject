@@ -1761,6 +1761,9 @@ MonoBehaviour:
   NPCList: []
   roomCapacity: 1
   remainingBedText: {fileID: 8031594258041088577}
+  isRoomEnabled: 1
+  ironDoor: {fileID: 6213401564906575376}
+  otherUI: {fileID: 3591762328889120152}
 --- !u!114 &-4372092902721683311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1790,9 +1793,6 @@ MonoBehaviour:
   CostText: {fileID: 1375220915702657221}
   UpgradeMenu: {fileID: 2744660661732230185}
   TotoalLevels: 6
-  sprs:
-  - {fileID: 21300000, guid: 623c4dba5c41a65488a0d39a954ef50d, type: 3}
-  - {fileID: 0}
 --- !u!1 &7061339549011619357
 GameObject:
   m_ObjectHideFlags: 0

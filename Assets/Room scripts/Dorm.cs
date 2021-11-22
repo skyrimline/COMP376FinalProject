@@ -9,13 +9,17 @@ public class Dorm : MonoBehaviour
     // add a particle system later. 
     public bool isDormInfected = false;
 
-    [SerializeField] private GameObject infectionParticle;
+    //[SerializeField] private GameObject infectionParticle;
+    private ParticleSystem infectionParticle_;
   
     // Start is called before the first frame update
     void Start()
     {
 
-        
+        infectionParticle_ = GetComponent<ParticleSystem>();
+        // change the simulation speed of the particle system
+        var main = infectionParticle_.main;
+        main.simulationSpeed = 0.1f;
 
         npcList = GetComponent<Room_Area>().NPCList;
 
@@ -28,8 +32,13 @@ public class Dorm : MonoBehaviour
         CheckRoomInfection();
         InfectNPC();
 
+
+    }
+
+    private void FixedUpdate()
+    {
         //check if play infection particle effect
-       
+
         changeInfectionParticle();
     }
 
@@ -68,10 +77,22 @@ public class Dorm : MonoBehaviour
 
     private void changeInfectionParticle()
     {
+        //if (isDormInfected)
+        //    infectionParticle.SetActive(true);
+        //else
+        //    infectionParticle.SetActive(false);
+
         if (isDormInfected)
-            infectionParticle.SetActive(true);
+        {
+            infectionParticle_.Play();
+        }
+
         else
-            infectionParticle.SetActive(false);
+        {
+            infectionParticle_.Stop();
+            infectionParticle_.Clear();
+        }
+
     }
 
 }
