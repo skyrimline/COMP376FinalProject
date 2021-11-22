@@ -454,7 +454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8296149504763265871
 RectTransform:
   m_ObjectHideFlags: 0
@@ -953,6 +953,7 @@ MonoBehaviour:
   remainingBedText: {fileID: 0}
   isRoomEnabled: 0
   ironDoor: {fileID: 2125859024069638009}
+  otherUI: {fileID: 0}
 --- !u!114 &8013104456510229813
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -18,9 +18,6 @@ public class NPC_Logic : MonoBehaviour
     [SerializeField] private int infectionPhase;
     [SerializeField] private NPC_Type type;
 
-    // get a reference to its own zombie, for later spawing
-    [SerializeField] private GameObject zombiePrefab = null;
-
 
     /* Logics to be implemented, while implementing, may introduce new variables and functions 
         Some logics might be better to implement in room, noted with (*)
@@ -31,8 +28,10 @@ public class NPC_Logic : MonoBehaviour
     // 2. food is allocated automatically by the game.
     // 3. All NPC (except from zombie) will die if their HP <= 0
     // 6. normal NPC can turn into infected NPC if stayed in an infected room for x, say 40 seconds
-    private float NormalToInfectedTimer = 40.0f;
-    private float NormalToInfectedTime = 40.0f;
+    //private float NormalToInfectedTimer = 40.0f;
+    //private float NormalToInfectedTime = 40.0f;
+    private float NormalToInfectedTimer = 10.0f;
+    private float NormalToInfectedTime = 10.0f;
     public bool infectedByRoom = false;
     // 6.1. NPC1 can be applied with vaccine, then it will never turn into NPC2
     public bool isVaccinated = false;
@@ -92,7 +91,7 @@ public class NPC_Logic : MonoBehaviour
         // play dead animation
         // destry object
         npcMovement.FreezePosAndDisableCol();
-        transform.eulerAngles = new Vector3(0, 0, 90);
+        npcMovement.isDying = true;
         Destroy(gameObject, 2);
     }
 
@@ -156,12 +155,10 @@ public class NPC_Logic : MonoBehaviour
                 return;
             }
 
-            // when times up, turn into zombie!
-            // Instantiate a zombie here and destroy this game object
-            Instantiate(zombiePrefab, transform.position, Quaternion.identity);
-            Destroy(gameObject);
+            // set animation transition
+            npcMovement.FreezePosAndDisableCol();
+            npcMovement.isBecomingZombie = true;
         }
-        
     }
 
     public void CureBySerum()

@@ -14,6 +14,10 @@ public class NPC_Movement : MonoBehaviour
     public bool isInRoom = false;
     // when npc outside the room, indicate whether npc is waiting in line
     public bool isWaitingInLine = false;
+    // true if NPC is killed or dying
+    public bool isDying = false;
+    // true if NPC is becoming zombie
+    public bool isBecomingZombie = false;
 
     // when being dragged, walking is disabled.
     private bool walkingEnabled = true;
@@ -27,6 +31,8 @@ public class NPC_Movement : MonoBehaviour
     // movement in room timers
     private float switchMovementTimerInRoom;
 
+    private NPC_Logic npcLogic;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -35,8 +41,19 @@ public class NPC_Movement : MonoBehaviour
         // set initial timer and move dir
         switchMovementTimerInRoom = Random.Range(1f,3f);
         moveDir = Vector3.zero;
+
+        npcLogic = gameObject.GetComponent<NPC_Logic>();
     }
 
+    private void Start()
+    {
+        if(npcLogic.GetNPCType() == NPC_Logic.NPC_Type.zombie)
+        {
+            FreezePosAndDisableCol();
+            switchMovementTimerInRoom = 0;
+            anim.Play("Transformed");
+        }
+    }
 
     void FixedUpdate()
     {
@@ -157,16 +174,39 @@ public class NPC_Movement : MonoBehaviour
         if(moveDir == Vector3.right)
         {
             transform.Find("AnimatorWrapper").localScale = new Vector3(1, 1, 1);
-            anim.SetTrigger("Walk");
+            if(npcLogic.GetNPCType() != NPC_Logic.NPC_Type.zombie)
+            {
+                anim.SetTrigger("Walk");
+            }
+            else
+            {
+                anim.SetTrigger("DeadWalking");
+            }
+
         }
         else if(moveDir == Vector3.left)
         {
             transform.Find("AnimatorWrapper").localScale = new Vector3(-1, 1, 1);
-            anim.SetTrigger("Walk");
+            if (npcLogic.GetNPCType() != NPC_Logic.NPC_Type.zombie)
+            {
+                anim.SetTrigger("Walk");
+            }
+            else
+            {
+                anim.SetTrigger("DeadWalking");
+            }
         }
-        else if(moveDir == Vector3.zero)
+        else if(moveDir == Vector3.zero && !isDying && !isBecomingZombie)
         {
             anim.SetTrigger("Idle");
+        }
+        else if(moveDir == Vector3.zero && isDying && !isBecomingZombie)
+        {
+            anim.SetTrigger("Die");
+        }
+        else if(moveDir == Vector3.zero && !isDying && isBecomingZombie)
+        {
+            anim.SetTrigger("BecomingZombie");
         }
     }
 

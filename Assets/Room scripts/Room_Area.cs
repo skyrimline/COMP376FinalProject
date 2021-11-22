@@ -27,12 +27,14 @@ public class Room_Area : MonoBehaviour, IDropHandler
         if (isRoomEnabled)
         {
             ironDoor.SetActive(false);
-            otherUI.SetActive(true);
+            if(otherUI != null)
+                otherUI.SetActive(true);
         }
         else
         {
             ironDoor.SetActive(true);
-            otherUI.SetActive(false);
+            if(otherUI != null)
+                otherUI.SetActive(false);
         }
     }
 
@@ -133,14 +135,16 @@ public class Room_Area : MonoBehaviour, IDropHandler
     {
         isRoomEnabled = true;
         ironDoor.SetActive(false);
-        otherUI.SetActive(true);
+        if (otherUI != null)
+            otherUI.SetActive(true);
     }
 
     public void DisableRoom()
     {
         isRoomEnabled = false;
         ironDoor.SetActive(true);
-        otherUI.SetActive(false);
+        if (otherUI != null)
+            otherUI.SetActive(false);
     }
 
 }

@@ -1378,6 +1378,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101214494}
     m_Modifications:
+    - target: {fileID: -6265503237421133822, guid: f596ea793f0fe11488c0420126d634bb, type: 3}
+      propertyPath: isRoomEnabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 95034720358709430, guid: f596ea793f0fe11488c0420126d634bb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -3845,6 +3849,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101214494}
     m_Modifications:
+    - target: {fileID: -6265503237421133822, guid: f596ea793f0fe11488c0420126d634bb, type: 3}
+      propertyPath: isRoomEnabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 95034720358709430, guid: f596ea793f0fe11488c0420126d634bb, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -5277,6 +5285,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101214494}
     m_Modifications:
+    - target: {fileID: -7618921515853544712, guid: 0d4be4a6d4b6a6c409bb435ceb53fa6d, type: 3}
+      propertyPath: isRoomEnabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 120631077325330702, guid: 0d4be4a6d4b6a6c409bb435ceb53fa6d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -7660,6 +7672,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+    - target: {fileID: 652222043975788287, guid: a31a275bc6f1186469df96a4875fe541, type: 3}
+      propertyPath: isRoomEnabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1326728697648696355, guid: a31a275bc6f1186469df96a4875fe541, type: 3}
       propertyPath: m_Name
       value: room_small_observation (3)
@@ -7762,6 +7778,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 101214494}
     m_Modifications:
+    - target: {fileID: -7618921515853544712, guid: 0d4be4a6d4b6a6c409bb435ceb53fa6d, type: 3}
+      propertyPath: isRoomEnabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 120631077325330702, guid: 0d4be4a6d4b6a6c409bb435ceb53fa6d, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 

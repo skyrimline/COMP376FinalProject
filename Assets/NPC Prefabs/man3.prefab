@@ -2171,6 +2171,7 @@ GameObject:
   - component: {fileID: 2428806034974474974}
   - component: {fileID: 7351082563047985333}
   - component: {fileID: 537425768449067568}
+  - component: {fileID: 4996911578979498530}
   m_Layer: 0
   m_Name: AnimatorWrapper
   m_TagString: Untagged
@@ -2227,6 +2228,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 7351082563047985331}
+--- !u!114 &4996911578979498530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243222850018920747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33f8ae5732ef7134ab1f63cfc4103a74, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombiePrefab: {fileID: 5555825739189305308, guid: 22c60ffb8243cec4eae89d940f04ad44, type: 3}
 --- !u!1 &1252183295832650529
 GameObject:
   m_ObjectHideFlags: 0
@@ -10254,7 +10268,6 @@ MonoBehaviour:
   heartRate: 0000000000000000000000000000000000000000
   infectionPhase: 0
   type: 0
-  zombiePrefab: {fileID: 5555825739189305308, guid: 22c60ffb8243cec4eae89d940f04ad44, type: 3}
   life: 0
   infectedByRoom: 0
   isVaccinated: 0
@@ -10272,6 +10285,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isInRoom: 0
   isWaitingInLine: 0
+  isDying: 0
+  isBecomingZombie: 0
 --- !u!114 &8508605178885626097
 MonoBehaviour:
   m_ObjectHideFlags: 0
