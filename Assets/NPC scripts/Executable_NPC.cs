@@ -9,14 +9,18 @@ public class Executable_NPC : MonoBehaviour, IPointerDownHandler
 
     private int cost = 50;
 
+    private GameLogic gl;
+
     private void Start()
     {
         npc = GetComponent<NPC_Logic>();
+        gl = GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>();
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
-        if (Execution.executionActive) {
+        // can only execute when have enough money
+        if (Execution.executionActive && gl.money >= cost) {
             beingExecuted();
         }
     }
@@ -24,7 +28,7 @@ public class Executable_NPC : MonoBehaviour, IPointerDownHandler
     private void beingExecuted()
     {
         // deduct money
-        GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>().money -= cost;
+        gl.money -= cost;
         npc.Die();
     }
 }
