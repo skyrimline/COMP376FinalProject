@@ -215,4 +215,14 @@ public class GameLogic : MonoBehaviour
     }
 
 
+    public float getTime()
+    {
+        return dayTime;
+    }
+
+    public float getTimer()
+    {
+        return dayTimer;
+    }
+
 }

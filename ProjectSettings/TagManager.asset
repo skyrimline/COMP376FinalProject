@@ -13,6 +13,11 @@ TagManager:
   - Zombie
   - GameLogic
   - AirDrop
+  - bg_sprite
+  - bg_tilemap
+  - bg_daylight
+  - bg_roomLightEmit
+  - bg_nightLight
   layers:
   - Default
   - TransparentFX
@@ -49,4 +54,7 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: room
+    uniqueID: 1937654567
     locked: 0
