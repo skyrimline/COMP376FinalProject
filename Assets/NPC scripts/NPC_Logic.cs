@@ -45,14 +45,11 @@ public class NPC_Logic : MonoBehaviour
     private float DyingToZombieTimer = 30f;
     private float DyingToZombieTime = 30f;
     private Progress_bar zombieProgress;
-    // 11. zombies cannot be dragged (already done, simply remove the Drag_And_Drop.cs on zombie prefab)
-    // 12. zombies can only be killed by special agents.
-    // 13. zombies can kill other NPC on contact (can check the collision tag). 
 
 
+    // the NPC_Movement reference of this game object
+    private NPC_Movement npcMovement;
 
-    //set if food is allowed to be allocated on this NPC
-    private bool isFoodAllowed;
 
 
     // Start is called before the first frame update
@@ -64,6 +61,8 @@ public class NPC_Logic : MonoBehaviour
         }
 
         GenerateHeartRate();
+
+        npcMovement = gameObject.GetComponent<NPC_Movement>();
     }
 
     // Update is called once per frame
@@ -89,8 +88,10 @@ public class NPC_Logic : MonoBehaviour
     // ---------- some state transition function -------------
     public void Die()
     {
+        // disable collider and stuff and disable rigid body
         // play dead animation
         // destry object
+        npcMovement.FreezePosAndDisableCol();
         transform.eulerAngles = new Vector3(0, 0, 90);
         Destroy(gameObject, 2);
     }

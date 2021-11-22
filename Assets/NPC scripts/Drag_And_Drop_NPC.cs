@@ -76,7 +76,11 @@ public class Drag_And_Drop_NPC : MonoBehaviour,
         // reset npc movement
         if (npcMove != null)
         {
-            npcMove.ResetMoveAndEnableCol();
+            if (!Execution.executionActive && !Disinfection.disinfectionActive)
+            {
+                npcMove.ResetMoveAndEnableCol();
+            }
+                
         }
     }
 }

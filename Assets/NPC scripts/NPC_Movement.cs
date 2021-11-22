@@ -125,7 +125,6 @@ public class NPC_Movement : MonoBehaviour
 
     private void SetDirectionZombie()
     {
-        walkingSpeed = 4;
         if (switchMovementTimerInRoom >= 0)
         {
             switchMovementTimerInRoom -= Time.fixedDeltaTime;
