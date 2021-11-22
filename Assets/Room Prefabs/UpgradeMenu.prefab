@@ -819,8 +819,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2090, y: -99.6}
-  m_SizeDelta: {x: 147.779, y: 45.218}
+  m_AnchoredPosition: {x: 1607, y: 41.002}
+  m_SizeDelta: {x: 326.94, y: 23.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3161669184767860177
 CanvasRenderer:
@@ -863,7 +863,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Has been upgraded to the limit
+  m_Text: Room capacity has been maximized
 --- !u!1 &5368180041063879656
 GameObject:
   m_ObjectHideFlags: 0
@@ -1058,8 +1058,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2090, y: -99.6}
-  m_SizeDelta: {x: 147.779, y: 45.218}
+  m_AnchoredPosition: {x: 1447.996, y: 41.001064}
+  m_SizeDelta: {x: 240.91, y: 23.88}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &175999300340104791
 CanvasRenderer:
