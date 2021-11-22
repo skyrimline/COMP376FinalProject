@@ -111,7 +111,7 @@ public class GameLogic : MonoBehaviour
     {
         for (int i = 0; i < allNPC_obj.Length; i++)
         {
-            if (allNPC_obj[i].GetComponent<NPC_Movement>().isInRoom)
+            if (allNPC_obj[i].GetComponent<NPC_Movement>().isInRoom && allNPC_obj[i].GetComponentInChildren<Button_Food_Allocation>().allow_Food_Allocation)
             {
                 if (foodNum > 0)
                 {

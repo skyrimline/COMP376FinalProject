@@ -2014,6 +2014,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isDormInfected: 0
+  infectionParticle: {fileID: 0}
 --- !u!114 &-2208345468651081558
 MonoBehaviour:
   m_ObjectHideFlags: 0
