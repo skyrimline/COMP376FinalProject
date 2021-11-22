@@ -220,6 +220,9 @@ MonoBehaviour:
   NPCList: []
   roomCapacity: 1
   remainingBedText: {fileID: 0}
+  isRoomEnabled: 0
+  ironDoor: {fileID: 9122188080304092335}
+  otherUI: {fileID: 3174710564620247964}
 --- !u!114 &2537892908911007203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -905,7 +908,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2959531280129634376
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1647,7 +1650,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4811161410366519307
 RectTransform:
   m_ObjectHideFlags: 0

@@ -449,7 +449,7 @@ GameObject:
   - component: {fileID: 1398155635905254222}
   - component: {fileID: 6866818319807012540}
   m_Layer: 5
-  m_Name: Image
+  m_Name: IronDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -951,6 +951,8 @@ MonoBehaviour:
   NPCList: []
   roomCapacity: 1
   remainingBedText: {fileID: 0}
+  isRoomEnabled: 0
+  ironDoor: {fileID: 2125859024069638009}
 --- !u!114 &8013104456510229813
 MonoBehaviour:
   m_ObjectHideFlags: 0

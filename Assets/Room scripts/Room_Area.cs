@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
+//[ExecuteInEditMode]
 public class Room_Area : MonoBehaviour, IDropHandler
 {
     // keep a list of NPC objects to keep track of NPCs
@@ -15,6 +16,25 @@ public class Room_Area : MonoBehaviour, IDropHandler
 
     [SerializeField] private Text remainingBedText = null;
 
+    public bool isRoomEnabled = false;
+    [SerializeField] private GameObject ironDoor = null;
+    [SerializeField] private GameObject otherUI = null;
+
+
+    private void Start()
+    {
+        // preset the door
+        if (isRoomEnabled)
+        {
+            ironDoor.SetActive(false);
+            otherUI.SetActive(true);
+        }
+        else
+        {
+            ironDoor.SetActive(true);
+            otherUI.SetActive(false);
+        }
+    }
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -41,7 +61,7 @@ public class Room_Area : MonoBehaviour, IDropHandler
     // called by drag and drop npc script to check capacity of the room.
     public bool CheckCapacity()
     {
-        return NPCList.Count < roomCapacity;
+        return NPCList.Count < roomCapacity && isRoomEnabled;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -109,5 +129,18 @@ public class Room_Area : MonoBehaviour, IDropHandler
         return roomCapacity;
     }
 
+    public void EnableRoom()
+    {
+        isRoomEnabled = true;
+        ironDoor.SetActive(false);
+        otherUI.SetActive(true);
+    }
+
+    public void DisableRoom()
+    {
+        isRoomEnabled = false;
+        ironDoor.SetActive(true);
+        otherUI.SetActive(false);
+    }
 
 }
