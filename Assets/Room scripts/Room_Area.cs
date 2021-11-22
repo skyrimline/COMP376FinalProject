@@ -41,7 +41,7 @@ public class Room_Area : MonoBehaviour, IDropHandler
     // called by drag and drop npc script to check capacity of the room.
     public bool CheckCapacity()
     {
-        return NPCList.Count <= roomCapacity;
+        return NPCList.Count < roomCapacity;
     }
 
     private void OnTriggerEnter2D(Collider2D other)

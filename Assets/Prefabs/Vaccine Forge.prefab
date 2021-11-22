@@ -543,7 +543,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8081928474279656377}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Vaccine_Lab, Assembly-CSharp
+        m_MethodName: ProduceVaccine
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6151326080498424128
 GameObject:
   m_ObjectHideFlags: 0
@@ -704,7 +716,7 @@ MonoBehaviour:
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
+  m_DynamicPixelsPerUnit: 11
   m_PresetInfoIsWorld: 1
 --- !u!114 &4317775436167100934
 MonoBehaviour:
@@ -888,7 +900,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drugType: 0
-  lab: {fileID: 5373630358381614601, guid: 1baad0634aaf9374a9a7aa830b9c8e83, type: 3}
+  lab: {fileID: 0}
   icu: {fileID: 8013104456510229813, guid: f596ea793f0fe11488c0420126d634bb, type: 3}
 --- !u!225 &6635100698728143395
 CanvasGroup:
