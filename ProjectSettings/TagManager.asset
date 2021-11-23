@@ -4,20 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - room_dorm
-  - room_observation
-  - room_vaccine
-  - room_ICU
-  - lose
-  - NPC
-  - Zombie
-  - GameLogic
-  - AirDrop
-  - bg_sprite
-  - bg_tilemap
-  - bg_daylight
-  - bg_roomLightEmit
-  - bg_nightLight
+  - Shootable
   layers:
   - Default
   - TransparentFX
@@ -25,11 +12,11 @@ TagManager:
   - 
   - Water
   - UI
-  - Wall
-  - NPC
   - 
   - 
-  - 
+  - Lighting
+  - Ground
+  - Postprocessing
   - 
   - 
   - 
@@ -52,9 +39,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Fire
+    uniqueID: 3804908061
+    locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: room
-    uniqueID: 1937654567
     locked: 0
