@@ -56,6 +56,12 @@ TagManager:
   - name: Fire
     uniqueID: 3804908061
     locked: 0
+  - name: background
+    uniqueID: 1236450689
+    locked: 0
+  - name: tileStuff
+    uniqueID: 4161106653
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
