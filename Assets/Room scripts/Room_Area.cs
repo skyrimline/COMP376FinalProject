@@ -72,7 +72,7 @@ public class Room_Area : MonoBehaviour, IDropHandler
         {
             return;
         }
-        if(other.tag.Equals("NPC") || other.tag.Equals("Zombie"))
+        if(other.tag.Equals("NPC"))
         {
             NPCList.Add(other.gameObject.GetComponent<NPC_Logic>());
         }
@@ -84,7 +84,7 @@ public class Room_Area : MonoBehaviour, IDropHandler
         {
             return;
         }
-        if (other.tag.Equals("NPC") || other.tag.Equals("Zombie"))
+        if (other.tag.Equals("NPC"))
         {
             NPCList.Remove(other.gameObject.GetComponent<NPC_Logic>());
         }
