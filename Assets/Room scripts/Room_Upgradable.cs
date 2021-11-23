@@ -15,6 +15,8 @@ public class Room_Upgradable : MonoBehaviour
     [SerializeField] private GameObject UpgradeMenu;
     [SerializeField] private int TotoalLevels = 6; //The upper limit of the capacity
 
+    [SerializeField] private GameObject ErrorMessagePrefab;
+
     //Upgrad setting:
     //Default Levels: 6
     //Default Capacity (level 1): 1  Cost: 10g
@@ -32,8 +34,6 @@ public class Room_Upgradable : MonoBehaviour
     void Start()
     {
         UpgradeMenu.transform.GetChild(0).gameObject.SetActive(false);
-        UpgradeMenu.transform.GetChild(1).gameObject.SetActive(false);
-        UpgradeMenu.transform.GetChild(2).gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -60,8 +60,6 @@ public class Room_Upgradable : MonoBehaviour
             {
                 //Next level will keep the same
                 NextBedText.text = (Capacity).ToString();
-                //Also show the warring warning
-                UpgradeMenu.transform.GetChild(1).gameObject.SetActive(true);
             }
 
         }
@@ -69,10 +67,6 @@ public class Room_Upgradable : MonoBehaviour
         {
             //the upgrade panel will not show
             UpgradeMenu.transform.GetChild(0).gameObject.SetActive(false);
-            UpgradeMenu.transform.GetChild(1).gameObject.SetActive(false);
-            UpgradeMenu.transform.GetChild(2).gameObject.SetActive(false);
-
-
         }
 
     }
@@ -102,13 +96,27 @@ public class Room_Upgradable : MonoBehaviour
         }
         else if (Capacity == TotoalLevels)//Showing No more upgrade
         {
-            UpgradeMenu.transform.GetChild(1).gameObject.SetActive(true);
+            // send error message here
+            GenerateErrorMessage("Room capacity has been maximized");
         }
         else if (cost > money)
         {
-            UpgradeMenu.transform.GetChild(2).gameObject.SetActive(true);
-
+            // error message here
+            GenerateErrorMessage("You don't have enough money");
         }
 
+    }
+
+    private void GenerateErrorMessage(string message)
+    {
+        Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        pos.z = 0;
+        pos.y += 1f;
+        GameObject g = Instantiate(ErrorMessagePrefab, pos, Quaternion.identity);
+        var f = g.GetComponentInChildren<Floating_Info_Control>();
+        if(f != null)
+        {
+            f.SetText(message);
+        }
     }
 }

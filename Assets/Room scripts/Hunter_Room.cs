@@ -133,7 +133,7 @@ public class Hunter_Room : MonoBehaviour
         {
             if(Random.Range(0f, 1f) < deathRate)
             {
-                Debug.Log("Dead");
+                //Debug.Log("Dead");
                 // kill NPC
                 tempNPCList[i].Die();
                 // remove from list
@@ -156,7 +156,7 @@ public class Hunter_Room : MonoBehaviour
     private void CollectResources()
     {
         int resourceCount1 = resources[resourceIndex_1] * tempNPCList.Count;
-        Debug.Log("Collect Resource" + resourceIndex_1 + ": " + resourceCount1);
+        //Debug.Log("Collect Resource" + resourceIndex_1 + ": " + resourceCount1);
         switch (resourceIndex_1)
         {
             case 0:
@@ -182,7 +182,7 @@ public class Hunter_Room : MonoBehaviour
         }
 
         int resourceCount2 = resources[resourceIndex_2] * tempNPCList.Count;
-        Debug.Log("Collect Resource" + resourceIndex_2 + ": " + resourceCount2);
+        //Debug.Log("Collect Resource" + resourceIndex_2 + ": " + resourceCount2);
         switch (resourceIndex_2)
         {
             case 0:
