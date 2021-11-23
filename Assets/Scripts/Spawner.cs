@@ -65,27 +65,25 @@ public class Spawner : MonoBehaviour
             transform.position, Quaternion.identity, NPCParent);
         // then randomly select its type and set attributes (may add some weight to npc 1 and 2)
         NPC_Logic npcLogic = npc.GetComponent<NPC_Logic>();
+        // TODO: maybe more NPCs of normal and infected, no dying.
         switch (Random.Range(0, 3))
         {
             // normal NPC
             case 0:
                 npcLogic.SetNPCType(NPC_Logic.NPC_Type.normal);
                 npcLogic.SetLife(4);
-                npcLogic.SetInfectionPhase(1);
                 break;
 
             // infected NPC
             case 1:
                 npcLogic.SetNPCType(NPC_Logic.NPC_Type.infected);
                 npcLogic.SetLife(2);
-                npcLogic.SetInfectionPhase(1);
                 break;
 
             // dying NPC
             case 2:
                 npcLogic.SetNPCType(NPC_Logic.NPC_Type.dying);
                 npcLogic.SetLife(1);
-                npcLogic.SetInfectionPhase(1);
                 break;
         }
 

@@ -12,10 +12,8 @@ public class NPC_Logic : MonoBehaviour
     public int[] heartRate = new int[5];
 
     // The following fields are set in the editor, and should be modified through getter and setter
-    // infectionPhase can be 1 or 2
     // 1 - NPC1, 2, 3 are all at phase 1. Phase 1 can be cured.
     // 2 - NPC4 (zombie) Phase 2 cannot be cured. Can only be killed.
-    [SerializeField] private int infectionPhase;
     [SerializeField] private NPC_Type type;
 
 
@@ -28,28 +26,38 @@ public class NPC_Logic : MonoBehaviour
     // 2. food is allocated automatically by the game.
     // 3. All NPC (except from zombie) will die if their HP <= 0
     // 6. normal NPC can turn into infected NPC if stayed in an infected room for x, say 40 seconds
-    //private float NormalToInfectedTimer = 40.0f;
-    //private float NormalToInfectedTime = 40.0f;
-    private float NormalToInfectedTimer = 10.0f;
-    private float NormalToInfectedTime = 10.0f;
+    private float NormalToInfectedTimer;
+    private float NormalToInfectedTime;
     public bool infectedByRoom = false;
     // 6.1. NPC1 can be applied with vaccine, then it will never turn into NPC2
     public bool isVaccinated = false;
 
-
     // 7. infected NPC can turn into dying NPC if not treated with serum(血清) after 1 minute (implicit timer)
-    private float InfectedToDyingTimer = 40f;
+    private float InfectedToDyingTime;
+    private float InfectedToDyingTimer;
     // 8. (*) infected NPC will contaminate a dorm immediately
     // 9. dying NPC has a explicit timer (progress bar) shown on top of head, if not treated with serum, will turn into zombie after 30 seconds
-    private float DyingToZombieTimer = 30f;
-    private float DyingToZombieTime = 30f;
+    private float DyingToZombieTimer;
+    private float DyingToZombieTime;
+
     private Progress_bar zombieProgress;
 
 
     // the NPC_Movement reference of this game object
     private NPC_Movement npcMovement;
 
+    private void Awake()
+    {
+        // this is where to set three timers
+        NormalToInfectedTime = 40.0f;
+        NormalToInfectedTimer = NormalToInfectedTime;
 
+        InfectedToDyingTime = 40.0f;
+        InfectedToDyingTimer = InfectedToDyingTime;
+
+        DyingToZombieTime = 30.0f;
+        DyingToZombieTimer = 30.0f;
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -118,11 +126,13 @@ public class NPC_Logic : MonoBehaviour
 
             // when time's up, set type to infected.
             type = NPC_Type.infected;
+            // this code was brought up from else
+            NormalToInfectedTimer = NormalToInfectedTime;
+            infectedByRoom = false;
         }
         else
         {
-            NormalToInfectedTimer = NormalToInfectedTime;
-            infectedByRoom = false;
+
         }
     }
 
@@ -140,6 +150,8 @@ public class NPC_Logic : MonoBehaviour
 
             // when time's up, turn into dying type:
             type = NPC_Type.dying;
+            // this code was brought up from else
+            InfectedToDyingTimer = InfectedToDyingTime;
         }
     }
 
@@ -197,15 +209,6 @@ public class NPC_Logic : MonoBehaviour
 
 
     // ----------- Getters and Setters --------------
-    public void SetInfectionPhase(int i) 
-    {
-        infectionPhase = i;
-    }
-
-    public int GetInfectinPhase()
-    {
-        return infectionPhase;
-    }
 
     public void SetNPCType(NPC_Type t)
     {
