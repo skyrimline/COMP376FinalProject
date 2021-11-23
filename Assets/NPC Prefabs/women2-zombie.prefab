@@ -1515,7 +1515,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 44
-  m_Sprite: {fileID: -5295591222934236924, guid: ec8e8b67cda8b694d8ac1951d68b61bb, type: 3}
+  m_Sprite: {fileID: -5295591222934236924, guid: ec8e8b67cda8b694d8ac1951d68b61bb,
+    type: 3}
   m_Color: {r: 1, g: 0, b: 0.12490797, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7339,7 +7340,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   heartRate: 0000000000000000000000000000000000000000
-  infectionPhase: 2
   type: 3
   life: 999
   infectedByRoom: 0
@@ -9192,7 +9192,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 5
-  m_Sprite: {fileID: -5295591222934236924, guid: ec8e8b67cda8b694d8ac1951d68b61bb, type: 3}
+  m_Sprite: {fileID: -5295591222934236924, guid: ec8e8b67cda8b694d8ac1951d68b61bb,
+    type: 3}
   m_Color: {r: 1, g: 0, b: 0.12490797, a: 1}
   m_FlipX: 0
   m_FlipY: 0

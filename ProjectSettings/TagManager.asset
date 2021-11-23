@@ -5,6 +5,20 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shootable
+  - room_ICU
+  - room_dorm
+  - bg_sprite
+  - bg_nightLight
+  - bg_tilemap
+  - bg_roomLightEmit
+  - lose
+  - bg_daylight
+  - GameLogic
+  - room_observation
+  - NPC
+  - room_vaccine
+  - AirDrop
+  - Zombie
   layers:
   - Default
   - TransparentFX
@@ -12,8 +26,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Wall
+  - Person
   - Lighting
   - Ground
   - Postprocessing
