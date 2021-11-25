@@ -1711,6 +1711,8 @@ MonoBehaviour:
   isRoomEnabled: 0
   ironDoor: {fileID: 9191392952930610432}
   otherUI: {fileID: 2705059307255472633}
+  ErrorMessagePrefab: {fileID: 4064797415328724204, guid: 9413fa0d6d8ef064a95d0f8dbde1dbcc,
+    type: 3}
 --- !u!114 &4738581582956203194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1736,6 +1738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56338f522451f8c4ab32652bd25cec60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ErrorMessagePrefab: {fileID: 4064797415328724204, guid: 9413fa0d6d8ef064a95d0f8dbde1dbcc,
+    type: 3}
 --- !u!114 &2458108141910049043
 MonoBehaviour:
   m_ObjectHideFlags: 0

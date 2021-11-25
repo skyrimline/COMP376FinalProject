@@ -144,3 +144,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77b7dd1ef7c95443f9d5c5354862ad97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  FloatingResourcePrefab: {fileID: 4064797415328724204, guid: b9ff66d27e5d22c4fae57f3dd707ff17,
+    type: 3}
+  resourceSprs:
+  - {fileID: 21300000, guid: aa148b5620a8f3b4594c55cab1115156, type: 3}
+  - {fileID: 21300000, guid: cc5a7610f97e0fe4f8d6087ec442303d, type: 3}
+  - {fileID: 21300000, guid: be056c47dc83bf24287275b9dc93b7a9, type: 3}
+  - {fileID: 21300000, guid: 4c5428152ae1c9747894f3230f757224, type: 3}
+  - {fileID: 21300000, guid: 642d368d89fb3b7459ca139dfc67d9f6, type: 3}
