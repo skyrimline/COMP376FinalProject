@@ -10,8 +10,7 @@ public class DayNightMovingTarget : MonoBehaviour
     private GameLogic gL;
     private float dTimer;
     private float highNoon;
-
-    public Animator animator;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
