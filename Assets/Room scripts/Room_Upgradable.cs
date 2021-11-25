@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Room_Upgradable : MonoBehaviour
 {
-
     //To show current Num of beds and avliable next level
     [SerializeField] private Text CurrentBedText;
     [SerializeField] private Text NextBedText;

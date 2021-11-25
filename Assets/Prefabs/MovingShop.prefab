@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1649175211330190429}
   - component: {fileID: 1649175211330190428}
   - component: {fileID: 1649175211330190426}
+  - component: {fileID: 879209811}
   m_Layer: 0
   m_Name: MovingShop
   m_TagString: bg_tilemap
@@ -173,6 +174,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &879209811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1649175211330190430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a0cf41ee23ea3d46949519329adf8ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _menu: {fileID: 3682302206344109833}
 --- !u!1 &1982895277798032145
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,16 +294,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 571827383679664684}
     m_Modifications:
-    - target: {fileID: 458564251189409882, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 688.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 458564251189409882, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -1.28
-      objectReference: {fileID: 0}
     - target: {fileID: 916270743629979244, guid: e20df5cac08eeb24c8cf215892c874f9,
         type: 3}
       propertyPath: m_Pivot.x
@@ -400,33 +404,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: Shopmenu
       objectReference: {fileID: 0}
-    - target: {fileID: 4454946347795591403, guid: e20df5cac08eeb24c8cf215892c874f9,
+    - target: {fileID: 8974614609679932412, guid: e20df5cac08eeb24c8cf215892c874f9,
         type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 210.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4454946347795591403, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 386.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4454946347795591403, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -305.59
-      objectReference: {fileID: 0}
-    - target: {fileID: 4454946347795591403, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 395.12997
-      objectReference: {fileID: 0}
-    - target: {fileID: 5368180041063879656, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_Name
-      value: Sample
-      objectReference: {fileID: 0}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 879209811}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e20df5cac08eeb24c8cf215892c874f9, type: 3}
+--- !u!1 &3682302206344109833 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3663313636131572676, guid: e20df5cac08eeb24c8cf215892c874f9,
+    type: 3}
+  m_PrefabInstance: {fileID: 129652276996379853}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &971547630303005345 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 916270743629979244, guid: e20df5cac08eeb24c8cf215892c874f9,
