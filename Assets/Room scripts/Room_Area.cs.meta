@@ -3,7 +3,12 @@ guid: 99bd31571874d7d498bbca51a9ecc572
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - remainingBedText: {instanceID: 0}
+  - ironDoor: {instanceID: 0}
+  - otherUI: {instanceID: 0}
+  - ErrorMessagePrefab: {fileID: 4064797415328724204, guid: 9413fa0d6d8ef064a95d0f8dbde1dbcc,
+      type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

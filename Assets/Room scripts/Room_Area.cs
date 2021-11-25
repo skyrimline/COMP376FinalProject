@@ -20,6 +20,9 @@ public class Room_Area : MonoBehaviour, IDropHandler
     [SerializeField] private GameObject ironDoor = null;
     [SerializeField] private GameObject otherUI = null;
 
+    // for spawning error messages
+    [SerializeField] private GameObject ErrorMessagePrefab;
+
 
     private void Start()
     {
@@ -63,6 +66,14 @@ public class Room_Area : MonoBehaviour, IDropHandler
     // called by drag and drop npc script to check capacity of the room.
     public bool CheckCapacity()
     {
+        if(!(NPCList.Count < roomCapacity))
+        {
+            GenerateErrorMessage("Room is Full");
+        }
+        if (!isRoomEnabled)
+        {
+            GenerateErrorMessage("Room is Currently Unavailable");
+        }
         return NPCList.Count < roomCapacity && isRoomEnabled;
     }
 
@@ -145,6 +156,19 @@ public class Room_Area : MonoBehaviour, IDropHandler
         ironDoor.SetActive(true);
         if (otherUI != null)
             otherUI.SetActive(false);
+    }
+
+    private void GenerateErrorMessage(string message)
+    {
+        Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        pos.z = 0;
+        pos.y += 1f;
+        GameObject g = Instantiate(ErrorMessagePrefab, pos, Quaternion.identity);
+        var f = g.GetComponentInChildren<Floating_Info_Control>();
+        if (f != null)
+        {
+            f.SetText(message);
+        }
     }
 
 }

@@ -19,6 +19,11 @@ public class Executable_NPC : MonoBehaviour, IPointerDownHandler
 
     public void OnPointerDown(PointerEventData eventData)
     {
+        if(eventData.button != PointerEventData.InputButton.Left)
+        {
+            return;
+        }
+
         // can only execute when have enough money
         if (Execution.executionActive && gl.money >= cost) {
             beingExecuted();

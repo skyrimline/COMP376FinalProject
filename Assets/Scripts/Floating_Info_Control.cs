@@ -30,6 +30,8 @@ public class Floating_Info_Control : MonoBehaviour
         else if(t == InfoType.ImageWithText)
         {
             // TODO: get reference of both text and image
+            text = transform.Find("Text").gameObject.GetComponent<Text>();
+            image = transform.Find("Image").gameObject.GetComponent<Image>();
         }
     }
 
@@ -64,6 +66,8 @@ public class Floating_Info_Control : MonoBehaviour
     private void ChangeImageAlphaAndPos()
     {
         // TODO: 
+        image.transform.position += new Vector3(0, movingSpeed * Time.deltaTime, 0);
+        image.color = new Color(text.color.r, text.color.g, text.color.b, liveTimer / liveTime);
     }
 
     private void DestroyByType()
@@ -76,6 +80,7 @@ public class Floating_Info_Control : MonoBehaviour
         else if (t == InfoType.ImageWithText)
         {
             // TODO delete parent object
+            Destroy(transform.parent.gameObject);
         }
     }
 
@@ -83,8 +88,15 @@ public class Floating_Info_Control : MonoBehaviour
     {
         if(text != null)
         {
-            Debug.Log(s);
             text.text = s;
+        }
+    }
+
+    public void SetImage(Sprite s)
+    {
+        if(image != null)
+        {
+            image.sprite = s;
         }
     }
 }

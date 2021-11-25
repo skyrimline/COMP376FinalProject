@@ -17,6 +17,8 @@ public class Hunter_Room : MonoBehaviour
     private int[] resources;
     private int resourceIndex_1;
     private int resourceIndex_2;
+    private int resourceCount1 = 0;
+    private int resourceCount2 = 0;
 
     // panel for send out hunder button
     [SerializeField] public GameObject sendButtonPanel;
@@ -33,6 +35,11 @@ public class Hunter_Room : MonoBehaviour
 
     private bool isHunterOut = false;
 
+    // for spawning informations
+    [SerializeField] private GameObject FloatingResourcePrefab;
+    [SerializeField] private Sprite[] resourceSprs;
+    private Transform InformationSpawnPoint;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,6 +53,7 @@ public class Hunter_Room : MonoBehaviour
         // initially all panels are not active, have to put someone into the room to activate it
         sendButtonPanel.SetActive(false);
         returnTimerPanel.SetActive(false);
+        InformationSpawnPoint = transform.Find("InformationSpawnPoint");
     }
 
     void Update()
@@ -155,7 +163,7 @@ public class Hunter_Room : MonoBehaviour
 
     private void CollectResources()
     {
-        int resourceCount1 = resources[resourceIndex_1] * tempNPCList.Count;
+        resourceCount1 = resources[resourceIndex_1] * tempNPCList.Count;
         //Debug.Log("Collect Resource" + resourceIndex_1 + ": " + resourceCount1);
         switch (resourceIndex_1)
         {
@@ -181,7 +189,7 @@ public class Hunter_Room : MonoBehaviour
                 break;
         }
 
-        int resourceCount2 = resources[resourceIndex_2] * tempNPCList.Count;
+        resourceCount2 = resources[resourceIndex_2] * tempNPCList.Count;
         //Debug.Log("Collect Resource" + resourceIndex_2 + ": " + resourceCount2);
         switch (resourceIndex_2)
         {
@@ -206,6 +214,8 @@ public class Hunter_Room : MonoBehaviour
                 gameLogicReference.vaccineC_num += resourceCount2;
                 break;
         }
+        if(resourceCount1 != 0 && resourceCount2 != 0)
+            SpawnFloatingResourceInfo();
     }
 
     private void ShowSendOutButton()
@@ -226,6 +236,31 @@ public class Hunter_Room : MonoBehaviour
         if (returnTimerPanel.activeInHierarchy)
         {
             hunterTimerText.text = ((int)Mathf.Round(hunterTimer)).ToString("D3");
+        }
+    }
+
+    private void SpawnFloatingResourceInfo()
+    {
+        // need to spawn 2 of these
+        Vector3 pos1 = InformationSpawnPoint.position;
+        pos1.x -= 1f;
+        GameObject g1 = Instantiate(FloatingResourcePrefab, pos1, Quaternion.identity);
+        var f1 = g1.GetComponentInChildren<Floating_Info_Control>();
+        if (f1 != null)
+        {
+            f1.SetText("+" + resourceCount1.ToString("D3"));
+            f1.SetImage(resourceSprs[resourceIndex_1]);
+        }
+
+        Vector3 pos2 = InformationSpawnPoint.position;
+
+        pos2.x += 3f;
+        GameObject g2 = Instantiate(FloatingResourcePrefab, pos2, Quaternion.identity);
+        var f2 = g2.GetComponentInChildren<Floating_Info_Control>();
+        if (f2 != null)
+        {
+            f2.SetText("+" + resourceCount2.ToString("D3"));
+            f2.SetImage(resourceSprs[resourceIndex_2]);
         }
     }
 
