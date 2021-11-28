@@ -57,8 +57,9 @@ public class Story_Control : MonoBehaviour
         Time.timeScale = 1;
         story1.SetActive(false);
 
-        //reduce resources
+        //reduce food and rulepower
         gameLogicReference.foodNum -= 5;
+        //reduce rulepower
     }
 }
 
