@@ -562,7 +562,7 @@ MonoBehaviour:
   maxRotation: 360
   circleColorRef: {fileID: 0}
   colorRef: {fileID: 0}
-  color: {r: 1, g: 0, b: 0.029950142, a: 1}
+  color: {r: 0.6156863, g: 0.23529412, b: 0.25490198, a: 1}
   sortingLayerName: Default
   sortingOrder: 42
   renderer: {fileID: 5414058123159865809}
@@ -895,7 +895,7 @@ MonoBehaviour:
   legUpper: {fileID: 5313152767907207288}
   legLower: {fileID: 760908046822857257}
   foot: {fileID: 1492361709399251271}
-  skinColor: {r: 1, g: 0, b: 0.029950142, a: 1}
+  skinColor: {r: 0.6156863, g: 0.23529412, b: 0.25490198, a: 1}
   hairColor: {r: 0, g: 0, b: 0, a: 1}
   shirtColor: {r: 0.24705884, g: 0.26666668, b: 0.29411766, a: 1}
   pantColor: {r: 0.24705884, g: 0.16862746, b: 0.16862746, a: 1}
@@ -2837,7 +2837,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 43
   m_Sprite: {fileID: 21300008, guid: ec8e8b67cda8b694d8ac1951d68b61bb, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.029950142, a: 1}
+  m_Color: {r: 0.6156863, g: 0.23529412, b: 0.25490198, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -3576,7 +3576,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 42
   m_Sprite: {fileID: 21300000, guid: ec8e8b67cda8b694d8ac1951d68b61bb, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.029950142, a: 1}
+  m_Color: {r: 0.6156863, g: 0.23529412, b: 0.25490198, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -5211,7 +5211,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ec8e8b67cda8b694d8ac1951d68b61bb, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.029950142, a: 1}
+  m_Color: {r: 0.6156863, g: 0.23529412, b: 0.25490198, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -5460,7 +5460,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 35
   m_Sprite: {fileID: 21300016, guid: ec8e8b67cda8b694d8ac1951d68b61bb, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.029950142, a: 1}
+  m_Color: {r: 0.6156863, g: 0.23529412, b: 0.25490198, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -5960,7 +5960,7 @@ MonoBehaviour:
   maxRotation: 182
   circleColorRef: {fileID: 0}
   colorRef: {fileID: 0}
-  color: {r: 1, g: 0, b: 0.029950142, a: 1}
+  color: {r: 0.6156863, g: 0.23529412, b: 0.25490198, a: 1}
   sortingLayerName: Default
   sortingOrder: 34
   renderer: {fileID: 2234038889841001270}
@@ -6344,7 +6344,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300008, guid: ec8e8b67cda8b694d8ac1951d68b61bb, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.029950142, a: 1}
+  m_Color: {r: 0.6156863, g: 0.23529412, b: 0.25490198, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -7645,7 +7645,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 34
   m_Sprite: {fileID: 21300000, guid: ec8e8b67cda8b694d8ac1951d68b61bb, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.029950142, a: 1}
+  m_Color: {r: 0.6156863, g: 0.23529412, b: 0.25490198, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -9054,7 +9054,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 35
   m_Sprite: {fileID: 21300008, guid: ec8e8b67cda8b694d8ac1951d68b61bb, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.029950142, a: 1}
+  m_Color: {r: 0.6156863, g: 0.23529412, b: 0.25490198, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
@@ -9373,7 +9373,7 @@ MonoBehaviour:
   maxRotation: 360
   circleColorRef: {fileID: 0}
   colorRef: {fileID: 0}
-  color: {r: 1, g: 0, b: 0.029950142, a: 1}
+  color: {r: 0.6156863, g: 0.23529412, b: 0.25490198, a: 1}
   sortingLayerName: Default
   sortingOrder: 1
   renderer: {fileID: 4413029275259755810}
