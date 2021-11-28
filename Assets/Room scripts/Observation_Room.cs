@@ -27,7 +27,7 @@ public class Observation_Room : MonoBehaviour
     {
         GetNpcReference();
         setRoomHeartRate();
-        DisplayHeartRate();
+        //DisplayHeartRate();
     }
 
     private void GetNpcReference()
@@ -55,49 +55,47 @@ public class Observation_Room : MonoBehaviour
 
 
     // based on the NPC type, display the heart rate
-    private void DisplayHeartRate()
-    {
-        // display a number on UI based on the npc type
+    //private void DisplayHeartRate()
+    //{
+    //    // display a number on UI based on the npc type
 
-        if (roomHeartRateIndex >= 5)
-            roomHeartRateIndex = 0;
-
-
-        if (npc != null)
-        {
-            // only display once after the interval
-            if (updateIntervalTimer > 0)
-            {
-                updateIntervalTimer -= Time.deltaTime;
-                return;
-            }
-            //Debug.Log("111");
-            // this is where you can change which npc can have which heart rate
+    //    if (roomHeartRateIndex >= 5)
+    //        roomHeartRateIndex = 0;
 
 
-            // reset timer
-            updateIntervalTimer = updateInterval;
-        }
-        // continue to display 000 when 
-        else
-        {
-            for (int i = 0; i < roomHeartRate.Length; i++)
-            {
-                roomHeartRate[i] = 0;
-            }
-
-            updateIntervalTimer = 0;
-        }
-
-        // display on UI
+    //    if (npc != null)
+    //    {
+    //        // only display once after the interval
+    //        if (updateIntervalTimer > 0)
+    //        {
+    //            updateIntervalTimer -= Time.deltaTime;
+    //            return;
+    //        }
+    //        //Debug.Log("111");
+    //        // this is where you can change which npc can have which heart rate
 
 
-        heartRateText.text = roomHeartRate[roomHeartRateIndex].ToString("D3");
+    //        // reset timer
+    //        updateIntervalTimer = updateInterval;
+    //    }
+    //    // continue to display 000 when 
+    //    else
+    //    {
+    //        for (int i = 0; i < roomHeartRate.Length; i++)
+    //        {
+    //            roomHeartRate[i] = 0;
+    //        }
+
+    //        updateIntervalTimer = 0;
+    //    }
+
+    //    // display on UI
 
 
+    //    heartRateText.text = roomHeartRate[roomHeartRateIndex].ToString("D3");
 
 
-        roomHeartRateIndex += 1;
+    //    roomHeartRateIndex += 1;
 
-    }
+    //}
 }
