@@ -671,7 +671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.08235294, b: 0.10980392, a: 1}
+  m_Color: {r: 0, g: 0.08235294, b: 0.10980392, a: 0.98039216}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -846,7 +846,6 @@ GameObject:
   - component: {fileID: 8312551989728616206}
   - component: {fileID: 8312551989728616207}
   - component: {fileID: 8312551989728616204}
-  - component: {fileID: 6106513942555171520}
   - component: {fileID: 1369573928736690932}
   m_Layer: 5
   m_Name: Button1
@@ -969,19 +968,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6106513942555171520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8312551989728616202}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f541653ea92d55043a7f34f96e5da58a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 4542386192469194441}
 --- !u!114 &1369573928736690932
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1042,7 +1028,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &8312551989837906099
 Transform:
   m_ObjectHideFlags: 0
@@ -1338,7 +1324,6 @@ GameObject:
   - component: {fileID: 8312551990841957157}
   - component: {fileID: 8312551990841957154}
   - component: {fileID: 8312551990841957155}
-  - component: {fileID: 1509645860730470461}
   - component: {fileID: 3527200087312264235}
   m_Layer: 5
   m_Name: Button2
@@ -1461,19 +1446,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1509645860730470461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8312551990841957153}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f541653ea92d55043a7f34f96e5da58a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 544757376725031219}
 --- !u!114 &3527200087312264235
 MonoBehaviour:
   m_ObjectHideFlags: 0

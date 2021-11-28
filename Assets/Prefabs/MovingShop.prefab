@@ -346,7 +346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.08235294, b: 0.10980392, a: 0.59607846}
+  m_Color: {r: 0, g: 0.08235294, b: 0.10980392, a: 0.9411765}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -370,11 +370,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5570694743003090337}
     m_Modifications:
-    - target: {fileID: 842761273235564698, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 916270743629979244, guid: e20df5cac08eeb24c8cf215892c874f9,
         type: 3}
       propertyPath: m_Pivot.x
@@ -419,21 +414,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.y
       value: 27.4371
-      objectReference: {fileID: 0}
-    - target: {fileID: 916270743629979244, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.05280305
-      objectReference: {fileID: 0}
-    - target: {fileID: 916270743629979244, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.27609438
-      objectReference: {fileID: 0}
-    - target: {fileID: 916270743629979244, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.27609438
       objectReference: {fileID: 0}
     - target: {fileID: 916270743629979244, guid: e20df5cac08eeb24c8cf215892c874f9,
         type: 3}
@@ -499,26 +479,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Shopmenu
-      objectReference: {fileID: 0}
-    - target: {fileID: 5378014542163616143, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 5378014542163616143, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7772973998643855724, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.00014448776
-      objectReference: {fileID: 0}
-    - target: {fileID: 7772973998643855724, guid: e20df5cac08eeb24c8cf215892c874f9,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.0000009536743
       objectReference: {fileID: 0}
     - target: {fileID: 8974614609679932412, guid: e20df5cac08eeb24c8cf215892c874f9,
         type: 3}
