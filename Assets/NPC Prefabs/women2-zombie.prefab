@@ -7344,6 +7344,12 @@ MonoBehaviour:
   life: 999
   infectedByRoom: 0
   isVaccinated: 0
+  actualColors:
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!61 &1347500979606204214
 BoxCollider2D:
   m_ObjectHideFlags: 0
