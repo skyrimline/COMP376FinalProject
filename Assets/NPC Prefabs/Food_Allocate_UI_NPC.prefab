@@ -59,7 +59,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Allow_Allocation: {fileID: 21300000, guid: aa148b5620a8f3b4594c55cab1115156, type: 3}
-  Not_Allow_Allocation: {fileID: 21300000, guid: 2a015d3a552394440a09707423cf6bed, type: 3}
+  Not_Allow_Allocation: {fileID: 21300000, guid: 2a015d3a552394440a09707423cf6bed,
+    type: 3}
   Food_Allocation_Button: {fileID: 8230406742828893976}
   allow_Food_Allocation: 1
 --- !u!1 &1299400189624696057
@@ -252,7 +253,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 6
   m_TargetDisplay: 0
 --- !u!114 &6340334943169515100
 MonoBehaviour:

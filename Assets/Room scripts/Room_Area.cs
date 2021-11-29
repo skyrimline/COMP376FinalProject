@@ -9,6 +9,7 @@ public class Room_Area : MonoBehaviour, IDropHandler
 {
     // keep a list of NPC objects to keep track of NPCs
     public List<NPC_Logic> NPCList = new List<NPC_Logic>();
+    public List<NPC_Logic> ZombieList = new List<NPC_Logic>();
 
     // capacity for different rooms, might increase or decrease. Can be set and get
     [SerializeField] private int roomCapacity = 1;
@@ -30,19 +31,24 @@ public class Room_Area : MonoBehaviour, IDropHandler
         if (isRoomEnabled)
         {
             ironDoor.SetActive(false);
-            if(otherUI != null)
+            if (otherUI != null)
                 otherUI.SetActive(true);
         }
         else
         {
             ironDoor.SetActive(true);
-            if(otherUI != null)
+            if (otherUI != null)
                 otherUI.SetActive(false);
         }
     }
 
     public void OnDrop(PointerEventData eventData)
     {
+        if (Disinfection.disinfectionActive || eventData.button != 0)
+        {
+            return;
+        }
+        
         if (CheckCapacity())
         {
             // get the object that is dropped 
@@ -66,7 +72,7 @@ public class Room_Area : MonoBehaviour, IDropHandler
     // called by drag and drop npc script to check capacity of the room.
     public bool CheckCapacity()
     {
-        if(!(NPCList.Count < roomCapacity))
+        if (!(NPCList.Count < roomCapacity))
         {
             GenerateErrorMessage("Room is Full");
         }
@@ -79,19 +85,23 @@ public class Room_Area : MonoBehaviour, IDropHandler
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other == null)
+        if (other == null)
         {
             return;
         }
-        if(other.tag.Equals("NPC"))
+        if (other.tag.Equals("NPC"))
         {
             NPCList.Add(other.gameObject.GetComponent<NPC_Logic>());
+        }
+        if (other.tag.Equals("Zombie"))
+        {
+            ZombieList.Add(other.gameObject.GetComponent<NPC_Logic>());
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if(other == null)
+        if (other == null)
         {
             return;
         }
@@ -111,7 +121,7 @@ public class Room_Area : MonoBehaviour, IDropHandler
     // Update the UI - remaining bed of dorm
     private void UpdateUIRemainingBed()
     {
-        if(remainingBedText != null)
+        if (remainingBedText != null)
         {
             remainingBedText.text = (roomCapacity - NPCList.Count).ToString();
         }
@@ -120,9 +130,9 @@ public class Room_Area : MonoBehaviour, IDropHandler
 
     private void RemoveNullFromList()
     {
-        for(int i = 0; i < NPCList.Count; ++i)
+        for (int i = 0; i < NPCList.Count; ++i)
         {
-            if(NPCList[i] == null)
+            if (NPCList[i] == null)
             {
                 NPCList.RemoveAt(i);
                 break;

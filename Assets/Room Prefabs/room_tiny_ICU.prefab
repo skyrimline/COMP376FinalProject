@@ -955,7 +955,8 @@ MonoBehaviour:
   isRoomEnabled: 0
   ironDoor: {fileID: 2125859024069638009}
   otherUI: {fileID: 0}
-  ErrorMessagePrefab: {fileID: 0}
+  ErrorMessagePrefab: {fileID: 4064797415328724204, guid: 9413fa0d6d8ef064a95d0f8dbde1dbcc,
+    type: 3}
 --- !u!114 &8013104456510229813
 MonoBehaviour:
   m_ObjectHideFlags: 0

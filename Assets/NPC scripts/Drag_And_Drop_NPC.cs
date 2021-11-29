@@ -20,7 +20,12 @@ public class Drag_And_Drop_NPC : MonoBehaviour,
     }
 
     public void OnPointerDown(PointerEventData eventData)
-    {   
+    {
+        if (Disinfection.disinfectionActive || eventData.button != 0)
+        {
+            return;
+        }
+        
         // if the object being dragged is a npc
         if(npcMove != null)
         {
@@ -32,16 +37,28 @@ public class Drag_And_Drop_NPC : MonoBehaviour,
     // change the position of the game object
     public void OnDrag(PointerEventData eventData)
     {
+        if (Disinfection.disinfectionActive || eventData.button != 0)
+        {
+            return;
+        }
         transform.position = - new Vector3(0, 2f, 0) + cam.ScreenToWorldPoint(new Vector3(eventData.position.x, eventData.position.y, 10));
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-
+        if (Disinfection.disinfectionActive || eventData.button != 0)
+        {
+            return;
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData)
     {
+
+        if (Disinfection.disinfectionActive || eventData.button != 0)
+        {
+            return;
+        }
 
         /***************************************************/
         // also check if the drop position is droppable.
@@ -73,6 +90,11 @@ public class Drag_And_Drop_NPC : MonoBehaviour,
 
     public void OnPointerUp(PointerEventData eventData)
     {
+        if (Disinfection.disinfectionActive || eventData.button != 0)
+        {
+            return;
+        }
+
         // reset npc movement
         if (npcMove != null)
         {
