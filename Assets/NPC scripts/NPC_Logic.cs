@@ -58,7 +58,7 @@ public class NPC_Logic : MonoBehaviour
         NormalToInfectedTime = 5.0f;
         NormalToInfectedTimer = NormalToInfectedTime;
 
-        InfectedToDyingTime = 40.0f;
+        InfectedToDyingTime = 60.0f;
         InfectedToDyingTimer = InfectedToDyingTime;
 
         DyingToZombieTime = 30.0f;
@@ -74,7 +74,13 @@ public class NPC_Logic : MonoBehaviour
         }
 
         if(type != NPC_Type.zombie)
+        {
             vaccinatedUI = transform.Find("Vaccinated_UI_NPC").gameObject;
+        }
+        else
+        {
+            vaccinatedUI = null;
+        }
 
         npcMovement = gameObject.GetComponent<NPC_Movement>();
 
@@ -210,14 +216,18 @@ public class NPC_Logic : MonoBehaviour
 
     private void SetVaccinationUI()
     {
-        if (isVaccinated)
+        if(vaccinatedUI != null)
         {
-            vaccinatedUI.SetActive(true);
+            if (isVaccinated)
+            {
+                vaccinatedUI.SetActive(true);
+            }
+            else
+            {
+                vaccinatedUI.SetActive(false);
+            }
         }
-        else
-        {
-            vaccinatedUI.SetActive(false);
-        }
+
     }
 
     // ------------ Other helpers -----------

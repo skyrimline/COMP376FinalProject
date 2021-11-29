@@ -2133,7 +2133,7 @@ GameObject:
   - component: {fileID: 3280097361596076435}
   m_Layer: 0
   m_Name: room_hunter
-  m_TagString: room_dorm
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2258,6 +2258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   NPCList: []
+  ZombieList: []
   roomCapacity: 1
   remainingBedText: {fileID: 8031594258041088577}
   isRoomEnabled: 1
@@ -2281,6 +2282,8 @@ MonoBehaviour:
   returnTimerPanel: {fileID: 1073052340721000294}
   hunterTimerText: {fileID: 2231168644470886205}
   FloatingResourcePrefab: {fileID: 4064797415328724204, guid: b9ff66d27e5d22c4fae57f3dd707ff17,
+    type: 3}
+  ErrorMessagePrefab: {fileID: 4064797415328724204, guid: 9413fa0d6d8ef064a95d0f8dbde1dbcc,
     type: 3}
   resourceSprs:
   - {fileID: 21300000, guid: aa148b5620a8f3b4594c55cab1115156, type: 3}

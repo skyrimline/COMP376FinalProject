@@ -31,12 +31,13 @@ public class Hunter_Room : MonoBehaviour
     private float hunterTimer;
 
     // chance that a hunter will die
-    private float deathRate = 0.3f;
+    private float deathRate = 0.1f;
 
     private bool isHunterOut = false;
 
     // for spawning informations
     [SerializeField] private GameObject FloatingResourcePrefab;
+    [SerializeField] private GameObject ErrorMessagePrefab;
     [SerializeField] private Sprite[] resourceSprs;
     private Transform InformationSpawnPoint;
 
@@ -102,6 +103,14 @@ public class Hunter_Room : MonoBehaviour
     // function called when click on hunter button
     public void SendOutHunters()
     {
+        // if not enough food, cant send hunters out
+        if(gameLogicReference.foodNum < room.NPCList.Count)
+        {
+            // generate error message here
+            GenerateErrorMessage("You don't have enough food!");
+            return;
+        }
+        
         // set the room to be inactive, just change the isRoomEnabled to false, dont change other UI
         // so no new npc can be dragged into it
         room.isRoomEnabled = false;
@@ -261,6 +270,19 @@ public class Hunter_Room : MonoBehaviour
         {
             f2.SetText("+" + resourceCount2.ToString("D3"));
             f2.SetImage(resourceSprs[resourceIndex_2]);
+        }
+    }
+
+    private void GenerateErrorMessage(string message)
+    {
+        Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        pos.z = 0;
+        pos.y += 1f;
+        GameObject g = Instantiate(ErrorMessagePrefab, pos, Quaternion.identity);
+        var f = g.GetComponentInChildren<Floating_Info_Control>();
+        if (f != null)
+        {
+            f.SetText(message);
         }
     }
 

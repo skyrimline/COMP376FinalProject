@@ -106,6 +106,11 @@ public class Room_Upgradable : MonoBehaviour
 
     }
 
+    public int GetTotalLevels()
+    {
+        return TotoalLevels;
+    }
+
     private void GenerateErrorMessage(string message)
     {
         Vector3 pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);

@@ -26,6 +26,9 @@ public class GameLogic : MonoBehaviour
     //amount of money
     public int money;
 
+    public int productivity;
+    public int rulePower;
+
     //ui for resources
     [SerializeField] private Text foodNumText;
     [SerializeField] private Text moneyText;
@@ -41,9 +44,9 @@ public class GameLogic : MonoBehaviour
     [SerializeField] private Transform airDropRightX;
 
     // game time
-    private int day = 5;
-    private float dayTime = 40;
-    private float dayTimer = 40f;
+    private int day;
+    private float dayTime;
+    private float dayTimer;
 
     //airdrop timer
     private float airDropTimer = 10f;
@@ -54,15 +57,21 @@ public class GameLogic : MonoBehaviour
     private int rewardFactor = 200;
 
 
-    // Start is called before the first frame update
-    void Start()
-    {   //set initial numbers
+    private void Awake()
+    {
+        productivity = 0;
+        rulePower = 50;
         foodNum = 20;
         money = 500;
         vaccineA_num = 20;
         vaccineB_num = 30;
         vaccineC_num = 10;
+
+        day = 10;
+        dayTime = 60;
+        dayTimer = dayTime;
     }
+
 
     // Update is called once per frame
     void Update()
@@ -82,6 +91,8 @@ public class GameLogic : MonoBehaviour
 
         //airdrop
         generateAirDrop();
+
+        UpdateProductivity();
 
     }
 
@@ -128,6 +139,7 @@ public class GameLogic : MonoBehaviour
         int npcCount = allNPC_obj.Length;
         return npcCount;
     }
+
 
     private int countSavedNormalNPC()
     {
@@ -207,6 +219,19 @@ public class GameLogic : MonoBehaviour
         }
     }
 
+    // productivity is calculated as the NPCs in dorm
+    private void UpdateProductivity()
+    {
+        GameObject[] allDorm_obj = GameObject.FindGameObjectsWithTag("room_dorm");
+        int count = 0;
+        for (int i = 0; i < allDorm_obj.Length; i++)
+        {
+            count += allDorm_obj[i].GetComponent<Room_Area>().NPCList.Count;
+        }
+
+        productivity = count;
+
+    }
 
     public float getTime()
     {

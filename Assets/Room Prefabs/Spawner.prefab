@@ -51,6 +51,13 @@ MonoBehaviour:
   - {fileID: 2051378050254981365, guid: 0289868aa760def4687584e77477b0cc, type: 3}
   - {fileID: 502662731437986983, guid: 9fcda3a996adbfa4b862b48afdc7275a, type: 3}
   - {fileID: 1095712458859260122, guid: c3589d2c69fda4a42b5ae7461285d042, type: 3}
+  Zombie_prefabs:
+  - {fileID: 5237410401664002183, guid: 46a2d5c83219b754caa44788b1d387cc, type: 3}
+  - {fileID: 814859582981557032, guid: a5f670f68b774134ead61c2b126156d5, type: 3}
+  - {fileID: 5555825739189305308, guid: 22c60ffb8243cec4eae89d940f04ad44, type: 3}
+  - {fileID: 7394018795796845611, guid: e0c6fa1ab2929924e840f2bb948e65c9, type: 3}
+  - {fileID: 7509381912226196899, guid: 991f7e80938c83c48b0a1aaebf4627f5, type: 3}
+  - {fileID: 5347632412554383133, guid: 69c16945046313845b7c4e44992231bd, type: 3}
   NPCParent: {fileID: 0}
   npcMovements: []
 --- !u!1 &7777329908811644941
