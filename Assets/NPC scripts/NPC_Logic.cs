@@ -46,6 +46,11 @@ public class NPC_Logic : MonoBehaviour
     // the NPC_Movement reference of this game object
     private NPC_Movement npcMovement;
 
+
+    //setting NPC observation property
+    private string[] targetColors = new string[5];
+    public string[] actualColors = new string[] { null, null, null, null, null };
+
     private void Awake()
     {
         // this is where to set three timers
@@ -67,9 +72,13 @@ public class NPC_Logic : MonoBehaviour
             zombieProgress = transform.Find("Timer_UI_NPC").gameObject.GetComponent<Progress_bar>();
         }
 
-        GenerateHeartRate();
+        
 
         npcMovement = gameObject.GetComponent<NPC_Movement>();
+
+        setNPCColor();
+       
+
     }
 
     // Update is called once per frame
@@ -91,6 +100,7 @@ public class NPC_Logic : MonoBehaviour
         }
     }
 
+   
 
     // ---------- some state transition function -------------
     public void Die()
@@ -271,5 +281,69 @@ public class NPC_Logic : MonoBehaviour
         }
 
 
+    }
+
+    public string[] getActualColors()
+    {
+        return actualColors;
+    }
+
+    private void setNPCColor()
+    {
+        if (GetNPCType() == NPC_Type.normal)
+        {
+
+            targetColors[0] = "red";
+            targetColors[1] = "yellow";
+            targetColors[2] = "yellow";
+            targetColors[3] = "green";
+            targetColors[4] = "green";
+
+
+        }
+        if (GetNPCType() == NPC_Type.infected)
+        {
+
+            targetColors[0] = "red";
+            targetColors[1] = "red";
+            targetColors[2] = "yellow";
+            targetColors[3] = "yellow";
+            targetColors[4] = "green";
+
+
+        }
+        if (GetNPCType() == NPC_Type.dying)
+        {
+
+            targetColors[0] = "red";
+            targetColors[1] = "red";
+            targetColors[2] = "red";
+            targetColors[3] = "yellow";
+            targetColors[4] = "yellow";
+
+
+        }
+
+        if (GetNPCType() == NPC_Type.zombie)
+        {
+
+            targetColors[0] = "red";
+            targetColors[1] = "red";
+            targetColors[2] = "red";
+            targetColors[3] = "red";
+            targetColors[4] = "red";
+
+
+        }
+
+        for (int i = 0; i < 5; i++)
+        {
+            int actualColorsIndex = Random.Range(0, 5);
+            while (actualColors[actualColorsIndex] == "red" || actualColors[actualColorsIndex] == "yellow" || actualColors[actualColorsIndex] == "green")
+            {
+                actualColorsIndex = Random.Range(0, 5);
+            }
+            actualColors[actualColorsIndex] = targetColors[i];
+        }
     }
 }

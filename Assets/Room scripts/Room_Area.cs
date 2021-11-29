@@ -9,6 +9,7 @@ public class Room_Area : MonoBehaviour, IDropHandler
 {
     // keep a list of NPC objects to keep track of NPCs
     public List<NPC_Logic> NPCList = new List<NPC_Logic>();
+    public List<NPC_Logic> ZombieList = new List<NPC_Logic>();
 
     // capacity for different rooms, might increase or decrease. Can be set and get
     [SerializeField] private int roomCapacity = 1;
@@ -86,6 +87,10 @@ public class Room_Area : MonoBehaviour, IDropHandler
         if(other.tag.Equals("NPC"))
         {
             NPCList.Add(other.gameObject.GetComponent<NPC_Logic>());
+        }
+        if (other.tag.Equals("Zombie"))
+        {
+            ZombieList.Add(other.gameObject.GetComponent<NPC_Logic>());
         }
     }
 

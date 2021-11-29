@@ -1288,6 +1288,12 @@ MonoBehaviour:
   life: 0
   infectedByRoom: 0
   isVaccinated: 0
+  actualColors:
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!114 &1058018855547845671
 MonoBehaviour:
   m_ObjectHideFlags: 0
