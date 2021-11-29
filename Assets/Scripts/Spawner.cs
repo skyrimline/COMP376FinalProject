@@ -66,7 +66,7 @@ public class Spawner : MonoBehaviour
         // then randomly select its type and set attributes (may add some weight to npc 1 and 2)
         NPC_Logic npcLogic = npc.GetComponent<NPC_Logic>();
         // TODO: maybe more NPCs of normal and infected, no dying.
-        switch (Random.Range(0, 3))
+        switch (Random.Range(0, 2))
         {
             // normal NPC
             case 0:
@@ -81,10 +81,10 @@ public class Spawner : MonoBehaviour
                 break;
 
             // dying NPC
-            case 2:
-                npcLogic.SetNPCType(NPC_Logic.NPC_Type.dying);
-                npcLogic.SetLife(1);
-                break;
+            //case 2:
+            //    npcLogic.SetNPCType(NPC_Logic.NPC_Type.dying);
+            //    npcLogic.SetLife(1);
+            //    break;
         }
 
         // Add this NPC movement to the list

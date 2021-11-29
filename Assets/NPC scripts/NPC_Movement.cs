@@ -64,7 +64,7 @@ public class NPC_Movement : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // set another direction if collides with wall
-        if (collision.gameObject.layer == 6 || collision.gameObject.layer == 7)
+        if (collision.gameObject.layer == 6 || collision.gameObject.layer == 7 || collision.gameObject.tag == "Zombie")
         {
             if(moveDir == Vector3.left)
             {

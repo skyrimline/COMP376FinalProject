@@ -58,7 +58,7 @@ public class Dialog_Box_Control : MonoBehaviour
         while (true)
         {
             
-            randomnumber = Random.Range(0, 2);
+            randomnumber = Random.Range(0, 4);
 
             playDialog();
             yield return new WaitForSeconds(2f);

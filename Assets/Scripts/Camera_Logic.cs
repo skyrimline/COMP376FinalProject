@@ -104,33 +104,54 @@ public class Camera_Logic : MonoBehaviour
     {
         // poll for input 
         // right edge
-        if (Input.mousePosition.x > Screen.width - edgeSize || Input.GetKey(KeyCode.D))
+        //if (Input.mousePosition.x > Screen.width - edgeSize || Input.GetKey(KeyCode.D))
+        //{
+        //    cameraPos.x += moveAmount * Time.deltaTime;
+        //}
+        //// left edge
+        //if (Input.mousePosition.x < edgeSize || Input.GetKey(KeyCode.A))
+        //{
+        //    cameraPos.x -= moveAmount * Time.deltaTime;
+        //}
+        //// up edge
+        //if (Input.mousePosition.y > Screen.height - edgeSize || Input.GetKey(KeyCode.W))
+        //{
+        //    cameraPos.y += moveAmount * Time.deltaTime;
+        //}
+        //// down edge
+        //if (Input.mousePosition.y < edgeSize || Input.GetKey(KeyCode.S))
+        //{
+        //    cameraPos.y -= moveAmount * Time.deltaTime;
+        //}
+
+        if (Input.GetKey(KeyCode.D))
         {
             cameraPos.x += moveAmount * Time.deltaTime;
         }
         // left edge
-        if (Input.mousePosition.x < edgeSize || Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A))
         {
             cameraPos.x -= moveAmount * Time.deltaTime;
         }
         // up edge
-        if (Input.mousePosition.y > Screen.height - edgeSize || Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.W))
         {
             cameraPos.y += moveAmount * Time.deltaTime;
         }
         // down edge
-        if (Input.mousePosition.y < edgeSize || Input.GetKey(KeyCode.S))
+        if (Input.GetKey(KeyCode.S))
         {
             cameraPos.y -= moveAmount * Time.deltaTime;
         }
 
+
         // use middle button to move cam
-        if (Input.GetMouseButtonDown(2))
+        if (Input.GetMouseButtonDown(1) || Input.GetMouseButtonDown(2))
         {
             isMouseDown = true;
         }
 
-        if (Input.GetMouseButtonUp(2))
+        if (Input.GetMouseButtonUp(1) || Input.GetMouseButtonDown(2))
         {
             isMouseDown = false;
             lastMousePosition = Vector3.zero;

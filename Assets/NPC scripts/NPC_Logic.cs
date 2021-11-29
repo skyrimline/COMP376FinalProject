@@ -46,6 +46,11 @@ public class NPC_Logic : MonoBehaviour
     // the NPC_Movement reference of this game object
     private NPC_Movement npcMovement;
 
+
+    //setting NPC observation property
+    private string[] targetColors = new string[5];
+    public string[] actualColors = new string[] { null, null, null, null, null };
+
     private void Awake()
     {
         // this is where to set three timers
@@ -62,14 +67,18 @@ public class NPC_Logic : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if(transform.Find("Timer_UI_NPC") != null)
+        if (transform.Find("Timer_UI_NPC") != null)
         {
             zombieProgress = transform.Find("Timer_UI_NPC").gameObject.GetComponent<Progress_bar>();
         }
 
-        GenerateHeartRate();
+
 
         npcMovement = gameObject.GetComponent<NPC_Movement>();
+
+        setNPCColor();
+
+
     }
 
     // Update is called once per frame
@@ -85,11 +94,12 @@ public class NPC_Logic : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // other npc touch zombie, they die
-        if(this.type != NPC_Type.zombie && collision.gameObject.tag.Equals("Zombie"))
+        if (this.type != NPC_Type.zombie && collision.gameObject.tag.Equals("Zombie"))
         {
-            Die();            
+            Die();
         }
     }
+
 
 
     // ---------- some state transition function -------------
@@ -106,7 +116,7 @@ public class NPC_Logic : MonoBehaviour
 
     private void CheckLife()
     {
-        if(life <= 0)
+        if (life <= 0)
         {
             Die();
         }
@@ -118,7 +128,7 @@ public class NPC_Logic : MonoBehaviour
         if (infectedByRoom && type == NPC_Type.normal)
         {
             // timer start count down
-            if(NormalToInfectedTimer >= 0)
+            if (NormalToInfectedTimer >= 0)
             {
                 NormalToInfectedTimer -= Time.deltaTime;
                 return;
@@ -129,6 +139,7 @@ public class NPC_Logic : MonoBehaviour
             // this code was brought up from else
             NormalToInfectedTimer = NormalToInfectedTime;
             infectedByRoom = false;
+            setNPCColor();
         }
         else
         {
@@ -142,7 +153,7 @@ public class NPC_Logic : MonoBehaviour
         if (type == NPC_Type.infected)
         {
             // start the timer
-            if(InfectedToDyingTimer >= 0)
+            if (InfectedToDyingTimer >= 0)
             {
                 InfectedToDyingTimer -= Time.deltaTime;
                 return;
@@ -152,14 +163,15 @@ public class NPC_Logic : MonoBehaviour
             type = NPC_Type.dying;
             // this code was brought up from else
             InfectedToDyingTimer = InfectedToDyingTime;
+            setNPCColor();
         }
     }
 
     private void DyingToZombie()
     {
-        if(type == NPC_Type.dying)
+        if (type == NPC_Type.dying)
         {
-            if(DyingToZombieTimer >= 0)
+            if (DyingToZombieTimer >= 0)
             {
                 DyingToZombieTimer -= Time.deltaTime;
                 // also set the max and current for progress bar
@@ -192,12 +204,12 @@ public class NPC_Logic : MonoBehaviour
     // ------------ Other helpers -----------
     private void TimerUIDisplay()
     {
-        if(zombieProgress == null)
+        if (zombieProgress == null)
         {
             return;
         }
 
-        if(type== NPC_Type.dying)
+        if (type == NPC_Type.dying)
         {
             zombieProgress.gameObject.SetActive(true);
         }
@@ -271,5 +283,72 @@ public class NPC_Logic : MonoBehaviour
         }
 
 
+    }
+
+    public string[] getActualColors()
+    {
+        return actualColors;
+    }
+
+    private void setNPCColor()
+    {
+        if (GetNPCType() == NPC_Type.normal)
+        {
+
+            targetColors[0] = "red";
+            targetColors[1] = "yellow";
+            targetColors[2] = "yellow";
+            targetColors[3] = "green";
+            targetColors[4] = "green";
+
+
+        }
+        if (GetNPCType() == NPC_Type.infected)
+        {
+
+            targetColors[0] = "red";
+            targetColors[1] = "red";
+            targetColors[2] = "yellow";
+            targetColors[3] = "yellow";
+            targetColors[4] = "green";
+        }
+        if (GetNPCType() == NPC_Type.dying)
+        {
+
+            targetColors[0] = "red";
+            targetColors[1] = "red";
+            targetColors[2] = "red";
+            targetColors[3] = "yellow";
+            targetColors[4] = "yellow";
+
+
+        }
+
+        if (GetNPCType() == NPC_Type.zombie)
+        {
+
+            targetColors[0] = "red";
+            targetColors[1] = "red";
+            targetColors[2] = "red";
+            targetColors[3] = "red";
+            targetColors[4] = "red";
+
+
+        }
+
+        for(int i = 0; i < 5; i++)
+        {
+            actualColors[i] = null;
+        }
+
+        for (int i = 0; i < 5; i++)
+        {
+            int actualColorsIndex = Random.Range(0, 5);
+            while (actualColors[actualColorsIndex] == "red" || actualColors[actualColorsIndex] == "yellow" || actualColors[actualColorsIndex] == "green")
+            {
+                actualColorsIndex = Random.Range(0, 5);
+            }
+            actualColors[actualColorsIndex] = targetColors[i];
+        }
     }
 }
