@@ -19,6 +19,8 @@ TagManager:
   - room_vaccine
   - AirDrop
   - Zombie
+  - vaccine
+  - serum
   layers:
   - Default
   - TransparentFX

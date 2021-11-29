@@ -151,7 +151,7 @@ public class Camera_Logic : MonoBehaviour
             isMouseDown = true;
         }
 
-        if (Input.GetMouseButtonUp(1) || Input.GetMouseButtonDown(2))
+        if (Input.GetMouseButtonUp(1) || Input.GetMouseButtonUp(2))
         {
             isMouseDown = false;
             lastMousePosition = Vector3.zero;

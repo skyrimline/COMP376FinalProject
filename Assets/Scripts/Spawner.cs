@@ -19,8 +19,8 @@ public class Spawner : MonoBehaviour
 
     // consider putting them as serialize field if needed.
     private int maxWaitingNPC = 3;
-    private float intervalMin = 10;
-    private float intervalMax = 20;
+    private float intervalMin = 20;
+    private float intervalMax = 40;
     private float spawnIntervalTimer = 0;
 
 

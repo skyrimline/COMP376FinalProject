@@ -69,4 +69,14 @@ public class Vaccine_Lab : MonoBehaviour
         return serumNum;
     }
 
+    public void DeductVaccine()
+    {
+        vaccineNum--;
+    }
+
+    public void DeductSerum()
+    {
+        serumNum--;
+    }
+
 }
