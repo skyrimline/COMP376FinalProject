@@ -56,7 +56,7 @@ public class Camera_Logic : MonoBehaviour
 
     private void HandleZoom()
     {
-        if (Input.GetAxis("Mouse ScrollWheel") != 0 && Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetAxis("Mouse ScrollWheel") != 0)
         {
             cameraZoom -= Input.GetAxis("Mouse ScrollWheel") * zoomStep;
             // also update the cameraPos a little step
