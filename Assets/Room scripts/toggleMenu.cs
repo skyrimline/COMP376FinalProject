@@ -25,7 +25,6 @@ public class toggleMenu : MonoBehaviour
         isDay = animator.GetBool("isDay");
         buttonPanel.SetActive(animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"));
         buttonPanel.transform.GetChild(0).gameObject.SetActive(animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"));
-
         if (MenuShow && !isDay)
         {
             //the Upgrade panel will shows
