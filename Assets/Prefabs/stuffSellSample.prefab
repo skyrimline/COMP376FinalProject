@@ -120,7 +120,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3909170573023772868}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 5622964753703435780}
+        m_TargetAssemblyTypeName: StuffSell, Assembly-CSharp
+        m_MethodName: SellClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2366541454045591170
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +377,7 @@ GameObject:
   - component: {fileID: 4791591980108998664}
   - component: {fileID: 709998746452836870}
   - component: {fileID: 4645819282793038769}
+  - component: {fileID: 5622964753703435780}
   m_Layer: 5
   m_Name: stuffSellSample
   m_TagString: Untagged
@@ -433,6 +446,27 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5622964753703435780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7819666212712193494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7fb676c1983bf243b63564927100f71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: {fileID: 1393743654896679429}
+  priceUI: {fileID: 6862027052968669927}
+  ObjUI: {fileID: 0}
+  price: 5
+  ErrorMessagePrefab: {fileID: 4064797415328724204, guid: 9413fa0d6d8ef064a95d0f8dbde1dbcc,
+    type: 3}
+  FloatingResourcePrefab: {fileID: 4064797415328724204, guid: b9ff66d27e5d22c4fae57f3dd707ff17,
+    type: 3}
+  discount: 1
 --- !u!1 &8316698554905546529
 GameObject:
   m_ObjectHideFlags: 0

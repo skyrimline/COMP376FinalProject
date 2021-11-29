@@ -290,6 +290,7 @@ GameObject:
   - component: {fileID: 7476150165684322907}
   - component: {fileID: 3199197765240170581}
   - component: {fileID: 7333827726796417506}
+  - component: {fileID: 6184385284708833650}
   m_Layer: 5
   m_Name: stuffBuySample
   m_TagString: Untagged
@@ -358,6 +359,26 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6184385284708833650
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5276725139223082885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a9da5f569916054595ca74eb81e91b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: {fileID: 3956459601976905814}
+  priceUI: {fileID: 8828577322191231156}
+  price: 20
+  ErrorMessagePrefab: {fileID: 4064797415328724204, guid: 9413fa0d6d8ef064a95d0f8dbde1dbcc,
+    type: 3}
+  FloatingResourcePrefab: {fileID: 4064797415328724204, guid: b9ff66d27e5d22c4fae57f3dd707ff17,
+    type: 3}
+  discount: 1
 --- !u!1 &6257013044076881266
 GameObject:
   m_ObjectHideFlags: 0
