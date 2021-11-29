@@ -88,11 +88,11 @@ public class Observation_Room : MonoBehaviour
 
         if (npc == null && zombie == null)
         {
-            light0.color = Color.white;
-            light1.color = Color.white;
-            light2.color = Color.white;
-            light3.color = Color.white;
-            light4.color = Color.white;
+            light0.color = Color.black;
+            light1.color = Color.black;
+            light2.color = Color.black;
+            light3.color = Color.black;
+            light4.color = Color.black;
             lightTimer = 0;
         }
 
@@ -123,7 +123,7 @@ public class Observation_Room : MonoBehaviour
                         light0.color = Color.green;
                         break;
                     default:
-                        light0.color = Color.white;
+                        light0.color = Color.black;
                         break;
                 }
             }
@@ -141,7 +141,7 @@ public class Observation_Room : MonoBehaviour
                         light1.color = Color.green;
                         break;
                     default:
-                        light1.color = Color.white;
+                        light1.color = Color.black;
                         break;
                 }
             }
@@ -159,7 +159,7 @@ public class Observation_Room : MonoBehaviour
                         light2.color = Color.green;
                         break;
                     default:
-                        light2.color = Color.white;
+                        light2.color = Color.black;
                         break;
                 }
             }
@@ -178,7 +178,7 @@ public class Observation_Room : MonoBehaviour
                         light3.color = Color.green;
                         break;
                     default:
-                        light3.color = Color.white;
+                        light3.color = Color.black;
                         break;
                 }
             }
@@ -196,7 +196,7 @@ public class Observation_Room : MonoBehaviour
                         light4.color = Color.green;
                         break;
                     default:
-                        light4.color = Color.white;
+                        light4.color = Color.black;
                         break;
                 }
             }
