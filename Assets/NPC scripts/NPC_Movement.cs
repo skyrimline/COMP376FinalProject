@@ -150,7 +150,16 @@ public class NPC_Movement : MonoBehaviour
 
         // when time's up, reset the timer and change the moving direction
         switchMovementTimerInRoom = Random.Range(1f, 3f);
-        moveDir = possibleMoveDir[Random.Range(0, 2)];
+        // make the chance to go right bigger
+        int random = Random.Range(0, 11);
+        if (random <= 3)
+        {
+            moveDir = possibleMoveDir[0];
+        }
+        else
+        {
+            moveDir = possibleMoveDir[1];
+        }
     }
 
     public void FreezePosAndDisableCol()

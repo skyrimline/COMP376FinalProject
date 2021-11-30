@@ -4772,7 +4772,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartRate: 0000000000000000000000000000000000000000
   type: 0
-  life: 0
+  maxLife: 5
+  life: 5
   infectedByRoom: 0
   isVaccinated: 0
   actualColors:
@@ -11260,11 +11261,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Food_Allocate_UI_NPC
-      objectReference: {fileID: 0}
-    - target: {fileID: 1235282817833186948, guid: 7cf0156efaa914642b6ca8408e87b88a,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7918180985540447433, guid: 7cf0156efaa914642b6ca8408e87b88a,
         type: 3}

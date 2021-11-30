@@ -615,6 +615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   heartRate: 0000000000000000000000000000000000000000
   type: 0
+  maxLife: 5
   life: 0
   infectedByRoom: 0
   isVaccinated: 0
@@ -1811,7 +1812,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1844373880335901051}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.736849, z: 0}
+  m_LocalPosition: {x: 0, y: 4.7368507, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8322584738308124540}
@@ -11486,6 +11487,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 990480871313925713}
     m_Modifications:
+    - target: {fileID: 996112520047204298, guid: 7cf0156efaa914642b6ca8408e87b88a,
+        type: 3}
+      propertyPath: m_FillAmount
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1235282817833186948, guid: 7cf0156efaa914642b6ca8408e87b88a,
         type: 3}
       propertyPath: m_Name
@@ -11545,6 +11551,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164422688557493305, guid: 7cf0156efaa914642b6ca8408e87b88a,
+        type: 3}
+      propertyPath: max
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cf0156efaa914642b6ca8408e87b88a, type: 3}

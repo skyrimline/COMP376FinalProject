@@ -83,13 +83,11 @@ public class Spawner : MonoBehaviour
                 // normal NPC
                 case 0:
                     npcLogic.SetNPCType(NPC_Logic.NPC_Type.normal);
-                    npcLogic.SetLife(4);
                     break;
 
                 // infected NPC
                 case 1:
                     npcLogic.SetNPCType(NPC_Logic.NPC_Type.infected);
-                    npcLogic.SetLife(2);
                     break;
 
                     // dying NPC
