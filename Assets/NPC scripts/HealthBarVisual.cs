@@ -12,8 +12,8 @@ public class HealthBarVisual : MonoBehaviour
     private int maxHealth;
 
     [SerializeField] Image fillImage;
-    private Color lowColor = new Color(1, 0, 0);   // red
-    private Color highColor = new Color(0, 1, 0);   // green
+    private Color lowColor = new Color(0.51f, 0.2f, 0.263f);   // red
+    private Color highColor = new Color(0.537f, 0.741f, 0.62f);   // green
 
 
     // Start is called before the first frame update

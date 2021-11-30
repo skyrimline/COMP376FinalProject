@@ -12,8 +12,8 @@ public class ProductivityVisual : MonoBehaviour
 
     private int maxProductivity;
 
-    private Color highColor = new Color(0.1377925f, 0.6981132f, 0);
-    private Color lowColor = new Color(0.6980392f, 0, 0.006834764f);
+    private Color highColor = new Color(1f, 0.525f, 0.133f);
+    private Color lowColor = new Color(0.737f, 0.063f, 0);
 
     // Start is called before the first frame update
     void Start()
