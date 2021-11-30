@@ -22,7 +22,8 @@ public class NPC_Logic : MonoBehaviour
      */
     // 1. All NPC(except from zombie) has an integer indicating their HP, normal NPC will have more lives than the others, vice versa.
     // will -1 for those who didn't get food
-    [SerializeField] private int life;
+    public int maxLife = 5;
+    public int life;
     // 2. food is allocated automatically by the game.
     // 3. All NPC (except from zombie) will die if their HP <= 0
     // 6. normal NPC can turn into infected NPC if stayed in an infected room for x, say 40 seconds
@@ -63,6 +64,8 @@ public class NPC_Logic : MonoBehaviour
 
         DyingToZombieTime = 30.0f;
         DyingToZombieTimer = 30.0f;
+
+        life = maxLife;
     }
 
     // Start is called before the first frame update
@@ -274,6 +277,12 @@ public class NPC_Logic : MonoBehaviour
     public void SetLife(int l)
     {
         life = l;
+    }
+
+    public void AddLife()
+    {
+        if(life + 1 <= maxLife)
+            life++;
     }
 
     private void GenerateHeartRate()

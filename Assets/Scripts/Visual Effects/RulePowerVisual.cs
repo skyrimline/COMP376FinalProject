@@ -13,8 +13,8 @@ public class RulePowerVisual : MonoBehaviour
 
     private int maxRulePower;
 
-    private Color lowColor = new Color(0.388f, 0, 0.071f);
-    private Color highColor = new Color(0.027f, 0.388f, 0);
+    private Color highColor = new Color(0.1377925f, 0.6981132f, 0);
+    private Color lowColor = new Color(0.6980392f, 0, 0.006834764f);
     // Start is called before the first frame update
     void Start()
     {

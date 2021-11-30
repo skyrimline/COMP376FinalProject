@@ -68,7 +68,7 @@ public class GameLogic : MonoBehaviour
         vaccineC_num = 10;
 
         day = 10;
-        dayTime = 60;
+        dayTime = 10;
         dayTimer = dayTime;
     }
 
@@ -116,15 +116,16 @@ public class GameLogic : MonoBehaviour
     {
         for (int i = 0; i < allNPC_obj.Length; i++)
         {
-            if (allNPC_obj[i].GetComponent<NPC_Movement>().isInRoom && allNPC_obj[i].GetComponentInChildren<Button_Food_Allocation>().allow_Food_Allocation)
+            bool allowFood = allNPC_obj[i].GetComponentInChildren<Button_Food_Allocation>().allow_Food_Allocation;
+            if (allNPC_obj[i].GetComponent<NPC_Movement>().isInRoom)
             {
-                if (foodNum > 0)
+                if (foodNum > 0 && allowFood)
                 {
                     foodNum--;
+                    allNPC_obj[i].GetComponent<NPC_Logic>().AddLife();
                 }
-
-                else
-                {// no food, deduct life
+                else if(foodNum <= 0 || !allowFood)
+                {// no food or not allow food, deduct life
                     allNPC_obj[i].GetComponent<NPC_Logic>().DeductLife();
                 }
             }

@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class observationRoomLightText : MonoBehaviour
+public class HoverInfo : MonoBehaviour
 {
 
-    [SerializeField] private TextMeshProUGUI lightText;
+    [SerializeField] private GameObject extraInfo;
 
     // Start is called before the first frame update
     void Start()
@@ -22,13 +22,13 @@ public class observationRoomLightText : MonoBehaviour
 
     private void OnMouseOver()
     {
-        lightText.gameObject.SetActive(true);
+        extraInfo.gameObject.SetActive(true);
         
     }
 
     private void OnMouseExit()
     {
-        lightText.gameObject.SetActive(false);
+        extraInfo.gameObject.SetActive(false);
 
     }
 }
