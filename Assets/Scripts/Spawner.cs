@@ -6,6 +6,8 @@ public class Spawner : MonoBehaviour
 {
     // reference to NPC prefabs
     [SerializeField] private GameObject[] NPC_prefabs;
+    [SerializeField] private GameObject[] Zombie_prefabs;
+
     // reference to NPC parent class
     [SerializeField] Transform NPCParent;
 
@@ -19,14 +21,16 @@ public class Spawner : MonoBehaviour
 
     // consider putting them as serialize field if needed.
     private int maxWaitingNPC = 3;
-    private float intervalMin = 10;
-    private float intervalMax = 20;
+    private float intervalMin = 20;
+    private float intervalMax = 40;
     private float spawnIntervalTimer = 0;
 
+    private GameLogic gameLogic;
 
     private void Start()
     {
         waitingPointPos = transform.GetChild(0).position;
+        gameLogic = GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>();
     }
 
     // Update is called once per frame
@@ -60,35 +64,45 @@ public class Spawner : MonoBehaviour
 
     private void SpawnSingleNPC()
     {
-        // first choose one from the NPC_prefabs
-        GameObject npc = Instantiate(NPC_prefabs[Random.Range(0, NPC_prefabs.Length)], 
-            transform.position, Quaternion.identity, NPCParent);
-        // then randomly select its type and set attributes (may add some weight to npc 1 and 2)
-        NPC_Logic npcLogic = npc.GetComponent<NPC_Logic>();
-        // TODO: maybe more NPCs of normal and infected, no dying.
-        switch (Random.Range(0, 2))
+        GameObject npc = null;
+        // 每天会在timer < 30% full timer的时间段内生成僵尸。
+        if (gameLogic.getTimer() < (0.3 * gameLogic.getTime()))
         {
-            // normal NPC
-            case 0:
-                npcLogic.SetNPCType(NPC_Logic.NPC_Type.normal);
-                npcLogic.SetLife(4);
-                break;
+            npc = Instantiate(Zombie_prefabs[Random.Range(0, Zombie_prefabs.Length)], transform.position, Quaternion.identity, NPCParent);
+        }
+        else
+        {
+            // first choose one from the NPC_prefabs
+            npc = Instantiate(NPC_prefabs[Random.Range(0, NPC_prefabs.Length)],
+                transform.position, Quaternion.identity, NPCParent);
+            // then randomly select its type and set attributes (may add some weight to npc 1 and 2)
+            NPC_Logic npcLogic = npc.GetComponent<NPC_Logic>();
 
-            // infected NPC
-            case 1:
-                npcLogic.SetNPCType(NPC_Logic.NPC_Type.infected);
-                npcLogic.SetLife(2);
-                break;
+            switch (Random.Range(0, 2))
+            {
+                // normal NPC
+                case 0:
+                    npcLogic.SetNPCType(NPC_Logic.NPC_Type.normal);
+                    npcLogic.SetLife(4);
+                    break;
 
-            // dying NPC
-            //case 2:
-            //    npcLogic.SetNPCType(NPC_Logic.NPC_Type.dying);
-            //    npcLogic.SetLife(1);
-            //    break;
+                // infected NPC
+                case 1:
+                    npcLogic.SetNPCType(NPC_Logic.NPC_Type.infected);
+                    npcLogic.SetLife(2);
+                    break;
+
+                    // dying NPC
+                    //case 2:
+                    //    npcLogic.SetNPCType(NPC_Logic.NPC_Type.dying);
+                    //    npcLogic.SetLife(1);
+                    //    break;
+            }
+
+            // Add this NPC movement to the list
+            npcMovements.Add(npc.GetComponent<NPC_Movement>());
         }
 
-        // Add this NPC movement to the list
-        npcMovements.Add(npc.GetComponent<NPC_Movement>());
     }
 
     // remove the NPCs that are already in room.

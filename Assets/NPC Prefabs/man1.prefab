@@ -4543,6 +4543,7 @@ Transform:
   - {fileID: 7181979512231642745}
   - {fileID: 5241994830649133675}
   - {fileID: 2137796772494728560}
+  - {fileID: 7795902250157049944}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4774,6 +4775,12 @@ MonoBehaviour:
   life: 0
   infectedByRoom: 0
   isVaccinated: 0
+  actualColors:
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!114 &6604323742390292577
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11254,6 +11261,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Food_Allocate_UI_NPC
       objectReference: {fileID: 0}
+    - target: {fileID: 1235282817833186948, guid: 7cf0156efaa914642b6ca8408e87b88a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7918180985540447433, guid: 7cf0156efaa914642b6ca8408e87b88a,
         type: 3}
       propertyPath: m_RootOrder
@@ -11396,6 +11408,81 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3013461242867456809, guid: f851c16ebb6887d4fae9b255568abd28,
     type: 3}
   m_PrefabInstance: {fileID: 5366728728954461520}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6737414893314390625
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3812430051516627848}
+    m_Modifications:
+    - target: {fileID: 1143556039249323615, guid: a893d75bc2bd32c46b338751755f50be,
+        type: 3}
+      propertyPath: m_Name
+      value: Vaccinated_UI_NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580503458755228217, guid: a893d75bc2bd32c46b338751755f50be,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580503458755228217, guid: a893d75bc2bd32c46b338751755f50be,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580503458755228217, guid: a893d75bc2bd32c46b338751755f50be,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580503458755228217, guid: a893d75bc2bd32c46b338751755f50be,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580503458755228217, guid: a893d75bc2bd32c46b338751755f50be,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580503458755228217, guid: a893d75bc2bd32c46b338751755f50be,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580503458755228217, guid: a893d75bc2bd32c46b338751755f50be,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580503458755228217, guid: a893d75bc2bd32c46b338751755f50be,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580503458755228217, guid: a893d75bc2bd32c46b338751755f50be,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580503458755228217, guid: a893d75bc2bd32c46b338751755f50be,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3580503458755228217, guid: a893d75bc2bd32c46b338751755f50be,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a893d75bc2bd32c46b338751755f50be, type: 3}
+--- !u!4 &7795902250157049944 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3580503458755228217, guid: a893d75bc2bd32c46b338751755f50be,
+    type: 3}
+  m_PrefabInstance: {fileID: 6737414893314390625}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6856101973291824681
 PrefabInstance:

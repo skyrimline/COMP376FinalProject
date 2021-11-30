@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 198124144702787664}
   - component: {fileID: 199092248008267778}
   m_Layer: 0
-  m_Name: PressurisedSteam
+  m_Name: PressurisedSteam - Blue
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

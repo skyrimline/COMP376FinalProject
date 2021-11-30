@@ -44,7 +44,8 @@ public class Room_Area : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        if (Disinfection.disinfectionActive || eventData.button != 0)
+        // disable room drop under these conditions!
+        if (Disinfection.disinfectionActive || eventData.button != 0 || eventData.pointerDrag.tag != "NPC")
         {
             return;
         }

@@ -79,7 +79,6 @@ public class Room_Upgradable : MonoBehaviour
     //Click the upgrade button
     public void UpgradeClick()
     {
-        Debug.Log("hey how are you");
         //Number of upgrades (which level we are now) and capacity synchronization
         //Find the money player has and the cost is the current level times 10
         int money = GameObject.FindGameObjectWithTag("GameLogic").GetComponent<GameLogic>().money;
@@ -105,6 +104,11 @@ public class Room_Upgradable : MonoBehaviour
             GenerateErrorMessage("You don't have enough money");
         }
 
+    }
+
+    public int GetTotalLevels()
+    {
+        return TotoalLevels;
     }
 
     private void GenerateErrorMessage(string message)

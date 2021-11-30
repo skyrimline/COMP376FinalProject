@@ -40,8 +40,9 @@ public class NPC_Logic : MonoBehaviour
     private float DyingToZombieTimer;
     private float DyingToZombieTime;
 
+    // UI
     private Progress_bar zombieProgress;
-
+    private GameObject vaccinatedUI;
 
     // the NPC_Movement reference of this game object
     private NPC_Movement npcMovement;
@@ -54,10 +55,10 @@ public class NPC_Logic : MonoBehaviour
     private void Awake()
     {
         // this is where to set three timers
-        NormalToInfectedTime = 40.0f;
+        NormalToInfectedTime = 5.0f;
         NormalToInfectedTimer = NormalToInfectedTime;
 
-        InfectedToDyingTime = 40.0f;
+        InfectedToDyingTime = 60.0f;
         InfectedToDyingTimer = InfectedToDyingTime;
 
         DyingToZombieTime = 30.0f;
@@ -72,7 +73,14 @@ public class NPC_Logic : MonoBehaviour
             zombieProgress = transform.Find("Timer_UI_NPC").gameObject.GetComponent<Progress_bar>();
         }
 
-
+        if(type != NPC_Type.zombie)
+        {
+            vaccinatedUI = transform.Find("Vaccinated_UI_NPC").gameObject;
+        }
+        else
+        {
+            vaccinatedUI = null;
+        }
 
         npcMovement = gameObject.GetComponent<NPC_Movement>();
 
@@ -89,6 +97,7 @@ public class NPC_Logic : MonoBehaviour
         DyingToZombie();
         TimerUIDisplay();
         CheckLife();
+        SetVaccinationUI();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -134,16 +143,20 @@ public class NPC_Logic : MonoBehaviour
                 return;
             }
 
-            // when time's up, set type to infected.
-            type = NPC_Type.infected;
-            // this code was brought up from else
-            NormalToInfectedTimer = NormalToInfectedTime;
-            infectedByRoom = false;
-            setNPCColor();
-        }
-        else
-        {
 
+            // when time's up, 0.5 chance set type to infected.
+            if (Random.Range(0f, 1f) < 0.5f)
+            {
+                type = NPC_Type.infected;
+                // this code was brought up from else
+                NormalToInfectedTimer = NormalToInfectedTime;
+                infectedByRoom = false;
+                setNPCColor();
+            }
+            else
+            {
+                NormalToInfectedTimer = NormalToInfectedTime;
+            }
         }
     }
 
@@ -161,7 +174,6 @@ public class NPC_Logic : MonoBehaviour
 
             // when time's up, turn into dying type:
             type = NPC_Type.dying;
-            // this code was brought up from else
             InfectedToDyingTimer = InfectedToDyingTime;
             setNPCColor();
         }
@@ -188,10 +200,11 @@ public class NPC_Logic : MonoBehaviour
     public void CureBySerum()
     {
         // only can cure if infection phase is 1, might check this attribute in other places.
-        // destroy the current NPC and instantiate a normal NPC. 
         // set type to normal
+        SetNPCType(NPC_Type.normal);
         // reset timers
-        // reset life
+        InfectedToDyingTimer = InfectedToDyingTime;
+        DyingToZombieTimer = DyingToZombieTime;
     }
 
     public void Vaccinate()
@@ -199,6 +212,22 @@ public class NPC_Logic : MonoBehaviour
         // might check NPC type. can only give vaccine to normal NPC (npc1)
         // might no need to check type since type is checked elsewhere (e.g. when applying the vaccine)
         isVaccinated = true;
+    }
+
+    private void SetVaccinationUI()
+    {
+        if(vaccinatedUI != null)
+        {
+            if (isVaccinated)
+            {
+                vaccinatedUI.SetActive(true);
+            }
+            else
+            {
+                vaccinatedUI.SetActive(false);
+            }
+        }
+
     }
 
     // ------------ Other helpers -----------

@@ -32,7 +32,8 @@ public class Drag_And_Drop_Drug : MonoBehaviour,
     {
         if (draggable)
         {
-            //cvs.blocksRaycasts = false;
+            cvs.blocksRaycasts = false;
+            cvs.interactable = false;
         }
     }
 
@@ -47,11 +48,10 @@ public class Drag_And_Drop_Drug : MonoBehaviour,
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        
-        
         // reset position anyways
         transform.position = startPos;
-        //cvs.blocksRaycasts = false;
+        cvs.blocksRaycasts = true;
+        cvs.interactable = true;
 
     }
 
@@ -100,6 +100,5 @@ public class Drag_And_Drop_Drug : MonoBehaviour,
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        
     }
 }

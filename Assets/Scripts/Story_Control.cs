@@ -45,8 +45,8 @@ public class Story_Control : MonoBehaviour
 
     public void choice1Story1()
     {
-        //rulepower-10
-        
+        gameLogicReference.foodNum -= 5;
+        gameLogicReference.rulePower -= 1;
         Time.timeScale = 1;
         story1.SetActive(false);
     }
@@ -57,8 +57,8 @@ public class Story_Control : MonoBehaviour
         Time.timeScale = 1;
         story1.SetActive(false);
 
-        //reduce resources
-        gameLogicReference.foodNum -= 5;
+        gameLogicReference.foodNum += 5;
+        gameLogicReference.rulePower -= 25;
     }
 }
 
