@@ -116,7 +116,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 232.86, y: -14.729}
+  m_AnchoredPosition: {x: 222.6, y: -14.148}
   m_SizeDelta: {x: 251.968, y: 60.877}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4871951480424976565
@@ -215,7 +215,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.69803923, g: 0, b: 0.0068347636, a: 1}
+  m_Color: {r: 1, g: 0.5218919, b: 0.13, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -385,7 +385,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 95.529, y: -0.00000035763}
+  m_AnchoredPosition: {x: 95.5, y: -0.00000035763}
   m_SizeDelta: {x: 161.544, y: 15.67}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6779163895463579933
@@ -461,7 +461,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -69.4, y: 0.0000076293945}
+  m_AnchoredPosition: {x: -82, y: 0.0000076293945}
   m_SizeDelta: {x: 23.325, y: 23.325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6779163895819604157
@@ -536,8 +536,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000016689, y: 16.3}
-  m_SizeDelta: {x: 95.952, y: 24.761}
+  m_AnchoredPosition: {x: 0.0000016689, y: 19.75}
+  m_SizeDelta: {x: 95.952, y: 17.86}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8114207790518578998
 CanvasRenderer:
@@ -560,7 +560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5176471, g: 0.7137255, b: 0.59607846, a: 1}
+  m_Color: {r: 1, g: 0.52156866, b: 0.12941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -577,7 +577,7 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: PRODUCTIVITY
