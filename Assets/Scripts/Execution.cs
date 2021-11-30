@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 
-public class Execution : MonoBehaviour, IPointerDownHandler
+public class Execution : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
 
     public static bool executionActive = false;
@@ -20,6 +20,8 @@ public class Execution : MonoBehaviour, IPointerDownHandler
     private Image coin;
     private Text text1;
     private Text text2;
+
+    private bool isMouseOver = false;
 
     // Start is called before the first frame update
     void Start()
@@ -58,17 +60,38 @@ public class Execution : MonoBehaviour, IPointerDownHandler
     {
         if (executionActive)
         {
-            icon.color = new Color(0.561f, 0.769f, 0.643f, 1f);
-            text1.color = new Color(0.561f, 0.769f, 0.643f, 1f);
-            text2.color = new Color(0.561f, 0.769f, 0.643f, 1f);
-            coin.color = new Color(0.561f, 0.769f, 0.643f, 1f);
+            if (isMouseOver)
+            {
+                icon.color = new Color(0.561f, 0.769f, 0.643f, 0.5f);
+                text1.color = new Color(0.561f, 0.769f, 0.643f, 0.5f);
+                text2.color = new Color(0.561f, 0.769f, 0.643f, 0.5f);
+                coin.color = new Color(0.561f, 0.769f, 0.643f, 0.5f);
+            }
+            else
+            {
+                icon.color = new Color(0.561f, 0.769f, 0.643f, 1f);
+                text1.color = new Color(0.561f, 0.769f, 0.643f, 1f);
+                text2.color = new Color(0.561f, 0.769f, 0.643f, 1f);
+                coin.color = new Color(0.561f, 0.769f, 0.643f, 1f);
+            }
+
         }
         else
         {
-            icon.color = new Color(1, 1, 1, 1f);
-            text1.color = new Color(1, 1, 1, 1f);
-            text2.color = new Color(1, 1, 1, 1f);
-            coin.color = new Color(1, 1, 1, 1f);
+            if (isMouseOver)
+            {
+                icon.color = new Color(1, 1, 1, 0.5f);
+                text1.color = new Color(1, 1, 1, 0.5f);
+                text2.color = new Color(1, 1, 1, 0.5f);
+                coin.color = new Color(1, 1, 1, 0.5f);
+            }
+            else
+            {
+                icon.color = new Color(1, 1, 1, 1f);
+                text1.color = new Color(1, 1, 1, 1f);
+                text2.color = new Color(1, 1, 1, 1f);
+                coin.color = new Color(1, 1, 1, 1f);
+            }
         }
     }
 
@@ -83,5 +106,15 @@ public class Execution : MonoBehaviour, IPointerDownHandler
     {
         executionActive = false;
         Cursor.SetCursor(default_cursor, new_cursorHotspot, CursorMode.Auto);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        isMouseOver = true;
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        isMouseOver = false;
     }
 }

@@ -1582,8 +1582,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vaccineNumText: {fileID: 1107496292097616501}
   serumNumText: {fileID: 2389687414844976746}
-  vaccineTime: 10
-  serumTime: 20
+  vaccineTimeOriginal: 10
+  serumTimeOriginal: 18
+  maxDiscount: 8
   progress: {fileID: 5151471065266502151}
   timerText: {fileID: 1221513765469731716}
   TimerPanelObj: {fileID: 705749942859550870}
@@ -2477,6 +2478,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Serum Forge
       objectReference: {fileID: 0}
+    - target: {fileID: 8529960833710625031, guid: ee8e975e70026c44b9d992085d845e3e,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8927738137326489555, guid: ee8e975e70026c44b9d992085d845e3e,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -2590,6 +2596,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3210448701511033147, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3219919506119574915, guid: 2fbe5c9ccfe434c4eb3c5b29a805e875,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0

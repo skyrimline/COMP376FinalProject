@@ -5,7 +5,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class Drag_And_Drop_Drug : MonoBehaviour, 
-    IEndDragHandler, IDragHandler, IInitializePotentialDragHandler, IBeginDragHandler, IPointerUpHandler
+    IEndDragHandler, IDragHandler, IInitializePotentialDragHandler, IBeginDragHandler, IPointerEnterHandler, IPointerExitHandler
 {
 
     public enum DrugType { vaccine, serum};
@@ -21,10 +21,13 @@ public class Drag_And_Drop_Drug : MonoBehaviour,
     private Vector3 startPos;
     private CanvasGroup cvs;
 
+    private Image image;
+
     private void Awake()
     {
         cam = Camera.main;
         cvs = GetComponent<CanvasGroup>();
+        image = GetComponent<Image>();
     }
 
 
@@ -98,7 +101,14 @@ public class Drag_And_Drop_Drug : MonoBehaviour,
         }
     }
 
-    public void OnPointerUp(PointerEventData eventData)
+    public void OnPointerEnter(PointerEventData eventData)
     {
+        if(draggable)
+            image.color = new Color(image.color.r, image.color.g, image.color.b, 0.5f);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        image.color = new Color(image.color.r, image.color.g, image.color.b, 1f);
     }
 }
