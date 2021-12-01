@@ -74,6 +74,7 @@ public class GameLogic : MonoBehaviour
         day = 10;
         dayTime = 60;
         dayTimer = dayTime;
+        phase = 1;
     }
 
 
