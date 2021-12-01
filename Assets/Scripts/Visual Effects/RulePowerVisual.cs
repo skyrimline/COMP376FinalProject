@@ -19,7 +19,7 @@ public class RulePowerVisual : MonoBehaviour
     void Start()
     {
         gameLogic = GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>();
-        maxRulePower = gameLogic.rulePower;
+        maxRulePower = gameLogic.maxRulePower;
         progress.max = maxRulePower;
     }
 

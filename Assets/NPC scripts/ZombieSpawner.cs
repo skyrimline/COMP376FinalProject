@@ -7,10 +7,12 @@ public class ZombieSpawner : MonoBehaviour
     // get a reference to its own zombie, for later spawing
     [SerializeField] private GameObject zombiePrefab = null;
 
+    private GameLogic gameLogic;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        gameLogic = GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>();
     }
 
     // Update is called once per frame
@@ -25,6 +27,7 @@ public class ZombieSpawner : MonoBehaviour
         // Instantiate a zombie here and destroy this game object
         Instantiate(zombiePrefab, transform.position, Quaternion.identity);
         Destroy(transform.parent.gameObject);
+        gameLogic.ChangeRulePower(-5);
     }
 
     public void restoreMovement()

@@ -27,6 +27,8 @@ public class GameLogic : MonoBehaviour
     public int money;
 
     public int productivity;
+
+    public int maxRulePower;
     public int rulePower;
 
     //ui for resources
@@ -61,7 +63,8 @@ public class GameLogic : MonoBehaviour
     private void Awake()
     {
         productivity = 0;
-        rulePower = 50;
+        maxRulePower = 100;
+        rulePower = maxRulePower;
         foodNum = 20;
         money = 500;
         vaccineA_num = 20;
@@ -115,6 +118,7 @@ public class GameLogic : MonoBehaviour
 
     private void distributeFood()
     {
+        bool isEveryoneGetsFood = true;
         for (int i = 0; i < allNPC_obj.Length; i++)
         {
             bool allowFood = allNPC_obj[i].GetComponentInChildren<Button_Food_Allocation>().allow_Food_Allocation;
@@ -126,11 +130,20 @@ public class GameLogic : MonoBehaviour
                     allNPC_obj[i].GetComponent<NPC_Logic>().AddLife();
                 }
                 else if(foodNum <= 0 || !allowFood)
-                {// no food or not allow food, deduct life
+                {
+                    // no food or not allow food, deduct life
                     allNPC_obj[i].GetComponent<NPC_Logic>().DeductLife();
+
+                    isEveryoneGetsFood = false;
                 }
             }
 
+        }
+
+        if (isEveryoneGetsFood)
+        {
+            // rulepower +2
+            ChangeRulePower(2);
         }
     }
 
@@ -233,6 +246,18 @@ public class GameLogic : MonoBehaviour
 
         productivity = count;
 
+    }
+
+    public void ChangeRulePower(int delta)
+    {
+        if(rulePower + delta > maxRulePower)
+        {
+            rulePower = maxRulePower;
+        }
+        else
+        {
+            rulePower += delta;
+        }
     }
 
     public float getTime()
