@@ -71,7 +71,7 @@ public class GameLogic : MonoBehaviour
         vaccineB_num = 30;
         vaccineC_num = 10;
 
-        day = 10;
+        day = 7;
         dayTime = 60;
         dayTimer = dayTime;
         phase = 1;

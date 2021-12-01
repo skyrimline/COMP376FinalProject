@@ -14,12 +14,27 @@ public class Story_Control : MonoBehaviour
     public GameObject story1;
     public GameObject story2;
     public GameObject story3;
+    public GameObject story4;
+    public GameObject story5;
+    public GameObject story6;
+    public GameObject story7;
+    public GameObject story8;
+    public GameObject story9;
+    public GameObject story10;
     private GameObject[] story = new GameObject[10];
 
 
     private bool story1called;
     private bool story2called;
     private bool story3called;
+    private bool story4called;
+    private bool story5called;
+    private bool story6called;
+    private bool story7called;
+    private bool story8called;
+    private bool story9called;
+    private bool story10called;
+
 
     private bool[] storyCalled = new bool[10];
 
@@ -30,9 +45,30 @@ public class Story_Control : MonoBehaviour
     {
 
         gameLogicReference = GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>();
-        storyPopTimeInDay = Random.Range(50f, gameLogicReference.getTime() - 5);
+        storyPopTimeInDay = Random.Range(5f, gameLogicReference.getTime() - 5);
         story[0] = story1;
         story[1] = story2;
+        story[2] = story3;
+        story[3] = story4;
+        story[4] = story5;
+        story[5] = story6;
+        story[6] = story7;
+        story[7] = story8;
+        story[8] = story9;
+        story[9] = story10;
+       
+
+
+        storyCalled[0] = story1called;
+        storyCalled[1] = story2called;
+        storyCalled[2] = story3called;
+        storyCalled[3] = story4called;
+        storyCalled[4] = story5called;
+        storyCalled[5] = story6called;
+        storyCalled[6] = story7called;
+        storyCalled[7] = story8called;
+        storyCalled[8] = story9called;
+        storyCalled[9] = story10called;
 
     }
 
@@ -54,7 +90,7 @@ public class Story_Control : MonoBehaviour
 
         if (phase == 1)
         {
-            if (day == 1 || day == 4 || day == 6)
+            if (day == 1 || day == 2 || day == 3)
             {
                 if (Mathf.Abs(time - storyPopTimeInDay) <= 1f)
                 {
@@ -95,15 +131,12 @@ public class Story_Control : MonoBehaviour
     {
 
         Time.timeScale = 0;
-        int randomStoryNum = Random.Range(0, 2);
-
+        int randomStoryNum = Random.Range(0, 10);
 
         while (storyCalled[randomStoryNum] != false)
         {
-            randomStoryNum = Random.Range(0, 2);
+            randomStoryNum = Random.Range(0, 10);
         }
-
-
 
         story[randomStoryNum].SetActive(true);
 
@@ -117,7 +150,7 @@ public class Story_Control : MonoBehaviour
         //rulepower-10
 
         Time.timeScale = 1;
-        story1.SetActive(false);
+        story2.SetActive(false);
     }
 
     public void choice2Story1()
@@ -167,7 +200,7 @@ public class Story_Control : MonoBehaviour
         gameLogicReference.money -= 100;
         gameLogicReference.vaccineB_num -= 5;
         Time.timeScale = 1;
-        //story3.SetActive(false);
+        story3.SetActive(false);
     }
 
     public void choice2Story3()
