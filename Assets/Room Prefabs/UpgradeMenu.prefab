@@ -1137,7 +1137,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Coin
+  m_Text: Bottle Cap
 --- !u!1 &7705241125844542814
 GameObject:
   m_ObjectHideFlags: 0
