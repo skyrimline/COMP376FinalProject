@@ -55,6 +55,11 @@ public class NPC_Logic : MonoBehaviour
     private string[] targetColors = new string[5];
     public string[] actualColors = new string[] { null, null, null, null, null };
 
+    [SerializeField] private AudioClip Kill;
+    [SerializeField] private AudioClip Zombie;
+    [SerializeField] private AudioSource source;
+    private bool Zombieplay = false;
+
     private void Awake()
     {
         // this is where to set three timers
@@ -129,10 +134,11 @@ public class NPC_Logic : MonoBehaviour
         {
             gameLogic.ChangeRulePower(2);
         }
-        
+
         // disable collider and stuff and disable rigid body
         // play dead animation
         // destry object
+        source.PlayOneShot(Kill);
         npcMovement.FreezePosAndDisableCol();
         npcMovement.isDying = true;
         Destroy(gameObject, 2);
@@ -210,6 +216,12 @@ public class NPC_Logic : MonoBehaviour
             // set animation transition
             npcMovement.FreezePosAndDisableCol();
             npcMovement.isBecomingZombie = true;
+            if (!Zombieplay)
+            {
+                source.PlayOneShot(Zombie);
+                Zombieplay = true;
+            }
+
         }
     }
 

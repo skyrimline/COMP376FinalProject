@@ -3,7 +3,24 @@ guid: 263ec96ef3524644c92b88fff0df16de
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - airplan: {fileID: 8300000, guid: ac6d466a42eeb63458c509c8004d7641, type: 3}
+  - source: {instanceID: 0}
+  - ScoreBoard: {instanceID: 0}
+  - titleText: {instanceID: 0}
+  - requiredText: {instanceID: 0}
+  - savedText: {instanceID: 0}
+  - rewardText: {instanceID: 0}
+  - foodNumText: {instanceID: 0}
+  - moneyText: {instanceID: 0}
+  - dayText: {instanceID: 0}
+  - dayTimerText: {instanceID: 0}
+  - vaccineA_numText: {instanceID: 0}
+  - vaccineB_numText: {instanceID: 0}
+  - vaccineC_numText: {instanceID: 0}
+  - airDrop: {instanceID: 0}
+  - airDropLeftX: {instanceID: 0}
+  - airDropRightX: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

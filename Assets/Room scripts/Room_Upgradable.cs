@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Room_Upgradable : MonoBehaviour
 {
+    [SerializeField] private AudioClip upgrade;
+    [SerializeField] private AudioSource source;
     //To show current Num of beds and avliable next level
     [SerializeField] private Text CurrentBedText;
     [SerializeField] private Text NextBedText;
@@ -91,6 +93,8 @@ public class Room_Upgradable : MonoBehaviour
             //update the room cap and money remains
             GetComponent<Room_Area>().SetCapacity(Capacity);
             GameObject.FindGameObjectWithTag("GameLogic").GetComponent<GameLogic>().money = money - cost;
+
+            source.PlayOneShot(upgrade);
 
         }
         else if (Capacity == TotoalLevels)//Showing No more upgrade

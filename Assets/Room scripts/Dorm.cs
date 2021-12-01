@@ -10,6 +10,9 @@ public class Dorm : MonoBehaviour
     public bool isDormInfected = false;
     public bool hasInfectedNPC = false;
 
+    [SerializeField] private AudioClip clean;
+    [SerializeField] private AudioSource source;
+
     //[SerializeField] private GameObject infectionParticle;
     private ParticleSystem infectionParticle_;
 
@@ -104,6 +107,7 @@ public class Dorm : MonoBehaviour
     public void Disinfect()
     {
         isDormInfected = false;
+        source.PlayOneShot(clean);
     }
 
     private void changeInfectionParticle()
