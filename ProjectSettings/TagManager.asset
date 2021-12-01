@@ -64,6 +64,9 @@ TagManager:
   - name: tileStuff
     uniqueID: 4161106653
     locked: 0
+  - name: Light_OutsideBuilding
+    uniqueID: 3486208685
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
