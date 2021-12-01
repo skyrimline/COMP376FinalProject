@@ -277,6 +277,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 39856305, guid: 99a5dc62e51cc4e3096f33bc5bae2800, type: 3}
+      propertyPath: m_text
+      value: (rulepower-5)
+      objectReference: {fileID: 0}
     - target: {fileID: 175259898, guid: 99a5dc62e51cc4e3096f33bc5bae2800, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.000036955
@@ -309,6 +313,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -88.2825
       objectReference: {fileID: 0}
+    - target: {fileID: 427269186, guid: 99a5dc62e51cc4e3096f33bc5bae2800, type: 3}
+      propertyPath: m_text
+      value: ([vaccineA,vaccineB, vaccineC]-2 rulepower -10)
+      objectReference: {fileID: 0}
     - target: {fileID: 494974718, guid: 99a5dc62e51cc4e3096f33bc5bae2800, type: 3}
       propertyPath: m_SizeDelta.y
       value: 155.65
@@ -324,6 +332,10 @@ PrefabInstance:
     - target: {fileID: 494974719, guid: 99a5dc62e51cc4e3096f33bc5bae2800, type: 3}
       propertyPath: m_fontSizeBase
       value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 501175728, guid: 99a5dc62e51cc4e3096f33bc5bae2800, type: 3}
+      propertyPath: m_text
+      value: (vaccine A -5, rulepower -10)
       objectReference: {fileID: 0}
     - target: {fileID: 539557159, guid: 99a5dc62e51cc4e3096f33bc5bae2800, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -422,6 +434,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1353811242, guid: 99a5dc62e51cc4e3096f33bc5bae2800, type: 3}
+      propertyPath: m_text
+      value: (food-10, rule power+10)
+      objectReference: {fileID: 0}
     - target: {fileID: 1434537642, guid: 99a5dc62e51cc4e3096f33bc5bae2800, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -439,6 +455,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -93.0305
       objectReference: {fileID: 0}
+    - target: {fileID: 1743822993, guid: 99a5dc62e51cc4e3096f33bc5bae2800, type: 3}
+      propertyPath: m_text
+      value: (bottle cap - 50, rulepower + 5)
+      objectReference: {fileID: 0}
     - target: {fileID: 1940405376, guid: 99a5dc62e51cc4e3096f33bc5bae2800, type: 3}
       propertyPath: m_SizeDelta.x
       value: 400
@@ -452,6 +472,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 186922433982919523, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice2Story6
+      objectReference: {fileID: 0}
     - target: {fileID: 195007823978532730, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
       propertyPath: m_Sprite
@@ -463,10 +488,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 305172473092901480, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice2Story8
+      objectReference: {fileID: 0}
     - target: {fileID: 341721940828326120, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 32.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 521364847936341073, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice1Story5
       objectReference: {fileID: 0}
     - target: {fileID: 564316334051441805, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
@@ -520,6 +555,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -20.857
       objectReference: {fileID: 0}
+    - target: {fileID: 1686383078716766760, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: ( rule power+10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1877200121601715115, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: (rulepower -10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1897466038720013029, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice2Story7
+      objectReference: {fileID: 0}
     - target: {fileID: 1991129512505311075, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -529,6 +579,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 32.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2204272769438907908, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: (rulepower + 5)
       objectReference: {fileID: 0}
     - target: {fileID: 2271829272778126929, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
@@ -550,15 +605,35 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2611280851220648012, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: ( food-5, rule power+10, bottle cap-50)
+      objectReference: {fileID: 0}
     - target: {fileID: 2745887489143388590, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -7.099992
       objectReference: {fileID: 0}
+    - target: {fileID: 2943758097555134832, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: (Food-5, Rule Power + 10)
+      objectReference: {fileID: 0}
     - target: {fileID: 3198334562002199662, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -7.099992
+      objectReference: {fileID: 0}
+    - target: {fileID: 3241776013033057371, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: (rull power-10 for NPC died in combat)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350931812305445907, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice1Story4
       objectReference: {fileID: 0}
     - target: {fileID: 3354453131543501664, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
@@ -570,6 +645,21 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -93.0305
       objectReference: {fileID: 0}
+    - target: {fileID: 3463079085661432692, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice2Story5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3515826769593688976, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: ( rule power-10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3591023596842826295, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice1Story8
+      objectReference: {fileID: 0}
     - target: {fileID: 3776648796328422069, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -579,6 +669,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -20.857
+      objectReference: {fileID: 0}
+    - target: {fileID: 4301181452700446801, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: ( rule power+10,food-5)
       objectReference: {fileID: 0}
     - target: {fileID: 4580687426880382978, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
@@ -600,6 +695,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 32.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4939645508201195634, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: (Food+5, Rule Power-10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4971584393901606898, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: (money+200, food-30, rulepower-10)
       objectReference: {fileID: 0}
     - target: {fileID: 5128803643672775278, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
@@ -636,10 +741,20 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5971312510815074302, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice1Story9
+      objectReference: {fileID: 0}
     - target: {fileID: 6352501145718596061, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6665345210809216468, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: ( rule power-10)
       objectReference: {fileID: 0}
     - target: {fileID: 6730640730460722150, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
@@ -658,6 +773,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: e8bd68df0b1b02340916422e2e33acdd,
         type: 3}
+    - target: {fileID: 6969329478412590294, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice2Story4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7033048556362487077, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: ( rule power-10 for NPC died in combat )
+      objectReference: {fileID: 0}
     - target: {fileID: 7249960069612983740, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -667,6 +792,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -7.099992
+      objectReference: {fileID: 0}
+    - target: {fileID: 7387874676805677795, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: (food-2, rulepower +5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7791210320592074463, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: ([VaccineA, vaccineB, vaccineC ]-5)
       objectReference: {fileID: 0}
     - target: {fileID: 8146889920158665063, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
@@ -682,6 +817,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -20.857
+      objectReference: {fileID: 0}
+    - target: {fileID: 8284472353275392533, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice1Story7
       objectReference: {fileID: 0}
     - target: {fileID: 8312551989574925426, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
@@ -783,6 +923,16 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8312551990585906755, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: Damn it, execute her!
+      objectReference: {fileID: 0}
+    - target: {fileID: 8312551990759939181, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: Keep "them" alive, but no extra food.
+      objectReference: {fileID: 0}
     - target: {fileID: 8312551990844494889, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
       propertyPath: m_text
@@ -802,6 +952,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -7.099992
       objectReference: {fileID: 0}
+    - target: {fileID: 8634131472392410597, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice2Story9
+      objectReference: {fileID: 0}
     - target: {fileID: 8739680442577528737, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
       propertyPath: m_IsActive
@@ -818,6 +973,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: e1c80ac9132d5b84f88821caed1195c9,
         type: 3}
+    - target: {fileID: 8914868244899124078, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: ( rule power-15, bottle cap+100)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8937423312277756754, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice1Story6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8964198836172360098, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice1Story10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8977231889346386163, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: choice2Story10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 99a5dc62e51cc4e3096f33bc5bae2800, type: 3}
 --- !u!1 &59023345 stripped

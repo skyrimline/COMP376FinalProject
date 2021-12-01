@@ -92,7 +92,7 @@ public class Story_Control : MonoBehaviour
         {
             if (day == 1 || day == 2 || day == 3)
             {
-                if (Mathf.Abs(time - storyPopTimeInDay) <= 1f)
+                if ((time - storyPopTimeInDay) <= 1f)
                 {
 
                     CallStory();
@@ -106,7 +106,7 @@ public class Story_Control : MonoBehaviour
         {
             if (day == 2 || day == 4 || day == 6)
             {
-                if (Mathf.Abs(time - storyPopTimeInDay) <= 1f)
+                if ((time - storyPopTimeInDay) <= 1f)
                 {
                     // ????????????????????????????, ????????dowhile??bool[]????????????????????????????
                     storyPopTimeInDay = Random.Range(5f, gameLogicReference.getTime() - 5);
@@ -117,7 +117,7 @@ public class Story_Control : MonoBehaviour
         {
             if (day == 2 || day == 4 || day == 6)
             {
-                if (Mathf.Abs(time - storyPopTimeInDay) <= 1f)
+                if ((time - storyPopTimeInDay) <= 1f)
                 {
                     // ????????????????????????????, ????????dowhile??bool[]????????????????????????????
                     storyPopTimeInDay = Random.Range(5f, gameLogicReference.getTime() - 5);
@@ -147,20 +147,27 @@ public class Story_Control : MonoBehaviour
 
     public void choice1Story1()
     {
-        //rulepower-10
+        gameLogicReference.ChangeRulePower(10);
+        gameLogicReference.foodNum -= 5;
 
-        Time.timeScale = 1;
+       
         story2.SetActive(false);
+        Time.timeScale = 1;
     }
 
     public void choice2Story1()
     {
 
-        Time.timeScale = 1;
-        story1.SetActive(false);
+       
 
         //reduce resources
-        gameLogicReference.foodNum -= 5;
+        gameLogicReference.foodNum += 5;
+        gameLogicReference.ChangeRulePower(-10);
+
+
+
+        story1.SetActive(false);
+        Time.timeScale = 1;
     }
     //Effect1: (food-10, medicine-10, dominance-3)
     //Effect2: (dominance-5)
@@ -169,8 +176,7 @@ public class Story_Control : MonoBehaviour
     {
         //Because he has made a lot of credit in the search team, he was given some food and medicine to exile him to fend for himself
         gameLogicReference.foodNum -= 10;
-        gameLogicReference.vaccineB_num -= 10;
-        gameLogicReference.vaccineC_num -= 3;
+        gameLogicReference.ChangeRulePower(10);
         Time.timeScale = 1;
         story2.SetActive(false);
     }
@@ -178,9 +184,11 @@ public class Story_Control : MonoBehaviour
     public void choice2Story2()
     {
 
+
+        gameLogicReference.ChangeRulePower(5);
+
         Time.timeScale = 1;
         story2.SetActive(false);
-        gameLogicReference.vaccineC_num -= 5;
         //For the safety of others, directly execute
     }
     public void choice3Story2()
@@ -188,8 +196,9 @@ public class Story_Control : MonoBehaviour
 
         Time.timeScale = 1;
         story2.SetActive(false);
-        gameLogicReference.vaccineC_num -= 10;
+        
         gameLogicReference.vaccineA_num -= 5;
+        gameLogicReference.ChangeRulePower(-10);
         //Leave him for spiritual healing 
     }
     //Effect1: (money-100, dominance -5)
@@ -197,18 +206,169 @@ public class Story_Control : MonoBehaviour
     public void choice1Story3()
     {
         //Direct execution 
-        gameLogicReference.money -= 100;
-        gameLogicReference.vaccineB_num -= 5;
+        gameLogicReference.money -= 50;
+        gameLogicReference.ChangeRulePower(5);
         Time.timeScale = 1;
         story3.SetActive(false);
     }
 
     public void choice2Story3()
     {
-        gameLogicReference.vaccineA_num -= 5;
+        gameLogicReference.vaccineA_num -= 2;
+        gameLogicReference.vaccineB_num -= 2;
+        gameLogicReference.vaccineC_num -= 2;
         //Serum cures him and stabilizes his emotions
         Time.timeScale = 1;
         story3.SetActive(false);
+
+    }
+
+    public void choice1Story4()
+    {
+        //Direct execution 
+        gameLogicReference.foodNum -= 2;
+        gameLogicReference.ChangeRulePower(5);
+        Time.timeScale = 1;
+        story4.SetActive(false);
+    }
+
+    public void choice2Story4()
+    {
+        gameLogicReference.ChangeRulePower(-10);
+        //Serum cures him and stabilizes his emotions
+        Time.timeScale = 1;
+        story4.SetActive(false);
+
+    }
+
+    public void choice1Story5()
+    {
+        //Direct execution
+        gameLogicReference.money += 200;
+        gameLogicReference.foodNum -= 30;
+        gameLogicReference.ChangeRulePower(-10);
+        Time.timeScale = 1;
+        story5.SetActive(false);
+    }
+
+    public void choice2Story5()
+    {
+        gameLogicReference.ChangeRulePower(5);
+        //Serum cures him and stabilizes his emotions
+        Time.timeScale = 1;
+        story5.SetActive(false);
+
+    }
+
+    public void choice1Story6()
+    {
+        //Direct execution
+        
+       
+        gameLogicReference.ChangeRulePower(-10);
+        Time.timeScale = 1;
+        story6.SetActive(false);
+    }
+
+    public void choice2Story6()
+    {
+        gameLogicReference.foodNum -= 10;
+        //Serum cures him and stabilizes his emotions
+        Time.timeScale = 1;
+        story6.SetActive(false);
+
+    }
+
+    public void choice1Story7()
+    {
+        //Direct execution
+
+
+        gameLogicReference.ChangeRulePower(-10);
+
+        
+        Time.timeScale = 1;
+        story7.SetActive(false);
+    }
+
+    public void choice2Story7()
+    {
+        
+        gameLogicReference.vaccineA_num -= 5;
+        gameLogicReference.vaccineB_num -= 5;
+        gameLogicReference.vaccineC_num -= 5;
+        //Serum cures him and stabilizes his emotions
+        Time.timeScale = 1;
+        story7.SetActive(false);
+
+    }
+
+    public void choice1Story8()
+    {
+        //Direct execution
+
+        gameLogicReference.foodNum -= 5;
+        gameLogicReference.ChangeRulePower(10);
+        gameLogicReference.money -= 50;
+
+
+        Time.timeScale = 1;
+        story8.SetActive(false);
+    }
+
+    public void choice2Story8()
+    {
+        gameLogicReference.ChangeRulePower(-10);
+        
+        //Serum cures him and stabilizes his emotions
+        Time.timeScale = 1;
+        story8.SetActive(false);
+
+    }
+
+    public void choice1Story9()
+    {
+        //Direct execution
+
+        gameLogicReference.foodNum -= 5;
+        gameLogicReference.ChangeRulePower(10);
+        
+
+
+        Time.timeScale = 1;
+        story9.SetActive(false);
+    }
+
+    public void choice2Story9()
+    {
+        gameLogicReference.ChangeRulePower(-10);
+
+        //Serum cures him and stabilizes his emotions
+        Time.timeScale = 1;
+        story9.SetActive(false);
+
+    }
+
+    public void choice1Story10()
+    {
+        //Direct execution
+
+        gameLogicReference.money += 100;
+        gameLogicReference.ChangeRulePower(-15);
+
+
+
+        Time.timeScale = 1;
+        story10.SetActive(false);
+    }
+
+    public void choice2Story10()
+    {
+        gameLogicReference.ChangeRulePower(10);
+
+        //Serum cures him and stabilizes his emotions
+        Time.timeScale = 1;
+        story10.SetActive(false);
 
     }
 }
