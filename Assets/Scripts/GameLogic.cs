@@ -47,6 +47,7 @@ public class GameLogic : MonoBehaviour
     private int day;
     private float dayTime;
     private float dayTimer;
+    private int phase;
 
     //airdrop timer
     private float airDropTimer = 10f;
@@ -242,6 +243,30 @@ public class GameLogic : MonoBehaviour
     public float getTimer()
     {
         return dayTimer;
+    }
+
+    public int getPhase()
+    {
+        return phase;
+    }
+
+    public int getDay()
+    {
+        return day;
+    }
+
+    public int getMaxDayInPhase()
+    {
+        switch (phase)
+        {
+            case 1:
+            case 2:
+                return 7;
+            case 3:
+                return 15;
+            default:
+                return 0;
+        }
     }
 
 }
