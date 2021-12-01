@@ -24,6 +24,7 @@ public class Room_Area : MonoBehaviour, IDropHandler
     // for spawning error messages
     [SerializeField] private GameObject ErrorMessagePrefab;
 
+    private GameLogic gameLogic;
 
     private void Start()
     {
@@ -40,6 +41,8 @@ public class Room_Area : MonoBehaviour, IDropHandler
             if (otherUI != null)
                 otherUI.SetActive(false);
         }
+
+        gameLogic = GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>();
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -57,9 +60,12 @@ public class Room_Area : MonoBehaviour, IDropHandler
 
             // set isInRoom to true to enable the movement in room behavior
             NPC_Movement npc_move = drop_obj.GetComponent<NPC_Movement>();
-            if (npc_move != null)
+            if (npc_move != null && !npc_move.isInRoom)
             {
+                // every new person admitted in room, rule power + 2
                 npc_move.isInRoom = true;
+                // rule power +3
+                gameLogic.ChangeRulePower(3);
             }
 
             // snap it to room position

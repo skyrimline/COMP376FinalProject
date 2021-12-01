@@ -9876,7 +9876,6 @@ GameObject:
   - component: {fileID: 1701036169}
   - component: {fileID: 1701036171}
   - component: {fileID: 1701036172}
-  - component: {fileID: 1701036173}
   m_Layer: 0
   m_Name: GameLogic
   m_TagString: GameLogic
@@ -9956,18 +9955,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8085aeb263c02b04d93b3b33409f09bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1701036173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1701036168}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 961503a54f3df6e4fbc19e47ffb5fde5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1713560188

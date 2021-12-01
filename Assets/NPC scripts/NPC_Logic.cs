@@ -47,6 +47,8 @@ public class NPC_Logic : MonoBehaviour
 
     // the NPC_Movement reference of this game object
     private NPC_Movement npcMovement;
+    // game logic reference
+    private GameLogic gameLogic;
 
 
     //setting NPC observation property
@@ -86,6 +88,7 @@ public class NPC_Logic : MonoBehaviour
         }
 
         npcMovement = gameObject.GetComponent<NPC_Movement>();
+        gameLogic = GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>();
 
         setNPCColor();
 
@@ -117,6 +120,16 @@ public class NPC_Logic : MonoBehaviour
     // ---------- some state transition function -------------
     public void Die()
     {
+        // deduct rule power when NPC die in room
+        if (npcMovement.isInRoom && GetNPCType() != NPC_Type.zombie)
+        {
+            gameLogic.ChangeRulePower(-7);
+        }
+        else if (npcMovement.isInRoom && GetNPCType() == NPC_Type.zombie)
+        {
+            gameLogic.ChangeRulePower(2);
+        }
+        
         // disable collider and stuff and disable rigid body
         // play dead animation
         // destry object
