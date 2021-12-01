@@ -45,7 +45,7 @@ public class Story_Control : MonoBehaviour
     {
 
         gameLogicReference = GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>();
-        storyPopTimeInDay = Random.Range(5f, gameLogicReference.getTime() - 5);
+        storyPopTimeInDay = Random.Range(5f, gameLogicReference.getTime() - 30);
         story[0] = story1;
         story[1] = story2;
         story[2] = story3;
