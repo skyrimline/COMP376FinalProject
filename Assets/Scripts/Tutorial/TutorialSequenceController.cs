@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class TutorialSequenceController : MonoBehaviour
 {
+    [SerializeField] private AudioSource Source;
+    [SerializeField] private AudioClip Click;
+    [SerializeField] private AudioClip ChangeScene;
+
 
     List<GameObject> panels = new List<GameObject>();
     Camera mainCam;
@@ -107,10 +111,14 @@ public class TutorialSequenceController : MonoBehaviour
         panels[++currentPanel].SetActive(true);
         mainCam.transform.position = cameraPositions[currentPanel];
         mainCam.orthographicSize = sizes[currentPanel];
+
+        Source.PlayOneShot(Click);
     }
 
     public void StartGame()
     {
         SceneManager.LoadScene("GameScene");
+
+        Source.PlayOneShot(ChangeScene);
     }
 }

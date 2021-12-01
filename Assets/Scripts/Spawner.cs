@@ -7,6 +7,8 @@ public class Spawner : MonoBehaviour
     // reference to NPC prefabs
     [SerializeField] private GameObject[] NPC_prefabs;
     [SerializeField] private GameObject[] Zombie_prefabs;
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioClip zombieBorn;
 
     // reference to NPC parent class
     [SerializeField] Transform NPCParent;
@@ -68,6 +70,7 @@ public class Spawner : MonoBehaviour
         // 每天会在timer < 30% full timer的时间段内生成僵尸。
         if (gameLogic.getTimer() < (0.3 * gameLogic.getTime()))
         {
+            source.PlayOneShot(zombieBorn);
             npc = Instantiate(Zombie_prefabs[Random.Range(0, Zombie_prefabs.Length)], transform.position, Quaternion.identity, NPCParent);
         }
         else

@@ -5,6 +5,8 @@ using UnityEngine.EventSystems;
 
 public class AirDrop : MonoBehaviour, IPointerDownHandler
 {
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioClip plan;
 
     private int supply_label1;
     private int supply_label2;

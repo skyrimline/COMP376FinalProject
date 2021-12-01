@@ -6,6 +6,9 @@ using UnityEngine.UI;
 public class GameLogic : MonoBehaviour
 {
     //scoreboard reference
+    [SerializeField] private AudioClip airplan;
+    [SerializeField] private AudioSource source;
+
     [SerializeField] private GameObject ScoreBoard;
     [SerializeField] private Text titleText;
     [SerializeField] private Text requiredText;
@@ -197,6 +200,7 @@ public class GameLogic : MonoBehaviour
             else
             {
                 //instantiate airdrop
+                source.PlayOneShot(airplan);
                 Instantiate(airDrop, new Vector3(Random.Range(airDropLeftX.position.x, airDropRightX.position.x), 35, 0), Quaternion.identity);
                 airDropTimer = Random.Range(dayTime, 1.5f*dayTime);
             }
