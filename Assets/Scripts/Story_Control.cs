@@ -10,82 +10,119 @@ public class Story_Control : MonoBehaviour
 
     private GameLogic gameLogicReference;
 
+
     public GameObject story1;
     public GameObject story2;
     public GameObject story3;
+    private GameObject[] story = new GameObject[10];
+
 
     private bool story1called;
     private bool story2called;
     private bool story3called;
+
+    private bool[] storyCalled = new bool[10];
 
     private float storyPopTimeInDay;
 
     // Start is called before the first frame update
     void Start()
     {
-         gameLogicReference = GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>();
-        storyPopTimeInDay = Random.Range(5f, gameLogicReference.getTime() - 5);
+
+        gameLogicReference = GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>();
+        storyPopTimeInDay = Random.Range(50f, gameLogicReference.getTime() - 5);
+        story[0] = story1;
+        story[1] = story2;
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        storyTimer += 1 * Time.deltaTime;
+        //storyTimer += 1 * Time.deltaTime;
 
-        // 检测阶段、天数、时间，到了一定的值，就调用一个故事
+        // ??????????????????????????????????????????????????
         int phase = gameLogicReference.getPhase();
         int day = gameLogicReference.getDay();
-        float time = gameLogicReference.getTime();
+        float time = gameLogicReference.getTimer();
 
-        day = gameLogicReference.getMaxDayInPhase() - day;
+        day = gameLogicReference.getMaxDayInPhase() - day + 1;
 
-        if(phase == 1)
+        //print(day);
+        print(storyPopTimeInDay);
+        //print(time);
+
+        if (phase == 1)
         {
-            if(day == 2 || day == 4 || day == 6)
+            if (day == 1 || day == 4 || day == 6)
             {
-                if (Mathf.Abs(time - storyPopTimeInDay) < 0.5f)
+                if (Mathf.Abs(time - storyPopTimeInDay) <= 1f)
                 {
-                    // 随机调取一个尚未调取过的事件, 需要用到dowhile和bool[]来判断事件是否是第一次被调取
+
+                    CallStory();
+                    // ????????????????????????????, ????????dowhile??bool[]????????????????????????????
                     storyPopTimeInDay = Random.Range(5f, gameLogicReference.getTime() - 5);
+
                 }
             }
         }
-        else if(phase == 2)
+        else if (phase == 2)
         {
             if (day == 2 || day == 4 || day == 6)
             {
-                if (Mathf.Abs(time - storyPopTimeInDay) < 0.5f)
+                if (Mathf.Abs(time - storyPopTimeInDay) <= 1f)
                 {
-                    // 随机调取一个尚未调取过的事件, 需要用到dowhile和bool[]来判断事件是否是第一次被调取
+                    // ????????????????????????????, ????????dowhile??bool[]????????????????????????????
                     storyPopTimeInDay = Random.Range(5f, gameLogicReference.getTime() - 5);
                 }
             }
         }
-        else if(phase == 3)
+        else if (phase == 3)
         {
             if (day == 2 || day == 4 || day == 6)
             {
-                if (Mathf.Abs(time - storyPopTimeInDay) < 0.5f)
+                if (Mathf.Abs(time - storyPopTimeInDay) <= 1f)
                 {
-                    // 随机调取一个尚未调取过的事件, 需要用到dowhile和bool[]来判断事件是否是第一次被调取
+                    // ????????????????????????????, ????????dowhile??bool[]????????????????????????????
                     storyPopTimeInDay = Random.Range(5f, gameLogicReference.getTime() - 5);
                 }
             }
         }
+
+    }
+
+    private void CallStory()
+    {
+
+        Time.timeScale = 0;
+        int randomStoryNum = Random.Range(0, 2);
+
+
+        while (storyCalled[randomStoryNum] != false)
+        {
+            randomStoryNum = Random.Range(0, 2);
+        }
+
+
+
+        story[randomStoryNum].SetActive(true);
+
+        storyCalled[randomStoryNum] = true;
+
 
     }
 
     public void choice1Story1()
     {
         //rulepower-10
-        
+
         Time.timeScale = 1;
         story1.SetActive(false);
     }
 
     public void choice2Story1()
     {
-        
+
         Time.timeScale = 1;
         story1.SetActive(false);
 
