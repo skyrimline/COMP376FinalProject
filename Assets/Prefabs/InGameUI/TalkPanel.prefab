@@ -490,12 +490,12 @@ GameObject:
   - component: {fileID: 6198721575519175964}
   - component: {fileID: 6198721575519175971}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: TalkPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &6198721575519175970
 RectTransform:
   m_ObjectHideFlags: 0

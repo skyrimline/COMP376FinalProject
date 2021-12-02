@@ -34,7 +34,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.2, y: -49.3}
+  m_AnchoredPosition: {x: 3.2, y: -11}
   m_SizeDelta: {x: 400, y: 30.4079}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &39856306
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (dominance-5)
+  m_text: (rulepower-5)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -168,7 +168,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.4, y: -55}
+  m_AnchoredPosition: {x: 0.000036955, y: -20.857}
   m_SizeDelta: {x: 400, y: 30.409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &231837586
@@ -284,9 +284,9 @@ RectTransform:
   m_Father: {fileID: 1735882945}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -31.8}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 200, y: -88.2825}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &375311614
@@ -493,7 +493,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (serum -1, vaccineA-5, dominance -2)
+  m_text: ([vaccineA,vaccineB, vaccineC]-2 rulepower -10)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -662,8 +662,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13
-  m_fontSizeBase: 13
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -738,7 +738,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.2, y: -49.3}
+  m_AnchoredPosition: {x: 3.2, y: -11}
   m_SizeDelta: {x: 400, y: 30.4079}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &501175729
@@ -769,7 +769,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (vaccine A -5, dominance -10)
+  m_text: (vaccine A -5, rulepower -10)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -875,7 +875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -37.8}
+  m_AnchoredPosition: {x: -0.000010173, y: -7.099992}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &539557163
@@ -1443,8 +1443,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17
-  m_fontSizeBase: 17
+  m_fontSize: 13.5
+  m_fontSizeBase: 13.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1520,7 +1520,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.6842, y: 9.5515}
+  m_AnchoredPosition: {x: 0.000024319, y: -15.205}
   m_SizeDelta: {x: 400, y: 30.409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &817482560
@@ -1560,7 +1560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -0.000010173, y: 32.9}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &817482565
@@ -1871,10 +1871,10 @@ RectTransform:
   m_Father: {fileID: 1735882945}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: 52.10281}
-  m_SizeDelta: {x: 380, y: 46.0816}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 200, y: -17.6565}
+  m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1013409561
 CanvasRenderer:
@@ -2127,9 +2127,9 @@ RectTransform:
   m_Father: {fileID: 1735882945}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000019667, y: 4}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 200, y: -52.969498}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1081093270
@@ -2383,8 +2383,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -93.031}
-  m_SizeDelta: {x: 0, y: -186.06}
+  m_AnchoredPosition: {x: 0.000030517578, y: -93.0305}
+  m_SizeDelta: {x: 0, y: -186.061}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1115562808
 CanvasRenderer:
@@ -2565,7 +2565,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb7a7848702a1f4448d155750e95ca7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b9aaea992cf2ce240be02287ff2abb11, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2852,7 +2852,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8.8, y: -49.3}
+  m_AnchoredPosition: {x: 8.8, y: -11}
   m_SizeDelta: {x: 400, y: 30.4079}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1353811243
@@ -2883,7 +2883,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (food-10, medicine-10, dominance-3)
+  m_text: (food-10, rule power+10)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3125,7 +3125,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb7a7848702a1f4448d155750e95ca7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 540e78a89c8e96a4d8f1327c8a4724f8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3146,6 +3146,7 @@ GameObject:
   - component: {fileID: 1735882945}
   - component: {fileID: 1735882947}
   - component: {fileID: 1735882946}
+  - component: {fileID: 59023346}
   m_Layer: 5
   m_Name: Buttons
   m_TagString: Untagged
@@ -3172,8 +3173,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -93.031}
-  m_SizeDelta: {x: 0, y: -186.06}
+  m_AnchoredPosition: {x: 0.000030517578, y: -93.0305}
+  m_SizeDelta: {x: 0, y: -186.061}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1735882947
 CanvasRenderer:
@@ -3213,6 +3214,32 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &59023346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1735882944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 8
+  m_ChildAlignment: 4
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &1743822992
 GameObject:
   m_ObjectHideFlags: 0
@@ -3278,7 +3305,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (money-100, dominance -5)
+  m_text: (bottle cap - 50, rulepower + 5)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3381,8 +3408,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.6842, y: 72.172}
-  m_SizeDelta: {x: 415.3685, y: 155.65}
+  m_AnchoredPosition: {x: 0.0000014305, y: 72.172}
+  m_SizeDelta: {x: 400, y: 155.65}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1940405378
 CanvasRenderer:
@@ -3658,7 +3685,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -0.000010173, y: 32.9}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8271013949832619965
@@ -3745,7 +3772,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice1Story3
+        m_MethodName: choice1Story9
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4020,7 +4047,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.4, y: -55}
+  m_AnchoredPosition: {x: 0.000024319, y: -20.857}
   m_SizeDelta: {x: 400, y: 30.409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &285035753803157843
@@ -4620,7 +4647,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (Food+5, Rule Power-1)
+  m_text: (Food+5, Rule Power-10)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4723,7 +4750,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.4, y: -55}
+  m_AnchoredPosition: {x: 0.000024319, y: -20.857}
   m_SizeDelta: {x: 400, y: 30.409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &931563422517574193
@@ -5125,7 +5152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -37.8}
+  m_AnchoredPosition: {x: -0.000010173, y: -7.099992}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3626667561937865670
@@ -5212,7 +5239,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice2Story3
+        m_MethodName: choice2Story4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5409,7 +5436,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( dominance-15, money+100)
+  m_text: ( rule power-15, bottle cap+100)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5931,7 +5958,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (food-2, dominance +5)
+  m_text: (food-2, rulepower +5)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6499,7 +6526,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb7a7848702a1f4448d155750e95ca7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e8bd68df0b1b02340916422e2e33acdd, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6574,7 +6601,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (dominance+10)
+  m_text: (rull power-10 for NPC died in combat)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7209,7 +7236,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -0.000010173, y: 32.9}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7764690585453754533
@@ -7296,7 +7323,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice1Story3
+        m_MethodName: choice1Story6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7571,7 +7598,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( food-5, dominance+10, money-50)
+  m_text: ( food-5, rule power+10, bottle cap-50)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7677,7 +7704,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -0.000010173, y: 32.9}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2864007065411144655
@@ -7764,7 +7791,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice1Story3
+        m_MethodName: choice1Story7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8045,8 +8072,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 17
-  m_fontSizeBase: 17
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 10
@@ -9003,7 +9030,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (Food-5, Rule Power-2)
+  m_text: (Food-5, Rule Power + 10)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9106,7 +9133,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.4, y: -55}
+  m_AnchoredPosition: {x: 0.000024319, y: -20.857}
   m_SizeDelta: {x: 400, y: 30.409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4654011673653955452
@@ -9251,7 +9278,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( dominance+10)
+  m_text: ( rule power+10)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9357,7 +9384,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -0.000010173, y: 32.9}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2533163024984928038
@@ -9444,7 +9471,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice1Story3
+        m_MethodName: choice1Story4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9613,7 +9640,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -37.8}
+  m_AnchoredPosition: {x: -0.000010173, y: -7.099992}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7665000738813612335
@@ -9700,7 +9727,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice2Story3
+        m_MethodName: choice2Story6
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9820,7 +9847,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (dominance -10)
+  m_text: (rulepower -10)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -10054,7 +10081,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb7a7848702a1f4448d155750e95ca7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6ae1b4d8644af1e42bd6b0987412a11e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10100,8 +10127,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000030517578, y: -93.031}
-  m_SizeDelta: {x: 0, y: -186.06}
+  m_AnchoredPosition: {x: 0.000030517578, y: -93.0305}
+  m_SizeDelta: {x: 0, y: -186.061}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9201576458674304939
 CanvasRenderer:
@@ -10309,7 +10336,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -37.8}
+  m_AnchoredPosition: {x: -0.000010173, y: -7.099992}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2180732196510317658
@@ -10396,7 +10423,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice2Story3
+        m_MethodName: choice2Story10
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10485,7 +10512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.4, y: -55}
+  m_AnchoredPosition: {x: 0.000024319, y: -20.857}
   m_SizeDelta: {x: 400, y: 30.409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &5943680917809510551
@@ -10525,7 +10552,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -0.000010173, y: 32.9}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2880857369252352491
@@ -10612,7 +10639,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice1Story3
+        m_MethodName: choice1Story8
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11108,7 +11135,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb7a7848702a1f4448d155750e95ca7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c3f66bd1ce6bcd74faf98e6e9a5be3e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11183,7 +11210,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( dominance-10)
+  m_text: ( rule power-10)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11394,7 +11421,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (dominance -5)
+  m_text: (rulepower + 5)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11528,7 +11555,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb7a7848702a1f4448d155750e95ca7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2910e226e591a4d41b249ae58a26ba82, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11914,7 +11941,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( dominance+10,food-5)
+  m_text: ( rule power+10,food-5)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12048,7 +12075,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (money+200, food-30, dominance-10)
+  m_text: (money+200, food-30, rulepower-10)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12231,7 +12258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -0.000010173, y: 32.9}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3965068083744292170
@@ -12318,7 +12345,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice1Story3
+        m_MethodName: choice1Story5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12438,7 +12465,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( dominance-10)
+  m_text: ( rule power-10)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12647,7 +12674,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb7a7848702a1f4448d155750e95ca7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: aee96e3a6d8a26b4a9a8a6f92569a585, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12694,7 +12721,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -37.8}
+  m_AnchoredPosition: {x: -0.000010173, y: -7.099992}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3741864410710077929
@@ -12781,7 +12808,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice2Story3
+        m_MethodName: choice2Story8
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13037,7 +13064,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb7a7848702a1f4448d155750e95ca7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e1c80ac9132d5b84f88821caed1195c9, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13223,7 +13250,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -37.8}
+  m_AnchoredPosition: {x: -0.000010173, y: -7.099992}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2682961743658202356
@@ -13310,7 +13337,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice2Story3
+        m_MethodName: choice2Story7
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13564,7 +13591,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: eb7a7848702a1f4448d155750e95ca7c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1bd9e6e7c3bd27c4790a3bfea1c6cac7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13611,7 +13638,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -37.8}
+  m_AnchoredPosition: {x: -0.000010173, y: -7.099992}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6116387691491554638
@@ -13698,7 +13725,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice2Story3
+        m_MethodName: choice2Story9
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13997,7 +14024,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.4, y: -55}
+  m_AnchoredPosition: {x: 0.000024319, y: -20.857}
   m_SizeDelta: {x: 400, y: 30.409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8186345743869367863
@@ -14065,7 +14092,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( dominance+10, deaths+2)
+  m_text: ( rule power-10 for NPC died in combat )
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14365,9 +14392,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   storyTimer: 0
-  story1: {fileID: 8312551989837906096}
-  story2: {fileID: 1434537642}
-  story3: {fileID: 1239429003}
+  story:
+  - {fileID: 8312551989837906096}
+  - {fileID: 1434537642}
+  - {fileID: 1239429003}
+  - {fileID: 6352501145718596061}
+  - {fileID: 285035753803157843}
+  - {fileID: 155158195317862607}
+  - {fileID: 5742799983386224358}
+  - {fileID: 1040361653595136502}
+  - {fileID: 8739680442577528737}
+  - {fileID: 2464039479632987227}
 --- !u!1 &8312551989728616202
 GameObject:
   m_ObjectHideFlags: 0
@@ -14643,7 +14678,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'I think we should keep her, or "them"alive. '
+  m_text: Damn it, execute her!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -14777,7 +14812,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Damn it! Kill Her! '
+  m_text: Keep "them" alive, but no extra food.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15263,8 +15298,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 13
-  m_fontSizeBase: 13
+  m_fontSize: 14
+  m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -15446,7 +15481,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ([VaccineA, vaccineB, vaccineC ]-5, dominance-10)
+  m_text: ([VaccineA, vaccineB, vaccineC ]-5)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15549,7 +15584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.4, y: -55}
+  m_AnchoredPosition: {x: 0.000024319, y: -20.857}
   m_SizeDelta: {x: 400, y: 30.409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8557304452581759398
@@ -15589,7 +15624,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -37.8}
+  m_AnchoredPosition: {x: -0.000010173, y: -7.099992}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5439456239523932225
@@ -15676,7 +15711,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice2Story3
+        m_MethodName: choice2Story5
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15765,7 +15800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.4, y: -55}
+  m_AnchoredPosition: {x: 0.000018477, y: -20.857}
   m_SizeDelta: {x: 400, y: 30.409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8739680442577528737
@@ -15975,7 +16010,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000010173, y: -0.0000076293945}
+  m_AnchoredPosition: {x: -0.000010173, y: 32.9}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8575022165424324232
@@ -16062,7 +16097,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8312551989574925428}
         m_TargetAssemblyTypeName: Story_Control, Assembly-CSharp
-        m_MethodName: choice1Story3
+        m_MethodName: choice1Story10
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

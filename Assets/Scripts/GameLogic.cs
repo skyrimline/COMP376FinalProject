@@ -5,15 +5,8 @@ using UnityEngine.UI;
 
 public class GameLogic : MonoBehaviour
 {
-    //scoreboard reference
     [SerializeField] private AudioClip airplan;
     [SerializeField] private AudioSource source;
-
-    [SerializeField] private GameObject ScoreBoard;
-    [SerializeField] private Text titleText;
-    [SerializeField] private Text requiredText;
-    [SerializeField] private Text savedText;
-    [SerializeField] private Text rewardText;
 
     //npc count 
     private GameObject[] allNPC_obj;
@@ -52,16 +45,12 @@ public class GameLogic : MonoBehaviour
     private int day;
     private float dayTime;
     private float dayTimer;
-    private int phase;
+    public int phase;
 
     //airdrop timer
     private float airDropTimer = 10f;
 
-    //targated saving number of npcs and present saved npcs
-    private int levelTargetSavedNPCS = 10;
-    private int savedNormalNPCs;
-    private int rewardFactor = 200;
-
+    private GameFlowControl gameFlowControl;
 
     private void Awake()
     {
@@ -74,22 +63,20 @@ public class GameLogic : MonoBehaviour
         vaccineB_num = 30;
         vaccineC_num = 10;
 
-        day = 7;
         dayTime = 60;
         dayTimer = dayTime;
-        phase = 1;
+    }
+
+    private void Start()
+    {
+        gameFlowControl = GetComponent<GameFlowControl>();
+        
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        // when day countdown == 0, show final scoreboard
-        showScoreBoard();
-
-        //count how many saved npcs are normal
-
-
         //count how many NPCs are there in each frame
         npcNum = countNPC();
         //updating the number of resources
@@ -110,7 +97,6 @@ public class GameLogic : MonoBehaviour
         if (dayTimer >= 0)
         {
             dayTimer -= Time.deltaTime;
-
         }
         else
         {
@@ -160,7 +146,7 @@ public class GameLogic : MonoBehaviour
     }
 
 
-    private int countSavedNormalNPC()
+    public int countSavedNormalNPC()
     {
         allNPC_obj = GameObject.FindGameObjectsWithTag("NPC");
         int savedNPCCount = 0;
@@ -207,38 +193,6 @@ public class GameLogic : MonoBehaviour
         }
     }
 
-    private void showScoreBoard()
-    {
-        //count how many normal NPCs are saved
-        savedNormalNPCs = countSavedNormalNPC();
-
-        if (day == 0)
-        {
-            Time.timeScale = 0;
-            // set texts
-            if(savedNormalNPCs < levelTargetSavedNPCS)
-            {
-                titleText.text = "apocalypse".ToUpper();
-                titleText.color = new Color(0.576f, 0, 0);
-                savedText.color = new Color(0.576f, 0, 0);
-            }
-            else
-            {
-                titleText.text = "Genesis".ToUpper();
-                titleText.color = new Color(1,1,1);
-                savedText.color = new Color(0, 1, 0);
-            }
-
-            requiredText.text = levelTargetSavedNPCS.ToString("D2");
-            savedText.text = savedNormalNPCs.ToString("D2");
-
-            rewardText.text = (savedNormalNPCs - levelTargetSavedNPCS) > 0 ? ((savedNormalNPCs - levelTargetSavedNPCS) * rewardFactor).ToString("D3") : 0.ToString("D3");
-
-            ScoreBoard.SetActive(true);
-
-        }
-    }
-
     // productivity is calculated as the NPCs in dorm
     private void UpdateProductivity()
     {
@@ -275,6 +229,11 @@ public class GameLogic : MonoBehaviour
         return dayTimer;
     }
 
+    public void setTimer(float i)
+    {
+        dayTimer = i;
+    }
+
     public int getPhase()
     {
         return phase;
@@ -285,15 +244,21 @@ public class GameLogic : MonoBehaviour
         return day;
     }
 
+    public void setDay(int i)
+    {
+        day = i;
+    }
+
     public int getMaxDayInPhase()
     {
         switch (phase)
         {
             case 1:
+                return gameFlowControl.phaseDayCount[0];
             case 2:
-                return 7;
+                return gameFlowControl.phaseDayCount[1];
             case 3:
-                return 15;
+                return gameFlowControl.phaseDayCount[2];
             default:
                 return 0;
         }

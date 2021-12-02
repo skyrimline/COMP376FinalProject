@@ -16,9 +16,15 @@ public class ReturnToMenu : MonoBehaviour
             ReturnToMainMenu();
         }
     }
-        public void ReturnToMainMenu()
-        {
-            Time.timeScale = 1;
-            SceneManager.LoadScene("MainMenu");
-        }
+    public void ReturnToMainMenu()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Skip()
+    {
+        Time.timeScale = 1;
+        SceneManager.LoadScene("GameScene");
+    }
 }
