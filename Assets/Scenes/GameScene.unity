@@ -12468,7 +12468,7 @@ MonoBehaviour:
   - {fileID: 1685250226}
   - {fileID: 33726303}
   - {fileID: 768872435}
-  phaseDayCount: 00000000000000000f000000
+  phaseDayCount: 07000000070000000f000000
 --- !u!1 &1713560188
 GameObject:
   m_ObjectHideFlags: 0

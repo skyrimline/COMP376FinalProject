@@ -38,7 +38,7 @@ public class GameFlowControl : MonoBehaviour
     private int reward = 0;
 
     public int[] phaseDayCount = { 7, 7, 15 };
-    private int[] phaseSaveCount = {1, 1, 45};
+    private int[] phaseSaveCount = {10, 24, 45};
 
     private GameLogic gameLogic;
 
