@@ -5,6 +5,9 @@ using UnityEngine.EventSystems;
 
 public class Executable_NPC : MonoBehaviour, IPointerDownHandler
 {
+    [SerializeField] private AudioClip shoot;
+    [SerializeField] private AudioSource source;
+
     private NPC_Logic npc;
 
     private int cost = 50;
@@ -33,6 +36,7 @@ public class Executable_NPC : MonoBehaviour, IPointerDownHandler
     private void beingExecuted()
     {
         // deduct money
+        source.PlayOneShot(shoot);
         gl.money -= cost;
         npc.Die();
     }
