@@ -117,8 +117,8 @@ public class TutorialSequenceController : MonoBehaviour
 
     public void StartGame()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("GameScene");
-
         Source.PlayOneShot(ChangeScene);
     }
 }
