@@ -1,0 +1,322 @@
+1, latter  [ˈlætər]
+adj. 后者的；近来的；后面的；较后的n. （Latter）（英、德、捷）拉特（人名）
+2, incorporate  [ɪnˈkɔːrpəreɪt]
+vt. 包含，吸收；体现；把……合并vi. 合并；混合；组成公司adj. 合并的；一体化的；组成公司的过去式incorporated过去分词incorporated现在分词incorporating第三人称单数incorporates
+3, Indicates  [ˈɪndɪkeɪts]
+v. 表明（indicate的第三人称单数形式）；指示，显示
+4, agile  [ˈædʒl]
+adj. 敏捷的；机敏的；活泼的
+5, iteratively  
+adv. 迭代地；反复地
+6, coupled  [ˈkʌpld]
+adj. （两性关系中）一方的；耦合的；联接的；成对的；共轭的v. 连接；成对；耦合；性交（couple 的过去式和过去分词）
+7, loosely  [ˈluːsli]
+adv. 宽松地；放荡地；轻率地
+8, tuned  [tjʊnd]
+adj. 经调谐的；谱好曲的；调好台的v. 调整；调音；发出乐音（tune的过去分词）
+9, encapsulation  [ɪnˌkæpsjuˈleɪʃn]
+n. 封装；包装复数encapsulations
+10, Primitiveness  
+原始；原始性
+11, Refactoring  
+n. 重构；重整
+12, Refactoring—  
+n. 重构；重整
+13, elaboration  [ɪˌlæbəˈreɪʃn]
+n. 苦心经营，精巧；详细阐述
+14, excessive  [ɪkˈsesɪv]
+adj. 过多的，极度的；过分的
+15, aversion  [əˈvɜːrʒn]
+n. 厌恶；讨厌的人复数aversions
+16, cohesion  [koʊˈhiːʒn]
+n. 凝聚；结合；[力] 内聚力
+17, enforces  
+强制执行施行
+18, compartmentalization  
+n. 划分；区分
+19, subdivided  [ˌsʌbdɪˈvaɪdɪd; ˈsʌbdɪvaɪdɪd]
+细分
+20, Abstraction  [æbˈstrækʃn]
+n. 抽象；提取；抽象概念；空想；心不在焉复数abstractions
+21, instructions  [ɪnˈstrʌkʃnz]
+n. 指令；说明（instruction的复数形式）
+22, procedural  [prəˈsiːdʒərəl]
+adj. 程序上的
+23, assessment  [əˈsesmənt]
+n. 评价；评定；鉴定；估价复数assessments
+24, refinement  [rɪˈfaɪnmənt]
+n. 改进，改善；有教养；精制；文雅；[化工][油气][冶] 提纯复数refinements
+25, partitioning  [pɑr'tɪʃən]
+n. 分割；分区v. 把…分成部分；隔开（partition的ing形式）
+26, Heuristics  [hjuˈrɪstɪks]
+n. 启发法；启发式教学法
+27, heuristics  [hjuˈrɪstɪks]
+n. 启发法；启发式教学法
+28, methodology  [ˌmeθəˈdɑːlədʒi]
+n. 方法学，方法论复数methodologies
+29, notation  [noʊˈteɪʃn]
+n. 符号；乐谱；注释；记号法复数notations
+30, distinct  [dɪˈstɪŋkt]
+adj. 明显的；独特的；清楚的；有区别的
+31, composed  [kəmˈpoʊzd]
+adj. 镇静的；沉着的v. 组成；作曲（compose的过去分词）；著作
+32, subsequently  [ˈsʌbsɪkwəntli]
+adv. 随后，其后；后来
+33, implicit  [ɪmˈplɪsɪt]
+adj. 含蓄的；暗示的；盲从的
+34, accommodate  [əˈkɑːmədeɪt]
+vt. 容纳；使适应；供应；调解vi. 适应；调解第三人称单数accommodates现在分词accommodating过去式accommodated过去分词accommodated
+35, Architectural  [ˌɑːrkɪˈtektʃərəl]
+adj. 建筑学的；建筑上的；符合建筑法的
+36, overriding  [ˌoʊvərˈraɪdɪŋ]
+adj. 高于一切的，最重要的；在……之上延伸的v. 不顾；践踏；压垮（override 的现在分词）
+37, lead  [liːd; led]
+vt. 领导；致使；引导；指挥vi. 导致；用水砣测深n. 领导；铅；导线；榜样n. (Lead) （英）利德（人名）复数leads第三人称单数leads现在分词leading过去式led
+38, Encompasses  
+围绕( encompass的第三人称单数 )包围包含包括
+39, lanes  [leɪnz]
+n. 线路，跑道（lane复数形式）n. (Lanes)人名；(法)拉纳
+40, segments  [ˈseɡmənts; seɡˈments]
+n. 片段；段数（segment的复数）；积弓形片模型v. 把…分割成段；细胞分裂（segment的三单形式）
+41, rectangle  [ˈrektæŋɡl]
+n. 矩形；长方形复数rectangles
+42, Swimlane  
+泳道
+43, respond  [rɪˈspɑːnd]
+vi. 回答；作出反应；承担责任vt. 以…回答n. 应答；唱和过去式responded过去分词responded现在分词responding第三人称单数responds
+44, stimuli  
+n. 刺激；刺激物；促进因素（stimulus的复数）
+45, observable  [əbˈzɜːrvəbl]
+adj. 显著的；觉察得到的；看得见的n. [物] 可观察量；感觉到的事物
+46, revising  [rɪˈvaɪzɪŋ]
+v. 校正（revise的ing形式）；修改润色
+47, token  [ˈtoʊkən]
+n. （用以启动某些机器或用作支付方式的）代币，辅币；代价券；礼券；标志；（用于表达感情的）表示；记号；证明；路签；权标；象征性代表；（语言学）符号；标记；（计算机）令牌adj. 装样子的；作为标志的；象征性当选的复数tokens
+48, deliberate  [dɪˈlɪbərət]
+adj. 故意的；深思熟虑的；从容的vt. 仔细考虑；商议过去式deliberated过去分词deliberated现在分词deliberating第三人称单数deliberates
+49, deliberated  [dɪˈlɪbəreɪtɪd]
+vbl. 思量
+50, deliberately.  [dɪˈlɪbərətli]
+adv. 故意地；缓慢而谨慎地
+51, associations  [ə,sosɪ'eʃən]
+n. 协会，[遗] 关联（association复数）；关联分析，协会组织
+52, accomplished  [əˈkɑːmplɪʃt]
+adj. 完成的；熟练的，有技巧的；有修养的；有学问的
+53, occurrence  [əˈkɜːrəns]
+n. 发生；出现；事件；发现复数occurrences
+54, inquire  [ɪnˈkwaɪər]
+vt. 询问；查究；问明vi. 询问；查究；询价过去式inquired过去分词inquired现在分词inquiring第三人称单数inquires
+55, broad  [brɔːd]
+adj. 宽的，辽阔的；显著的；大概的n. 宽阔部分adv. 宽阔地n. (Broad)人名；(英、德)布罗德复数broads
+56, meaningful  [ˈmiːnɪŋfl]
+adj. 有意义的；意味深长的
+57, inclusion  [ɪnˈkluːʒn]
+n. 包含；内含物复数inclusions
+58, essential  [ɪˈsenʃl]
+adj. 基本的；必要的；本质的；精华的n. 本质；要素；要点；必需品复数essentials
+59, appear  [əˈpɪr]
+v. 出现；显得；似乎vi. 出庭；登场第三人称单数appears现在分词appearing过去式appeared过去分词appeared
+60, instances  [ˈɪnstənsɪz]
+n. 相依物体，例子；实体（instance的复数）
+
+v. 举例说明（instance的第三人称单数形式）
+61, Retained  [rɪˈteɪnd]
+adj. 保留的v. 保留；保存（retain的过去式形式）
+62, overall  [ˌoʊvərˈɔːl; ˈoʊvərɔːl]
+adj. 全部的；全体的；一切在内的adv. 全部地；总的说来n. 工装裤；罩衫复数overalls
+63, application  [ˌæplɪˈkeɪʃn]
+n. 应用；申请；应用程序；敷用；（对事物、学习等）投入复数applications
+64, relevant  [ˈreləvənt]
+adj. 相关的；切题的；中肯的；有重大关系的；有意义的，目的明确的比较级more relevant最高级most relevant
+65, interact  [ˌɪntərˈækt]
+vt. 互相影响；互相作用vi. 互相影响；互相作用n. 幕间剧；幕间休息过去式interacted过去分词interacted现在分词interacting第三人称单数interacts
+66, Occurrences  
+
+67, isolated  [ˈaɪsəleɪtɪd]
+adj. 偏远的；孤立的；孤独的；单独的； 绝缘的v. 使……孤立；使……分离；将……剔出（isolate 的过去式和过去分词）
+68, underlining  [ˌʌndərˈlaɪnɪŋ]
+v. 在…下划线
+69, grammatical  [ɡrəˈmætɪkl]
+adj. 文法的；符合语法规则的
+70, parse  [pɑːrs]
+vt. 解析；从语法上分析vi. 理解；从语法上分析n. 从语法上分析；分列过去式parsed过去分词parsed现在分词parsing第三人称单数parses
+71, appropriately  [əˈproʊpriətli]
+adv. 适当地；合适地；相称地
+72, exhibit  [ɪɡˈzɪbɪt]
+vt. 展览；显示；提出（证据等）n. 展览品；证据；展示会vi. 展出；开展览会过去式exhibited过去分词exhibited现在分词exhibiting第三人称单数exhibits
+73, alternative  [ɔːlˈtɜːrnətɪv]
+adj. 供选择的；选择性的；交替的n. 二中择一；供替代的选择复数alternatives
+74, invoked  
+v. 叫唤（invoke的过去式，过去分词）
+75, conversations  
+n. 会话（conversation的复数）
+76, formal  [ˈfɔːrml]
+adj. 正式的；拘谨的；有条理的n. 正式的社交活动；夜礼服n. (Formal)人名；(法)福马尔比较级more formal最高级most formal复数formals
+77, platform  [ˈplætfɔːrm]
+n. 平台；月台，站台；坛；讲台；厚底松糕鞋复数platforms
+78, exchanging  [ɪksˈtʃeɪndʒɪŋ]
+v. 交换；交流（exchange的ing形式）；兑换adj. 交换的
+79, layered  ['leər]
+adj. 分层的；层状的v. 分层堆积；用压条法培植（layer的过去分词）
+80, manner  [ˈmænər]
+n. 方式；习惯；种类；规矩；风俗n. (Manner)人名；(德、芬、瑞典)曼纳复数manners
+81, partitioned  [pɑr'tɪʃən]
+adj. 分割的；分区的；分段的vt. 划分（partition的过去分词）；[数] 分割；把…分成部分
+82, infrastructure  [ˈɪnfrəstrʌktʃər]
+n. 基础设施；公共建设；下部构造复数infrastructures
+83, achieve  [əˈtʃiːv]
+vt. 取得；获得；实现；成功vi. 达到预期的目的，实现预期的结果，如愿以偿第三人称单数achieves现在分词achieving过去式achieved过去分词achieved
+84, collaborate  [kəˈlæbəreɪt]
+vi. 合作；勾结，通敌过去式collaborated过去分词collaborated现在分词collaborating第三人称单数collaborates
+85, depict  [dɪˈpɪkt]
+vt. 描述；描画过去式depicted过去分词depicted现在分词depicting第三人称单数depicts
+86, Scenario  [səˈnærioʊ]
+n. 方案；情节；剧本；设想复数scenarios
+87, elaborate  [ɪˈlæbərət; ɪˈlæbəreɪt; ɪˈlæbərɪt]
+adj. 精心制作的；详尽的；煞费苦心的vt. 精心制作；详细阐述；从简单成分合成（复杂有机物）vi. 详细描述；变复杂最高级most elaborate过去式elaborated过去分词elaborated现在分词elaborating第三人称单数elaborates
+88, testable  [ˈtestəbl]
+adj. 可试验的；有资格立遗嘱的；可根据遗嘱处理的；有资格作证人的
+89, assesses  [əˈses]
+vt. 评定；估价；对…征税过去式assessed过去分词assessed现在分词assessing第三人称单数assesses
+90, proposed  [prəˈpoʊzd]
+adj. 被提议的，建议的v. 提议；计划（propose 的过去式和过去分词）
+91, emphasis  [ˈemfəsɪs]
+n. 重点；强调；加强语气复数emphases
+92, Intent  [ɪnˈtent]
+n. 意图；目的；含义adj. 专心的；急切的；坚决的比较级more intent最高级most intent复数intents
+93, accomplishes  [əˈkɑːmplɪʃ]
+vt. 完成；实现；达到
+94, essence  [ˈesns]
+n. 本质，实质；精华；香精n. (Essence)人名；(英)埃森丝复数essences
+95, inform  [ɪnˈfɔːrm]
+vt. 通知；告诉；报告vi. 告发；告密过去式informed过去分词informed现在分词informing第三人称单数informs
+96, preconditions  
+n. 先决条件（precondition的复数）v. 预先安排好；预先处理（precondition的第三人称单数）
+97, provide  [prəˈvaɪd]
+vt. 提供；规定；准备；装备vi. 规定；抚养；作准备过去式provided过去分词provided现在分词providing第三人称单数provides
+98, insight  [ˈɪnsaɪt]
+n. 洞察力；洞悉n. (Insight)人名；(英)因赛特复数insights
+99, scenarios  [sɪ'nerɪ,o]
+n. 情节；脚本；情景介绍（scenario 的复数）
+100, constraints  [kənˈstreɪnts]
+n. [数] 约束；限制；约束条件（constraint的复数形式）
+101, preferably  [ˈprefrəbli]
+adv. 更合意地，最好是
+102, feasibility  [ˌfiːzəˈbɪləti]
+n. 可行性；可能性
+103, Elicitation  [ɪˌlɪsɪˈteɪʃn]
+n. 引出；诱出；抽出
+104, approaches  
+处理
+105, negotiate  [nɪˈɡoʊʃieɪt]
+vt. 谈判，商议；转让；越过vi. 谈判，交涉过去式negotiated过去分词negotiated现在分词negotiating第三人称单数negotiates
+106, facilitator  [fəˈsɪlɪteɪtər]
+n. 服务商；促进者复数facilitators
+107, conducted  [kənˈdʌktɪd]
+v. 管理（conduct的过去分词）；引导；指挥
+108, collaboration  [kəˌlæbəˈreɪʃn]
+n. 合作；勾结；通敌复数collaborations
+109, traceability  [ˌtreɪsəˈbɪləti]
+n. [统计] 可追溯性；跟踪能力；可描绘
+110, assessed  [əˈsest]
+v. 对…进行评估（assess过去时形式）
+111, consistency  [kənˈsɪstənsi]
+n. [计] 一致性；稠度；相容性复数consistencies
+112, Validation  [ˌvælɪˈdeɪʃn]
+n. 确认；批准；生效复数validations
+113, deliverable  [dɪˈlɪvərəbl]
+adj. 可以传送的；可交付使用的
+114, Negotiation  [nɪˌɡoʊʃiˈeɪʃn]
+n. 谈判；转让；顺利的通过复数negotiations
+115, aspects  ['æspɛkts]
+n. 方面；相位；面貌（aspect的复数）
+116, Elaboration  [ɪˌlæbəˈreɪʃn]
+n. 苦心经营，精巧；详细阐述
+117, stakeholders  
+n. 利益相关者；赌款保存人（stakeholder的复数）
+118, elicit  [ɪˈlɪsɪt]
+vt. 抽出，引出；引起过去式elicited过去分词elicited现在分词eliciting第三人称单数elicits
+119, elicitation  [ɪˌlɪsɪˈteɪʃn]
+n. 引出；诱出；抽出
+120, inception  [ɪnˈsepʃn]
+n. （机构，活动的）开始，开端
+121, Inception  
+n. 《盗梦空间》（电影名）
+122, intuition  [ˌɪntjuˈɪʃn]
+n. 直觉；直觉力；直觉的知识
+123, designment  
+n. 设计；计划
+124, regress  [rɪˈɡres]
+vi. 逆行，倒退；复归
+
+n. 回归；退回
+
+vt. 使…倒退
+125, justify  [ˈdʒʌstɪfaɪ]
+vi. 证明合法；整理版面
+
+vt. 证明……是正当的；替……辩护
+126, criminal  [ˈkrɪmɪnl]
+adj. 犯罪的；刑事的；罪过的，错误的；不道德的；令人震惊的
+
+n. 罪犯
+127, overlooks‘  [ˌəʊvəˈlʊk]
+vt. 忽略；俯瞰；远眺；不计较，宽恕；施魔法于；监督；检查
+
+n. 忽视；眺望；从高处能看到的景色
+128, towards  [təˈwɔːdz]
+prep. 朝，向；趋向；接近（目的）；将近（某一时间）；对于；向……致敬；用于；有助于
+129, Defeasibility  
+n. 可废除性
+130, Cogency  [ˈkoʊdʒənsi]
+n. 中肯；力量；恳切
+131, Analogy  [əˈnælədʒi]
+n. 类比；类推；类似复数analogies
+132, Validity  [vəˈlɪdəti]
+n. [计] 有效性；正确；正确性
+133, Soundness  [ˈsaʊndnəs]
+n. 健康；稳固；完整；公正
+134, Inference  [ˈɪnfərəns]
+n. 推理；推论；推断复数inferences
+135, Disjunctive syllogism  
+析取三段论
+136, Disjunctive  [dɪsˈdʒʌŋktɪv]
+adj. 分隔的；分离的n. 反意连接词
+137, Consequent  [ˈkɑːnsɪkwent]
+adj. 随之发生的，作为结果的；（河流、山谷）顺向的；合乎逻辑的n. （逻辑）后件，推断；（音乐）答句；分母复数consequents
+138, Conjunctive  [kənˈdʒʌŋktɪv]
+adj. 连接的；结合的n. 连接词
+139, Assertion  [əˈsɜːrʃn]
+n. 断言，声明；主张，要求；坚持；认定复数assertions
+140, Antecedent  [ˌæntɪˈsiːdnt]
+n. 前情；祖先；（语法）先行词；前件adj. 先前的；（语法）先行的复数antecedents
+141, Weasel word  
+模棱两可的话
+142, Rhetoric  [ˈretərɪk]
+n. 修辞，修辞学；华丽的词藻adj. 花言巧语的
+143, Universal quantifiers  
+[数] 全称量词
+144, Polysemy  [pəˈlɪsɪmi]
+n. 一词多义；意义的分歧
+145, Naturalistic fallacy  
+自然主义谬误
+146, misquote  [ˌmɪsˈkwoʊt]
+v. 错误地引用n. 错误引文（或引语）过去式misquoted过去分词misquoted现在分词misquoting复数misquotes第三人称单数misquotes
+147, Lexical ambiguity  
+[计] 词法多义性；词法的歧义性
+148, presuppositions  
+预设
+149, Enthymemes  
+
+150, Burden of proof  
+[法] 举证责任；提供证据之责任
+151, contribution  [ˌkɒntrɪˈbjuːʃn]
+n. 贡献；捐献；投稿
+152, quantum  [ˈkwɒntəm]
+n. 量子论；额（特指定额、定量）；美国昆腾公司（世界领先的硬盘生产商）
+153, approval  [əˈpruːvl]
+n. 批准；认可；赞成
+154, project  [ˈprɒdʒekt]
+n. （生产或研究）工程；方案；计划；事业；项目；专题研究；住房，廉租住宅区
+
+v. 设计；计划；抛射；投射；表现；促进（观点或意象）；确立（好印象）；突出；预测；发送；（声音）扩及远处；想象（自己或场景）在另一个时间或地点；作……投影线；（情感、愿望）无意投射转移（给别人）
