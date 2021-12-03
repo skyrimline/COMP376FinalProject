@@ -2358,6 +2358,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_AlignByGeometry
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9172833023173493300, guid: 4ff6657e846bbad48913cd9657429b20,
+        type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9172833023173493300, guid: 4ff6657e846bbad48913cd9657429b20,
+        type: 3}
+      propertyPath: m_FontData.m_HorizontalOverflow
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9172833023173493303, guid: 4ff6657e846bbad48913cd9657429b20,
         type: 3}
       propertyPath: m_Pivot.y
@@ -18964,6 +18974,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6079110193167462261, guid: dbe8db28846012b47b3e40727449dc8a,
+        type: 3}
+      propertyPath: m_Text
+      value: 000
       objectReference: {fileID: 0}
     - target: {fileID: 7367951042800469520, guid: dbe8db28846012b47b3e40727449dc8a,
         type: 3}
