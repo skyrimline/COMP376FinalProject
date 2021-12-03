@@ -85,7 +85,7 @@ public class GameFlowControl : MonoBehaviour
                 Camera.main.orthographicSize = 23.9f;
                 //var t = ScoreBoard.GetComponent<RectTransform>();
                 //t.localPosition = new Vector3(-297f, -238f, 0);
-                ScoreBoard.transform.localPosition = new Vector3(-297f, -13f, 0);
+                //ScoreBoard.transform.localPosition = new Vector3(-297f, -13f, 0);
                 Time.timeScale = 0;
                 BEPanel_Other.SetActive(true);
             }
