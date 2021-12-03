@@ -44,6 +44,10 @@ public class StuffBuy : MonoBehaviour
                     // give food
                     gameLogicReference.foodNum += 1;
                     break;
+                case "Food x6":
+                    // give food x6
+                    gameLogicReference.foodNum += 6;
+                    break;
                 case "VaccineA":
                     // give money
                     gameLogicReference.vaccineA_num += 1;
@@ -54,6 +58,11 @@ public class StuffBuy : MonoBehaviour
                     break;
                 case "VaccineC":
                     // give vaccineB
+                    gameLogicReference.vaccineC_num += 1;
+                    break;
+                case "Vaccine3in1":
+                    gameLogicReference.vaccineA_num += 1;
+                    gameLogicReference.vaccineB_num += 1;
                     gameLogicReference.vaccineC_num += 1;
                     break;
             }
