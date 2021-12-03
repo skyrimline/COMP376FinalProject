@@ -44,7 +44,7 @@ public class Hunter_Room : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        hunterTime = 10.0f;
+        hunterTime = 30.0f;
         hunterTimer = hunterTime;
 
         gameLogicReference = GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>();
@@ -164,7 +164,7 @@ public class Hunter_Room : MonoBehaviour
     private void GenerateResources()
     {
         // food, money, vac_A, vac_B, vac_C
-        int[] _resources = { Random.Range(5, 10), Random.Range(50, 100), Random.Range(3, 7), Random.Range(5, 10), Random.Range(3, 7)};
+        int[] _resources = { Random.Range(15, 30), Random.Range(100, 200), Random.Range(10, 20), Random.Range(10, 20), Random.Range(6, 14)};
         resources = _resources;
         resourceIndex_1 = Random.Range(0, 5);
         resourceIndex_2 = Random.Range(0, 5);
