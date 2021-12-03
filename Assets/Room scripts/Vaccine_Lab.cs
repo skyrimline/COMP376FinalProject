@@ -135,11 +135,11 @@ public class Vaccine_Lab : MonoBehaviour
         }
         
         // if there's still enough material, deduct material and num ++
-        if (gameLogic.vaccineA_num >= 3 && gameLogic.vaccineB_num >= 3 && gameLogic.vaccineC_num >= 3)
+        if (gameLogic.vaccineA_num >= 3 && gameLogic.vaccineB_num >= 3 && gameLogic.vaccineC_num >= 2)
         {
-            gameLogic.vaccineA_num --;
-            gameLogic.vaccineB_num --;
-            gameLogic.vaccineC_num --;
+            gameLogic.vaccineA_num -= 3;
+            gameLogic.vaccineB_num -= 3;
+            gameLogic.vaccineC_num -= 2;
         }
         else
         {
