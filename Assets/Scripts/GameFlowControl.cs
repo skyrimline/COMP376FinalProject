@@ -208,7 +208,8 @@ public class GameFlowControl : MonoBehaviour
 
     public void GameWin()
     {
-        SceneManager.LoadScene("mainmenu");
+        SceneManager.LoadScene("CreditRoll");
+        Time.timeScale = 1;
     }
 
 }

@@ -70,7 +70,7 @@ public class GameLogic : MonoBehaviour
     private void Start()
     {
         gameFlowControl = GetComponent<GameFlowControl>();
-        
+        source.volume = 0.3f;
     }
 
 
