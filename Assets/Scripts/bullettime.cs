@@ -44,6 +44,7 @@ public class bullettime : MonoBehaviour
         if (isBulletTime && bulletTimeTimer > 0)
         {
             bulletTimeTimer -= Time.deltaTime * (1/Time.timeScale);
+
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 isBulletTime = false;
