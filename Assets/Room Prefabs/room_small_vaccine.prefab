@@ -1582,8 +1582,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vaccineNumText: {fileID: 1107496292097616501}
   serumNumText: {fileID: 2389687414844976746}
-  vaccineTimeOriginal: 10
-  serumTimeOriginal: 18
+  vaccineTimeOriginal: 5
+  serumTimeOriginal: 15
   maxDiscount: 8
   progress: {fileID: 5151471065266502151}
   timerText: {fileID: 1221513765469731716}

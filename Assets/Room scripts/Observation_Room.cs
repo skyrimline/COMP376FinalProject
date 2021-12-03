@@ -29,6 +29,9 @@ public class Observation_Room : MonoBehaviour
     [SerializeField] private Light2D light4;
     private float lightTimer = 0;
 
+    private float baseTime_observation = 3;
+    //private float baseTime_observation_adder = 2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -109,7 +112,7 @@ public class Observation_Room : MonoBehaviour
         {
             lightTimer += 1 * Time.deltaTime;
 
-            if (lightTimer >= 3)
+            if (lightTimer >= baseTime_observation)
             {
                 switch (roomLight[0])
                 {
@@ -127,7 +130,7 @@ public class Observation_Room : MonoBehaviour
                         break;
                 }
             }
-            if (lightTimer >= 6)
+            if (lightTimer >= 2 * baseTime_observation)
             {
                 switch (roomLight[1])
                 {
@@ -145,7 +148,7 @@ public class Observation_Room : MonoBehaviour
                         break;
                 }
             }
-            if (lightTimer >= 9)
+            if (lightTimer >= 3 * baseTime_observation)
             {
                 switch (roomLight[2])
                 {
@@ -163,7 +166,7 @@ public class Observation_Room : MonoBehaviour
                         break;
                 }
             }
-            if (lightTimer >= 12)
+            if (lightTimer >= 4 * baseTime_observation)
             {
 
                 switch (roomLight[3])
@@ -182,7 +185,7 @@ public class Observation_Room : MonoBehaviour
                         break;
                 }
             }
-            if (lightTimer >= 15)
+            if (lightTimer >= 5 * baseTime_observation)
             {
                 switch (roomLight[4])
                 {

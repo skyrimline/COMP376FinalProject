@@ -13,9 +13,9 @@ public class Vaccine_Lab : MonoBehaviour
 
     private GameLogic gameLogic;
 
-    [SerializeField] private float vaccineTimeOriginal = 10;
+    [SerializeField] private float vaccineTimeOriginal = 5;
     private float vaccineTime;
-    [SerializeField] private float serumTimeOriginal = 18;
+    [SerializeField] private float serumTimeOriginal = 15;
     private float serumTime;
     [SerializeField] private float maxDiscount = 8;
     private float timer;
@@ -135,7 +135,7 @@ public class Vaccine_Lab : MonoBehaviour
         }
         
         // if there's still enough material, deduct material and num ++
-        if (gameLogic.vaccineA_num > 0 && gameLogic.vaccineB_num > 0 && gameLogic.vaccineC_num > 0)
+        if (gameLogic.vaccineA_num >= 3 && gameLogic.vaccineB_num >= 3 && gameLogic.vaccineC_num >= 3)
         {
             gameLogic.vaccineA_num -= 3;
             gameLogic.vaccineB_num -= 3;

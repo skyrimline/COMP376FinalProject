@@ -31,7 +31,7 @@ public class Hunter_Room : MonoBehaviour
     private float hunterTimer;
 
     // chance that a hunter will die
-    private float deathRate = 0.1f;
+    private float deathRate = 0.05f;
 
     private bool isHunterOut = false;
 

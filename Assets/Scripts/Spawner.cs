@@ -23,8 +23,8 @@ public class Spawner : MonoBehaviour
 
     // consider putting them as serialize field if needed.
     private int maxWaitingNPC = 3;
-    private float intervalMin = 15;
-    private float intervalMax = 30;
+    private float intervalMin = 10;
+    private float intervalMax = 20;
     private float spawnIntervalTimer = 0;
 
     private GameLogic gameLogic;
@@ -67,11 +67,18 @@ public class Spawner : MonoBehaviour
     private void SpawnSingleNPC()
     {
         GameObject npc = null;
-        // 每天会在timer < 30% full timer的时间段内生成僵尸。
+        // ????????timer < 30% full timer????????????????????
         if (gameLogic.getTimer() < (0.25 * gameLogic.getTime()))
         {
-            source.PlayOneShot(zombieBorn);
-            npc = Instantiate(Zombie_prefabs[Random.Range(0, Zombie_prefabs.Length)], transform.position, Quaternion.identity, NPCParent);
+            //source.PlayOneShot(zombieBorn);
+            //npc = Instantiate(Zombie_prefabs[Random.Range(0, Zombie_prefabs.Length)], transform.position, Quaternion.identity, NPCParent);
+
+            npc = Instantiate(NPC_prefabs[Random.Range(0, NPC_prefabs.Length)],
+                transform.position, Quaternion.identity, NPCParent);
+            // then randomly select its type and set attributes (may add some weight to npc 1 and 2)
+            NPC_Logic npcLogic = npc.GetComponent<NPC_Logic>();
+            npcLogic.SetNPCType(NPC_Logic.NPC_Type.dying);
+            npcMovements.Add(npc.GetComponent<NPC_Movement>());
         }
         else
         {
