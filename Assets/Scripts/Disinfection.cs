@@ -16,6 +16,7 @@ public class Disinfection : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
     private Image coin;
     private Text text1;
     private Text text2;
+    private Text text3;
 
     private bool isMouseOver;
 
@@ -27,12 +28,25 @@ public class Disinfection : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
         text1 = transform.GetChild(0).gameObject.GetComponent<Text>();
         text2 = transform.GetChild(1).gameObject.GetComponent<Text>();
         coin = transform.GetChild(2).gameObject.GetComponent<Image>();
+        text3 = transform.GetChild(3).GetChild(0).gameObject.GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
         ChangeColor();
+
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
+            if (!disinfectionActive)
+            {
+                setDisinfectionActive();
+            }
+            else
+            {
+                unsetDisinfectionActive();
+            }
+        }
 
         //click the right mouse button to unset disinfection button
         if (Input.GetMouseButton(1))
@@ -59,6 +73,7 @@ public class Disinfection : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
                 text1.color = new Color(0.561f, 0.769f, 0.643f, 0.5f);
                 text2.color = new Color(0.561f, 0.769f, 0.643f, 0.5f);
                 coin.color = new Color(0.561f, 0.769f, 0.643f, 0.5f);
+                text3.color = new Color(0.561f, 0.769f, 0.643f, 0.5f);
             }
             else
             {
@@ -66,6 +81,7 @@ public class Disinfection : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
                 text1.color = new Color(0.561f, 0.769f, 0.643f, 1f);
                 text2.color = new Color(0.561f, 0.769f, 0.643f, 1f);
                 coin.color = new Color(0.561f, 0.769f, 0.643f, 1f);
+                text3.color = new Color(0.561f, 0.769f, 0.643f, 1f);
             }
 
         }
@@ -77,6 +93,7 @@ public class Disinfection : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
                 text1.color = new Color(1, 1, 1, 0.5f);
                 text2.color = new Color(1, 1, 1, 0.5f);
                 coin.color = new Color(1, 1, 1, 0.5f);
+                text3.color = new Color(1, 1, 1, 0.5f);
             }
             else
             {
@@ -84,6 +101,7 @@ public class Disinfection : MonoBehaviour, IPointerDownHandler, IPointerEnterHan
                 text1.color = new Color(1, 1, 1, 1f);
                 text2.color = new Color(1, 1, 1, 1f);
                 coin.color = new Color(1, 1, 1, 1f);
+                text3.color = new Color(1, 1, 1, 1f);
             }
         }
     }
