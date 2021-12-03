@@ -347,6 +347,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2943758097555134832, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
+        type: 3}
+      propertyPath: m_text
+      value: ( - Food, + Rule Power)
+      objectReference: {fileID: 0}
     - target: {fileID: 8312551989574925426, guid: 99a5dc62e51cc4e3096f33bc5bae2800,
         type: 3}
       propertyPath: m_Name

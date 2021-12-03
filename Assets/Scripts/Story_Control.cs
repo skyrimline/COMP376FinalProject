@@ -105,7 +105,7 @@ public class Story_Control : MonoBehaviour
     public void choice1Story1()
     {
         gameLogicReference.ChangeRulePower(10);
-        gameLogicReference.foodNum = gameLogicReference.foodNum  - 5 < 0 ? 0 : gameLogicReference.foodNum - 5;
+        gameLogicReference.foodNum = gameLogicReference.foodNum  - 10 < 0 ? 0 : gameLogicReference.foodNum - 10;
         story[0].SetActive(false);
         Time.timeScale = 1;
     }
@@ -113,8 +113,8 @@ public class Story_Control : MonoBehaviour
     public void choice2Story1()
     {
         //reduce resources
-        gameLogicReference.foodNum += 5;
-        gameLogicReference.ChangeRulePower(-10);
+        gameLogicReference.foodNum += 15;
+        gameLogicReference.ChangeRulePower(-15);
         story[0].SetActive(false);
         Time.timeScale = 1;
     }
@@ -132,7 +132,7 @@ public class Story_Control : MonoBehaviour
 
     public void choice2Story2()
     {
-        gameLogicReference.ChangeRulePower(5);
+        gameLogicReference.ChangeRulePower(-15);
         Time.timeScale = 1;
         story[1].SetActive(false);
         //For the safety of others, directly execute
@@ -141,8 +141,8 @@ public class Story_Control : MonoBehaviour
     {
         Time.timeScale = 1;
         story[1].SetActive(false);
-        gameLogicReference.vaccineA_num = gameLogicReference.vaccineA_num - 5 < 0 ? 0 : gameLogicReference.vaccineA_num - 5;
-        gameLogicReference.ChangeRulePower(-10);
+        gameLogicReference.vaccineA_num = gameLogicReference.vaccineA_num - 15 < 0 ? 0 : gameLogicReference.vaccineA_num - 15;
+        gameLogicReference.ChangeRulePower(-15);
         //Leave him for spiritual healing 
     }
     //Effect1: (money-100, dominance -5)
@@ -151,15 +151,15 @@ public class Story_Control : MonoBehaviour
     {
         //Direct execution 
         gameLogicReference.money = gameLogicReference.money - 50 < 0 ? 0 : gameLogicReference.money - 50;
-        gameLogicReference.ChangeRulePower(5);
+        gameLogicReference.ChangeRulePower(10);
         Time.timeScale = 1;
         story[2].SetActive(false);
     }
 
     public void choice2Story3()
     {
-        gameLogicReference.vaccineA_num = gameLogicReference.vaccineA_num - 5 < 0 ? 0 : gameLogicReference.vaccineA_num - 5;
-        gameLogicReference.vaccineB_num = gameLogicReference.vaccineA_num - 5 < 0 ? 0 : gameLogicReference.vaccineA_num - 5;
+        gameLogicReference.vaccineA_num = gameLogicReference.vaccineA_num - 10 < 0 ? 0 : gameLogicReference.vaccineA_num - 10;
+        gameLogicReference.vaccineB_num = gameLogicReference.vaccineA_num - 10 < 0 ? 0 : gameLogicReference.vaccineA_num - 10;
         gameLogicReference.vaccineC_num = gameLogicReference.vaccineA_num - 5 < 0 ? 0 : gameLogicReference.vaccineA_num - 5;
         //Serum cures him and stabilizes his emotions
         Time.timeScale = 1;
@@ -170,8 +170,8 @@ public class Story_Control : MonoBehaviour
     public void choice1Story4()
     {
         //Direct execution 
-        gameLogicReference.foodNum = gameLogicReference.foodNum - 2 < 0 ? 0 : gameLogicReference.foodNum - 2;
-        gameLogicReference.ChangeRulePower(5);
+        gameLogicReference.foodNum = gameLogicReference.foodNum - 10 < 0 ? 0 : gameLogicReference.foodNum - 10;
+        gameLogicReference.ChangeRulePower(10);
         Time.timeScale = 1;
         story[3].SetActive(false);
         // set storyCalled 8 to false
@@ -180,7 +180,7 @@ public class Story_Control : MonoBehaviour
 
     public void choice2Story4()
     {
-        gameLogicReference.ChangeRulePower(-10);
+        gameLogicReference.ChangeRulePower(-15);
         //Serum cures him and stabilizes his emotions
         Time.timeScale = 1;
         story[3].SetActive(false);
@@ -192,15 +192,15 @@ public class Story_Control : MonoBehaviour
     {
         //Direct execution
         gameLogicReference.money += 200;
-        gameLogicReference.foodNum = gameLogicReference.foodNum - 30 < 0 ? 0 : gameLogicReference.foodNum - 30;
-        gameLogicReference.ChangeRulePower(-10);
+        gameLogicReference.foodNum = gameLogicReference.foodNum - 20 < 0 ? 0 : gameLogicReference.foodNum - 20;
+        gameLogicReference.ChangeRulePower(-15);
         Time.timeScale = 1;
         story[4].SetActive(false);
     }
 
     public void choice2Story5()
     {
-        gameLogicReference.ChangeRulePower(5);
+        gameLogicReference.ChangeRulePower(10);
         //Serum cures him and stabilizes his emotions
         Time.timeScale = 1;
         story[4].SetActive(false);
@@ -210,7 +210,7 @@ public class Story_Control : MonoBehaviour
     public void choice1Story6()
     {
         //Direct execution
-        gameLogicReference.ChangeRulePower(-10);
+        gameLogicReference.ChangeRulePower(-15);
         Time.timeScale = 1;
         story[5].SetActive(false);
         // set storyCalled 7 to false
@@ -230,7 +230,7 @@ public class Story_Control : MonoBehaviour
     public void choice1Story7()
     {
         //Direct execution
-        gameLogicReference.ChangeRulePower(-10);
+        gameLogicReference.ChangeRulePower(-15);
         Time.timeScale = 1;
         story[6].SetActive(false);
     }
@@ -238,8 +238,8 @@ public class Story_Control : MonoBehaviour
     public void choice2Story7()
     {
 
-        gameLogicReference.vaccineA_num = gameLogicReference.vaccineA_num - 5 < 0 ? 0 : gameLogicReference.vaccineA_num - 5;
-        gameLogicReference.vaccineB_num = gameLogicReference.vaccineA_num - 5 < 0 ? 0 : gameLogicReference.vaccineA_num - 5;
+        gameLogicReference.vaccineA_num = gameLogicReference.vaccineA_num - 10 < 0 ? 0 : gameLogicReference.vaccineA_num - 10;
+        gameLogicReference.vaccineB_num = gameLogicReference.vaccineA_num - 10 < 0 ? 0 : gameLogicReference.vaccineA_num - 10;
         gameLogicReference.vaccineC_num = gameLogicReference.vaccineA_num - 5 < 0 ? 0 : gameLogicReference.vaccineA_num - 5;
         //Serum cures him and stabilizes his emotions
         Time.timeScale = 1;
@@ -250,7 +250,7 @@ public class Story_Control : MonoBehaviour
     public void choice1Story8()
     {
         //Direct execution
-        gameLogicReference.foodNum = gameLogicReference.foodNum - 5 < 0 ? 0 : gameLogicReference.foodNum - 5;
+        gameLogicReference.foodNum = gameLogicReference.foodNum - 10 < 0 ? 0 : gameLogicReference.foodNum - 10;
         gameLogicReference.ChangeRulePower(10);
         gameLogicReference.money = gameLogicReference.money - 50 < 0 ? 0 : gameLogicReference.money - 50;
         Time.timeScale = 1;
@@ -259,7 +259,7 @@ public class Story_Control : MonoBehaviour
 
     public void choice2Story8()
     {
-        gameLogicReference.ChangeRulePower(-10);
+        gameLogicReference.ChangeRulePower(-15);
         
         //Serum cures him and stabilizes his emotions
         Time.timeScale = 1;
@@ -270,7 +270,7 @@ public class Story_Control : MonoBehaviour
     public void choice1Story9()
     {
         //Direct execution
-        gameLogicReference.foodNum = gameLogicReference.foodNum - 5 < 0 ? 0 : gameLogicReference.foodNum - 5;
+        gameLogicReference.foodNum = gameLogicReference.foodNum - 10 < 0 ? 0 : gameLogicReference.foodNum - 10;
         gameLogicReference.ChangeRulePower(10);
         Time.timeScale = 1;
         story[8].SetActive(false);
@@ -278,7 +278,7 @@ public class Story_Control : MonoBehaviour
 
     public void choice2Story9()
     {
-        gameLogicReference.ChangeRulePower(-10);
+        gameLogicReference.ChangeRulePower(-15);
 
         //Serum cures him and stabilizes his emotions
         Time.timeScale = 1;
@@ -298,7 +298,7 @@ public class Story_Control : MonoBehaviour
 
     public void choice2Story10()
     {
-        gameLogicReference.ChangeRulePower(10);
+        gameLogicReference.ChangeRulePower(-5);
 
         //Serum cures him and stabilizes his emotions
         Time.timeScale = 1;

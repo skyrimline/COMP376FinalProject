@@ -55,12 +55,12 @@ public class GameLogic : MonoBehaviour
     private void Awake()
     {
         productivity = 0;
-        maxRulePower = 100;
+        maxRulePower = 10;
         rulePower = maxRulePower;
         foodNum = 20;
-        money = 500;
-        vaccineA_num = 20;
-        vaccineB_num = 30;
+        money = 300;
+        vaccineA_num = 10;
+        vaccineB_num = 10;
         vaccineC_num = 10;
 
         dayTime = 60;
