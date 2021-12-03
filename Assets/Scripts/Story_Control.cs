@@ -150,7 +150,7 @@ public class Story_Control : MonoBehaviour
     public void choice1Story3()
     {
         //Direct execution 
-        gameLogicReference.money = gameLogicReference.money - 50 < 0 ? 0 : gameLogicReference.money - 50;
+        gameLogicReference.money = gameLogicReference.money - 200 < 0 ? 0 : gameLogicReference.money - 200;
         gameLogicReference.ChangeRulePower(10);
         Time.timeScale = 1;
         story[2].SetActive(false);

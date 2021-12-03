@@ -25,7 +25,7 @@ public class bullettime : MonoBehaviour
         icon = transform.GetChild(1).gameObject.GetComponent<Image>();
         countDown = transform.GetChild(2).gameObject.GetComponent<Text>();
         decoText = transform.GetChild(3).gameObject.GetComponent<Text>();
-        maxBulletTime = 4.0f;
+        maxBulletTime = 6.0f;
         bulletTimeTimer = maxBulletTime;
         isRechargeTime = false;
         isBulletTime = false;
@@ -33,6 +33,7 @@ public class bullettime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        ChangeColor();
         countDown.text = ((int)bulletTimeTimer).ToString();
         if (!PauseMenu.isPaused && Input.GetKeyDown(KeyCode.LeftShift))
         {
@@ -42,7 +43,8 @@ public class bullettime : MonoBehaviour
         }
         if (isBulletTime && bulletTimeTimer > 0)
         {
-            bulletTimeTimer -= Time.deltaTime;
+            bulletTimeTimer -= Time.deltaTime * (1/Time.timeScale);
+
             if (Input.GetKeyUp(KeyCode.LeftShift))
             {
                 isBulletTime = false;
