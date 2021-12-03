@@ -38,12 +38,12 @@ public class toggleMenu : MonoBehaviour
         }
         buttonPanel.SetActive(animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"));
         buttonPanel.transform.GetChild(0).gameObject.SetActive(animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"));
-        if (MenuShow && !isDay)
+        if (MenuShow && isDay)
         {
             //the Upgrade panel will shows
             buttonPanel.transform.GetChild(1).gameObject.SetActive(true);
         }
-        else if (!MenuShow || isDay)
+        else if (!MenuShow || !isDay)
         {
             MenuShow = false;
             //the upgrade panel will not show
