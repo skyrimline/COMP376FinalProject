@@ -142,7 +142,7 @@ public class Story_Control : MonoBehaviour
         Time.timeScale = 1;
         story[1].SetActive(false);
         gameLogicReference.vaccineA_num = gameLogicReference.vaccineA_num - 15 < 0 ? 0 : gameLogicReference.vaccineA_num - 15;
-        gameLogicReference.ChangeRulePower(-15);
+        gameLogicReference.ChangeRulePower(-5);
         //Leave him for spiritual healing 
     }
     //Effect1: (money-100, dominance -5)
@@ -191,7 +191,7 @@ public class Story_Control : MonoBehaviour
     public void choice1Story5()
     {
         //Direct execution
-        gameLogicReference.money += 200;
+        gameLogicReference.money += 500;
         gameLogicReference.foodNum = gameLogicReference.foodNum - 20 < 0 ? 0 : gameLogicReference.foodNum - 20;
         gameLogicReference.ChangeRulePower(-15);
         Time.timeScale = 1;
@@ -290,7 +290,7 @@ public class Story_Control : MonoBehaviour
     {
         //Direct execution
 
-        gameLogicReference.money += 100;
+        gameLogicReference.money += 300;
         gameLogicReference.ChangeRulePower(-15);
         Time.timeScale = 1;
         story[9].SetActive(false);

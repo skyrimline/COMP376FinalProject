@@ -152,7 +152,7 @@ public class NPC_Movement : MonoBehaviour
         switchMovementTimerInRoom = Random.Range(1f, 3f);
         // make the chance to go right bigger
         int random = Random.Range(0, 11);
-        if (random <= 3)
+        if (random <= 1)
         {
             moveDir = possibleMoveDir[0];
         }

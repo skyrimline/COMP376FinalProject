@@ -69,8 +69,8 @@ public class NPC_Logic : MonoBehaviour
         InfectedToDyingTime = 60.0f;
         InfectedToDyingTimer = InfectedToDyingTime;
 
-        DyingToZombieTime = 30.0f;
-        DyingToZombieTimer = 30.0f;
+        DyingToZombieTime = 8.0f;
+        DyingToZombieTimer = DyingToZombieTime;
 
         life = maxLife;
     }
@@ -81,6 +81,7 @@ public class NPC_Logic : MonoBehaviour
         if (transform.Find("Timer_UI_NPC") != null)
         {
             zombieProgress = transform.Find("Timer_UI_NPC").gameObject.GetComponent<Progress_bar>();
+            zombieProgress.max = DyingToZombieTime;
         }
 
         if(type != NPC_Type.zombie)
