@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (rulepower-5)
+  m_text: (- Rule Power)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -284,9 +284,9 @@ RectTransform:
   m_Father: {fileID: 1735882945}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -88.2825}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &375311614
@@ -493,7 +493,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ([vaccineA,vaccineB, vaccineC]-2 rulepower -10)
+  m_text: ( - [VaccineA,VaccineB, VaccineC], - Rule Power)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -629,13 +629,12 @@ MonoBehaviour:
       m_Calls: []
   m_text: <size=150%>A man</size> suddenly showed signs of mutant zombies in the
     dormitory, and began to attack others, threatening to infect everyone. The reason
-    is that he was tested as a normal person (not vaccinated) and his sister was
-    detected as an infected person. <color=#C3465F><b><u>Since you did not have many
-    vaccines at the time, you could only choose to execute some people, and his sister
-    was among them.</u></b> </color>  Because of this, he held a grudge. When he
-    went out to collect supplies, he deliberately injected zombie blood into his
-    body and infected him with zombie virus, and wanted to infect all other people
-    after returning to the dormitory. What will you do at this time?
+    is when he was tested as a normal person (not vaccinated) and his sister was
+    detected as an infected person. <color=#C3465F><b><u>Since you did not have enough
+    vaccine for everyone.she's been chosen by executed.</u></b> </color>   When he
+    went out to collect supplies, he injected zombie blood into his body to got infected,
+    and wanted to infect all the other people after returning to the dormitory. WHAT
+    WOULD YOU DO FOR THIS MAN WHO LOST HIS MIND JUST WANT TO REVENGE?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -769,7 +768,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (vaccine A -5, rulepower -10)
+  m_text: ( - Vaccine A, - Rule Power)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1871,9 +1870,9 @@ RectTransform:
   m_Father: {fileID: 1735882945}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -17.6565}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1013409561
@@ -2127,9 +2126,9 @@ RectTransform:
   m_Father: {fileID: 1735882945}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -52.969498}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 380, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1081093270
@@ -2883,7 +2882,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (food-10, rule power+10)
+  m_text: ( - Food, + Rule Power)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3305,7 +3304,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (bottle cap - 50, rulepower + 5)
+  m_text: ( - Bottle Cap, + Rule Power)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3439,13 +3438,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <size=150%>One person</size> in the dormitory was frightened by the zombies
-    <color=#C3465F><b><u>because of a mental disorder caused by going out hunting
-    many times.</u></b> </color> He thought that normal people in the dormitory were
-    all zombies and wanted to kill them all (knife/gun stolen from the hunter's room).
-    Others expressed panic and fear about his behavior. The team members who went
-    hunting with him many times all interceded for him. How would you deal with this
-    problem?
+  m_text: <size=150%>A men</size> in the dormitory was frightened by the zombies
+    <color=#C3465F><b><u>cause  the mental disorder by hunting out too many times.</u></b>
+    </color> He think that all the people in the dormitory were zombies and want
+    to kill them all (knife/gun stolen from the hunter's room). Others expressed
+    panic and fear about his behavior. The team members who went hunting with him
+    all interceded for him. WHAT YOU GONNA CHOOSE FOR THE EX-LIFESAVER WHOS TAKING
+    ALL THE RISKS JUST FOR FEEDING THE WHOLE PLACE?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4513,7 +4512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (food-10)
+  m_text: ( - Food)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4647,7 +4646,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (Food+5, Rule Power-10)
+  m_text: '( + Food, - Rule Power) '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5436,7 +5435,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( rule power-15, bottle cap+100)
+  m_text: ( - Rule Power, + Bottle Cap)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5958,7 +5957,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (food-2, rulepower +5)
+  m_text: ( - Food, + Rule Power)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6601,7 +6600,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (rull power-10 for NPC died in combat)
+  m_text: (- Rule Power for NPC died in combat)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7123,14 +7122,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<size=150%> There is</size> a rapid knock on the door, and you open the
-    door to find a bloated man. His clothes are dirty but the workmanship is very
-    delicate, coupled with his elegant speech and manners and the expensive gold
-    watch in his hands, you can conclude that his identity must not be simple. Sure
-    enough, he offered to trade all his belongings in exchange for a chance to live
-    with you, <color=#C3465F><b><u> but he is used to living a luxurious life, knowing
-    nothing but eating enough for three meals a day.  </u></b></color> Do you want
-    to take him in and receive his wealth?  '
+  m_text: '<size=150%> There is</size> a rapid knocked on the door. you open the
+    door found out is a bloated man with dirty but very delicatly clothes, coupled
+    with his elegant speech and manners and the expensive gold watch in his hands,
+    you can conclude that his identity must not be simple. And yes. he offered to
+    trade all his belongings  for a chance to live with you, <color=#C3465F><b><u>
+    but he is used to living a luxurious life, knowing nothing but picky.   </u></b></color>
+    Do you want to take him in and receive his wealth?  '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7598,7 +7596,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( food-5, rule power+10, bottle cap-50)
+  m_text: ( - Food, + Rule Power, - Bottle Cap)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -8182,8 +8180,8 @@ MonoBehaviour:
   m_text: '<size=150%> Today</size> the group of people are here again, this time
     they have more sharp blades and guns in their hands, they are not afraid of your
     threat at all. While you are anxiously thinking about countermeasures,  <color=#C3465F><b><u>you
-    look at the guns in their hands and ask questions: Why is this gun so similar
-    to yours? </u></b></color>At this moment, the crowd came in, so you...   '
+    look at the guns in their hands and wondering : Why is this gun so similar to
+    yours? </u></b></color>At this moment, the crowd came in, so you...   '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9030,7 +9028,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (Food-5, Rule Power + 10)
+  m_text: ( + Food, + Rule Power)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9278,7 +9276,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( rule power+10)
+  m_text: ( - Rule Power)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9847,7 +9845,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (rulepower -10)
+  m_text: (- Rule Power)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11210,7 +11208,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( rule power-10)
+  m_text: ( - Rule Power)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11421,7 +11419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (rulepower + 5)
+  m_text: (+ Rule Power)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11941,7 +11939,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( rule power+10,food-5)
+  m_text: ( + Rule Power, - Food)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12075,7 +12073,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: (money+200, food-30, rulepower-10)
+  m_text: ( + Bottle Cap, - Food, - Rule Power)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12465,7 +12463,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( rule power-10)
+  m_text: ( - Rule Power)
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -13140,8 +13138,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: '<size=150%> Here </size>comes a beautiful lady. She is beautiful and elegant,
-    kind and gentle, and is welcomed by everyone. But it didn''t take long for the
-    crowd to hear bad comments about her: she used to be a prostitute. <color=#C3465F><b><u>So
+    kind and gentle,  welcomed by everyone. But it didn''t take long for the crowd
+    to hear bad comments about her: she used to be a prostitute. <color=#C3465F><b><u>So
     the men in the shelter molested her and trampled on her dignity, and the women
     cursed and mocked her identity. Some people even offered to sell her to a delivery
     merchant in exchange for a special discount. </u></b></color>  you... '
@@ -14092,7 +14090,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ( rule power-10 for NPC died in combat )
+  m_text: ( - Rule Power for NPC died in combat )
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15125,15 +15123,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<size=150%>A woman</size> you rescued not long ago was always seen sneaking
-    back to the dormitory after eating. It was only when her dorm-mates went back
-    to their rooms one day to sweep that they inadvertently discovered her secret:
-    she was <color=#C3465F><b><u>pregnant</u></b> </color>and had been secretly taking
-    food for two to keep the baby in her belly!
+  m_text: '<size=150%>A woman</size> that you rescued recently be seen sneaking back
+    to the dormitory after eating. One day after room cleaning ,they found out she
+    is <color=#C3465F><b><u>pregnant</u></b> </color>and secretly taking foods back
+    to keep her baby!
 
-    She falls to her knees and begs
-    your forgiveness: while stealing what belongs to the collective is a capital
-    offence, killing the mother who is protecting her child does not win you applause.'
+    She knees down and begging for your forgiveness. IS IT
+    WORTH FOR KILLING A MOTHER WHO JUST TRYING TO PROTECT HER KID?'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15267,11 +15263,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<size=150%>This morning</size>, people found an abandoned baby at the
-    door. <color=#C3465F><b><u>The baby in the basket kept crying because of the
-    cold and hunger, and there was nothing besides the old teddy bear.</u></b> </color>
-    Now his little face is purplish and crying, and he is gradually weakening. Facing
-    this abandoned little life, what do you decide to do?  '
+  m_text: '<size=150%>This morning</size>, people found out a baby been abandoned
+    at the door. <color=#C3465F><b><u>The baby in the basket keep crying because
+    of the cold and hunger, and there was nothing besides the old teddy bear.</u></b>
+    </color> Now his little face is getting purplish  and he is gradually weakening.
+    WHAT YOU GONNA DO FOR THIS LITTLE THING THAT ABOUT TO PASS IN ANY SECOND?  '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15481,7 +15477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ([VaccineA, vaccineB, vaccineC ]-5)
+  m_text: ( - [VaccineA, VaccineB, VaccineC ])
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15899,12 +15895,11 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<size=150%> There has </size>always been a couple in your shelter, but
-    the boy among them was infected with the virus at the latest. He became ill very
-    quickly, and he was already heavily infected when he was discovered, so you have
-    to kill him. <color=#C3465F><b><u>The girl stopped you when you drew the gun.
-    She begs you not to kill the boy, she is willing to leave this shelter with the
-    zombies, just begging you to let them live. </u></b></color> You decide... '
+  m_text: '<size=150%> There''s </size> a couple in your shelter, the boy was infected
+    with the virus at the latest. He became sick very quick, was in deep infected
+    while he was been discovered, you have to execute him immediately. <color=#C3465F><b><u>The
+    girl stopped you when you drew the gun. She begs you not to kill the boy, she
+    is willing to leave this shelter with him.</u></b></color> You decide... '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
