@@ -20,6 +20,7 @@ public class Execution : MonoBehaviour, IPointerDownHandler, IPointerEnterHandle
     private Image coin;
     private Text text1;
     private Text text2;
+    private Text text3;
 
     private bool isMouseOver = false;
 
@@ -32,6 +33,7 @@ public class Execution : MonoBehaviour, IPointerDownHandler, IPointerEnterHandle
         text1 = transform.GetChild(0).gameObject.GetComponent<Text>();
         text2 = transform.GetChild(1).gameObject.GetComponent<Text>();
         coin = transform.GetChild(2).gameObject.GetComponent<Image>();
+        text3 = transform.GetChild(3).GetChild(0).gameObject.GetComponent<Text>();
 
     }
 
@@ -40,8 +42,21 @@ public class Execution : MonoBehaviour, IPointerDownHandler, IPointerEnterHandle
     {
         ChangeColor();
 
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
+            if (!executionActive)
+            {
+                setExecutionActive();
+            }
+            else
+            {
+                unsetExecutionActive();
+            }
+        }
+            
+
         //click the right mouse button to unset execution button
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButton(1) || Input.GetKeyDown(KeyCode.Alpha2))
         {
             unsetExecutionActive();
         }
@@ -66,6 +81,7 @@ public class Execution : MonoBehaviour, IPointerDownHandler, IPointerEnterHandle
                 text1.color = new Color(0.561f, 0.769f, 0.643f, 0.5f);
                 text2.color = new Color(0.561f, 0.769f, 0.643f, 0.5f);
                 coin.color = new Color(0.561f, 0.769f, 0.643f, 0.5f);
+                text3.color = new Color(0.561f, 0.769f, 0.643f, 0.5f);
             }
             else
             {
@@ -73,6 +89,7 @@ public class Execution : MonoBehaviour, IPointerDownHandler, IPointerEnterHandle
                 text1.color = new Color(0.561f, 0.769f, 0.643f, 1f);
                 text2.color = new Color(0.561f, 0.769f, 0.643f, 1f);
                 coin.color = new Color(0.561f, 0.769f, 0.643f, 1f);
+                text3.color = new Color(0.561f, 0.769f, 0.643f, 1f);
             }
 
         }
@@ -84,6 +101,7 @@ public class Execution : MonoBehaviour, IPointerDownHandler, IPointerEnterHandle
                 text1.color = new Color(1, 1, 1, 0.5f);
                 text2.color = new Color(1, 1, 1, 0.5f);
                 coin.color = new Color(1, 1, 1, 0.5f);
+                text3.color = new Color(1, 1, 1, 0.5f);
             }
             else
             {
@@ -91,6 +109,7 @@ public class Execution : MonoBehaviour, IPointerDownHandler, IPointerEnterHandle
                 text1.color = new Color(1, 1, 1, 1f);
                 text2.color = new Color(1, 1, 1, 1f);
                 coin.color = new Color(1, 1, 1, 1f);
+                text3.color = new Color(1, 1, 1, 1f);
             }
         }
     }
