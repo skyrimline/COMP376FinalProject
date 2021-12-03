@@ -55,7 +55,7 @@ public class GameLogic : MonoBehaviour
     private void Awake()
     {
         productivity = 0;
-        maxRulePower = 10;
+        maxRulePower = 100;
         rulePower = maxRulePower;
         foodNum = 20;
         money = 300;
