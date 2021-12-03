@@ -8857,12 +8857,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1052605462}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1052605464 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6198721575519175969, guid: f376837f556ea644ebd00966bb67e5fd,
-    type: 3}
-  m_PrefabInstance: {fileID: 1052605462}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1072254432
 GameObject:
   m_ObjectHideFlags: 0
@@ -13799,7 +13793,7 @@ MonoBehaviour:
   phase3EndTalkPanels:
   - {fileID: 525147095}
   - {fileID: 166497542}
-  BEPanel_RulePower: {fileID: 1052605464}
+  BEPanel_RulePower: {fileID: 2111452425}
   BEPanel_Other: {fileID: 1895472152}
   phase2UnlockRooms:
   - {fileID: 241149773}
