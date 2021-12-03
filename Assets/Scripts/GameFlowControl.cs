@@ -63,7 +63,7 @@ public class GameFlowControl : MonoBehaviour
         }
 
         // check rule power
-        if(gameLogic.rulePower < 50)
+        if(gameLogic.rulePower <= 0)
         {
             triggered = true;
             Camera.main.transform.position = new Vector3(3.1f, -5.9f, -10f);
