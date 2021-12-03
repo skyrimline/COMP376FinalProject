@@ -101,7 +101,7 @@ public class StuffBuy : MonoBehaviour
         var f1 = g1.GetComponentInChildren<Floating_Info_Control>();
         if (f1 != null)
         {
-            f1.SetText("+ 1 ");
+            f1.SetText("+  ");
             f1.SetImage(ObjUI);
         }
     }

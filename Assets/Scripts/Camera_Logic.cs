@@ -52,6 +52,7 @@ public class Camera_Logic : MonoBehaviour
         HandleZoom();
         HandleMove();
         CheckConfine();
+        resetPosition();
     }
 
     private void HandleZoom()
@@ -221,4 +222,12 @@ public class Camera_Logic : MonoBehaviour
         }
     }
 
+    private void resetPosition()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            cameraPos = new Vector3(3.1f, -5.9f, -10f);
+            cameraZoom = 30.0f;
+        }
+    }
 }

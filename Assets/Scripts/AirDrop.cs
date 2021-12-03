@@ -20,28 +20,38 @@ public class AirDrop : MonoBehaviour, IPointerDownHandler
     [SerializeField] private GameObject FloatingResourcePrefab;
     [SerializeField] private Sprite[] resourceSprs;
 
+
     // Start is called before the first frame update
     void Start()
     {
+
+        gameLogicReference = GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>();
         int food_supply;
         int money_supply;
         int vaccineA_supply;
         int vaccineB_supply;
         int vaccineC_supply;
         //initialized the number of resources
-        food_supply = Random.Range(5, 10);
+
+        //phase1
+        food_supply =  Random.Range(5, 10);
         money_supply = Random.Range(50, 100);
         vaccineA_supply = Random.Range(3, 7);
         vaccineB_supply = Random.Range(5, 11);
         vaccineC_supply = Random.Range(1, 3);
+
+        
         int[] supplys_ = { food_supply, money_supply, vaccineA_supply, vaccineB_supply, vaccineC_supply};
+        for (int i = 0; i < 5; i++)
+        {
+            supplys_[i] *= gameLogicReference.phase;
+        }
         supplys = supplys_;
 
         //initialized the labels of supply
          supply_label1 = Random.Range(0, 5);
          supply_label2 = Random.Range(0, 5);
 
-        gameLogicReference = GameObject.FindGameObjectsWithTag("GameLogic")[0].GetComponent<GameLogic>();
     }
 
     // Update is called once per frame

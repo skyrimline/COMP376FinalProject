@@ -64,7 +64,7 @@ public class StuffSell : MonoBehaviour
             //Increase the money 
             GameObject.FindGameObjectWithTag("GameLogic").GetComponent<GameLogic>().money += price;
             //Decrease the item
-            SpawnFloatingResourceInfo();
+            
             switch (Name.text)
             {
                 case "Food":
@@ -73,6 +73,12 @@ public class StuffSell : MonoBehaviour
                     break;
                 case "Food x6":
                     // give food
+                    if (NUMofItem < 6)
+                    {
+                        GenerateErrorMessage("You don't have item to sell");
+                        return;
+                    }
+                 
                     gameLogicReference.foodNum -= 6;
                     break;
                 case "VaccineA":
@@ -88,6 +94,8 @@ public class StuffSell : MonoBehaviour
                     gameLogicReference.vaccineC_num -= 1;
                     break;
             }
+
+            SpawnFloatingResourceInfo();
         }
         else
         {
@@ -120,7 +128,7 @@ public class StuffSell : MonoBehaviour
         var f1 = g1.GetComponentInChildren<Floating_Info_Control>();
         if (f1 != null)
         {
-            f1.SetText("- 1 ");
+            f1.SetText("-  ");
             f1.SetImage(ObjUI);
         }
     }

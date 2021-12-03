@@ -133,7 +133,7 @@ public class NPC_Logic : MonoBehaviour
         }
         else if (npcMovement.isInRoom && GetNPCType() == NPC_Type.zombie)
         {
-            gameLogic.ChangeRulePower(2);
+            gameLogic.ChangeRulePower(5);
         }
 
         // disable collider and stuff and disable rigid body

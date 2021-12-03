@@ -38,7 +38,7 @@ public class GameFlowControl : MonoBehaviour
     private int reward = 0;
 
     public int[] phaseDayCount = { 7, 7, 15 };
-    private int[] phaseSaveCount = {10, 24, 45};
+    private int[] phaseSaveCount = {10, 24, 40};
 
     private GameLogic gameLogic;
 
@@ -92,7 +92,7 @@ public class GameFlowControl : MonoBehaviour
             else
             {
                 // continue game and phase++ 
-                // 触发过关对话panel
+                // ????????????panel
                 // set main camera back to default place
                 Camera.main.transform.position = new Vector3(3.1f, -5.9f, -10f);
                 Camera.main.orthographicSize = 23.9f;
