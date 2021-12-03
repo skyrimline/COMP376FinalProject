@@ -37,11 +37,11 @@ public class Dialog_Box_Control : MonoBehaviour
             outsideDialog1.SetActive(true);
         }
 
-        //play inside dialog 1
-        else if (NPCMovementReference.isInRoom && randomnumber == 1)
-        {
-            insideDialog1.SetActive(true);
-        }
+        ////play inside dialog 1
+        //else if (NPCMovementReference.isInRoom && randomnumber == 1)
+        //{
+        //    insideDialog1.SetActive(true);
+        //}
 
         //don't play any dialog
         else

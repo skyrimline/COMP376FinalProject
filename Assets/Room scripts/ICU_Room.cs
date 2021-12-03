@@ -24,27 +24,31 @@ public class ICU_Room : MonoBehaviour, IDropHandler
             NPC_Logic npc = room.NPCList[0];
             // play particle system once
             // vaccine or syrum num--
+            // depend on NPC type, call the cure function.
+            // if normal, vaccinate the NPC
+
             if (eventData.pointerDrag.tag == "vaccine")
             {
                 vaccineLab.DeductVaccine();
                 gasParticleSystem_vaccine.Play();
+                if (npc.GetNPCType() == NPC_Logic.NPC_Type.normal)
+                {
+                    npc.Vaccinate();
+                }
             }
             else if(eventData.pointerDrag.tag == "serum")
             {
                 vaccineLab.DeductSerum();
                 gasParticleSystem_serum.Play();
+
+                if (npc.GetNPCType() == NPC_Logic.NPC_Type.infected || npc.GetNPCType() == NPC_Logic.NPC_Type.dying)
+                {
+                    npc.CureBySerum();
+                }
             }
 
-            // depend on NPC type, call the cure function.
-            // if normal, vaccinate the NPC
-            if(npc.GetNPCType() == NPC_Logic.NPC_Type.normal)
-            {
-                npc.Vaccinate();
-            }
-            else if(npc.GetNPCType() == NPC_Logic.NPC_Type.infected || npc.GetNPCType() == NPC_Logic.NPC_Type.dying)
-            {
-                npc.CureBySerum();
-            }
+            
+           
         }
 
     }

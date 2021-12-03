@@ -56,7 +56,7 @@ public class GameLogic : MonoBehaviour
     {
         productivity = 0;
         maxRulePower = 100;
-        rulePower = maxRulePower;
+        rulePower = 50;
         foodNum = 20;
         money = 300;
         vaccineA_num = 10;
