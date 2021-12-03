@@ -33,6 +33,11 @@ public class bullettime : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Time.timeScale == 0)
+        {
+            return;
+        }
+        
         ChangeColor();
         countDown.text = ((int)bulletTimeTimer).ToString();
         if (!PauseMenu.isPaused && Input.GetKeyDown(KeyCode.LeftShift))

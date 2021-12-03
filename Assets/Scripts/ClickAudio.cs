@@ -10,7 +10,8 @@ public class ClickAudio : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        source.PlayOneShot(start);
+        if (start != null)
+            source.PlayOneShot(start);
     }
 
     // Update is called once per frame

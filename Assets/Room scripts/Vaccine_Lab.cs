@@ -31,6 +31,8 @@ public class Vaccine_Lab : MonoBehaviour
 
     private int maxProductivity;
 
+    [SerializeField] private AudioSource vaccineReady;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -76,6 +78,9 @@ public class Vaccine_Lab : MonoBehaviour
             return;
         }
 
+        // play sound
+        vaccineReady.PlayOneShot(vaccineReady.clip);
+
         // when timer stops, vaccine num++
         vaccineNum++;
         isVaccineProducing = false;
@@ -120,7 +125,8 @@ public class Vaccine_Lab : MonoBehaviour
             timerText.text = ((int)timer).ToString("D2");
             return;
         }
-
+        // play sound
+        vaccineReady.PlayOneShot(vaccineReady.clip);
         // when timer stops, vaccine num++
         serumNum++;
         isSerumProducing = false;

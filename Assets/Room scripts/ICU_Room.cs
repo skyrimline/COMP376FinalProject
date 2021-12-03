@@ -13,13 +13,15 @@ public class ICU_Room : MonoBehaviour, IDropHandler
     [SerializeField] private ParticleSystem gasParticleSystem_vaccine;
     [SerializeField] private ParticleSystem gasParticleSystem_serum;
 
+    [SerializeField] private AudioSource spraySound;
+
     public void OnDrop(PointerEventData eventData)
     {
-        Debug.Log(eventData.pointerDrag.name);
-
         // only do action when room is not empty
         if(room.NPCList.Count > 0)
         {
+            spraySound.PlayOneShot(spraySound.clip);
+            
             // safe to reference, a room only contains at most one npc
             NPC_Logic npc = room.NPCList[0];
             // play particle system once
