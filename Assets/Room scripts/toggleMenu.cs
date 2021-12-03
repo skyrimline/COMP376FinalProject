@@ -8,7 +8,11 @@ public class toggleMenu : MonoBehaviour
     private GameObject shop;
     private Animator animator;
     private bool isDay;
+    private bool isNight;
 
+    [SerializeField] private AudioSource source;
+    [SerializeField] private AudioClip car;
+    private bool play = false;
 
     private bool MenuShow = false;
     // Start is called before the first frame update
@@ -22,7 +26,16 @@ public class toggleMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        isDay = animator.GetBool("isDay");
+        isDay = ! animator.GetBool("isDay");
+        if (isDay && !play)
+        {
+            source.PlayOneShot(car);
+            play = true;
+        }
+        if (!isDay)
+        {
+            play = false;
+        }
         buttonPanel.SetActive(animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"));
         buttonPanel.transform.GetChild(0).gameObject.SetActive(animator.GetCurrentAnimatorStateInfo(0).IsName("Idle"));
         if (MenuShow && !isDay)
