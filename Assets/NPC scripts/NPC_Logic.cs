@@ -234,6 +234,7 @@ public class NPC_Logic : MonoBehaviour
         // reset timers
         InfectedToDyingTimer = InfectedToDyingTime;
         DyingToZombieTimer = DyingToZombieTime;
+        setNPCColor();
     }
 
     public void Vaccinate()
