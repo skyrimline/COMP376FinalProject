@@ -17,6 +17,11 @@ public class ICU_Room : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
+        if (!eventData.pointerDrag.gameObject.GetComponent<Drag_And_Drop_Drug>().draggable)
+        {
+            return;
+        }
+        
         // only do action when room is not empty
         if(room.NPCList.Count > 0)
         {
