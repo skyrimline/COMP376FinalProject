@@ -16,7 +16,7 @@ public class Drag_And_Drop_Drug : MonoBehaviour,
     [SerializeField] Vaccine_Lab lab;
     [SerializeField] ICU_Room icu;
 
-    private bool draggable = false;
+    public bool draggable = false;
 
     private Vector3 startPos;
     private CanvasGroup cvs;
